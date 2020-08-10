@@ -1,0 +1,355 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHEActivity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/fldGrpSectionCHE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- im25  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVim25"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im25"
+                            android:text="@string/im25" />
+
+                        <TextView
+                            android:id="@+id/q_im25"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im25"
+                            android:layout_alignBottom="@id/qtxt_im25"
+                            android:text="@string/Q_im25" />
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/im25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/im251"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/im251" />
+
+                        <RadioButton
+                            android:id="@+id/im252"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/im252" />
+
+                        <RadioButton
+                            android:id="@+id/im2598"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/im2598" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- im26  TextArea   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVim26"
+                style="@style/cardView"
+                android:visibility='@{im251.checked? View.VISIBLE : View.GONE}'>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im26"
+                            android:text="@string/im26" />
+
+                        <TextView
+                            android:id="@+id/q_im26"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im26"
+                            android:layout_alignBottom="@id/qtxt_im26"
+                            android:text="@string/Q_im26" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/im26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/im26x"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- im26a  TextArea   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVim26a"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im26a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im26a"
+                            android:text="@string/im26a" />
+
+                        <TextView
+                            android:id="@+id/q_im26a"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im26a"
+                            android:layout_alignBottom="@id/qtxt_im26a"
+                            android:text="@string/Q_im26a" />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/im26a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789-,"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- im26b  TextArea   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVim26b"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im26b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im26b"
+                            android:text="@string/im26b" />
+
+                        <TextView
+                            android:id="@+id/q_im26b"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im26b"
+                            android:layout_alignBottom="@id/qtxt_im26b"
+                            android:text="@string/Q_im26b" />
+
+                    </RelativeLayout>
+
+
+
+                    <EditText
+                        android:id="@+id/im26b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789-,"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- im26c  TextArea   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVim26c"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im26c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im26c"
+                            android:text="@string/im26c" />
+
+                        <TextView
+                            android:id="@+id/q_im26c"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im26c"
+                            android:layout_alignBottom="@id/qtxt_im26c"
+                            android:text="@string/Q_im26c" />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/im26c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789-,"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- im26d  TextArea   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVim26d"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im26d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im26d"
+                            android:text="@string/im26d" />
+
+                        <TextView
+                            android:id="@+id/q_im26d"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im26d"
+                            android:layout_alignBottom="@id/qtxt_im26d"
+                            android:text="@string/Q_im26d" />
+
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/im26d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789-,"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:tag="-1" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--EndButton LinearLayout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/red_overlay"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/green_overlay"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

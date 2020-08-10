@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.aku.hassannaqvi.covid_matiari">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.hardware.location.gps" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- TakePhoto Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="edu.aku.hassannaqvi.covid_matiari.core.MainApp"
+        android:allowBackup="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        tools:replace="android:allowBackup"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIB02Activity"
+            android:label="@string/nh3heading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.InfoSectionActivity"
+            android:label="@string/nh3heading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH302Activity"
+            android:label="@string/nh3heading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.list_activity.FormsReportCluster"
+            android:label="Forms Report"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.list_activity.FormsReportDate"
+            android:label="Forms Report"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.list_activity.PendingFormsActivity"
+            android:label="Unfinished Forms"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.SplashscreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.MainActivity"
+            android:theme="@style/AppThemeEnglish" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.EndingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.PIEndingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu" />
+
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionSubInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH301Activity"
+            android:label="@string/nh3heading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH4Activity"
+            android:label="@string/na5heading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHCActivity"
+            android:label="@string/IMheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHDActivity"
+            android:label="@string/IMheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHEActivity"
+            android:label="@string/IMheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIAActivity"
+            android:label="@string/section1_mainheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIB01Activity"
+            android:label="@string/section2_mainheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPICActivity"
+            android:label="@string/section3_mainheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.core.AndroidDatabaseManager"
+            android:parentActivityName="edu.aku.hassannaqvi.covid_matiari.ui.other.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.SyncActivity"
+            android:parentActivityName="edu.aku.hassannaqvi.covid_matiari.ui.other.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <service android:name="edu.aku.hassannaqvi.covid_matiari.services.DownloadFileService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "edu.aku.hassannaqvi.covid_matiari",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 1,
+      "versionName": "0.1",
+      "enabled": true,
+      "outputFile": "covid_sero_2020_07_30_v0001.apk"
+    }
+  ]
+}

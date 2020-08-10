@@ -1,0 +1,846 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+        <!--<variable
+            name="form"
+            type="edu.aku.hassannaqvi.uencovid19.models.Form" />-->
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIAActivity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/fldGrpSectionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- pa01  Input   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVpa01"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_pa01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_pa01"
+                            android:text="@string/pa01" />
+
+                        <TextView
+                            android:id="@+id/q_pa01"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_pa01"
+                            android:layout_alignBottom="@id/qtxt_pa01"
+                            android:text="@string/Q_pa01" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/pa01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="@string/pa01" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- pa02  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVpa02"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_pa02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_pa02"
+                            android:text="@string/pa02" />
+
+                        <TextView
+                            android:id="@+id/q_pa02"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_pa02"
+                            android:layout_alignBottom="@id/qtxt_pa02"
+                            android:text="@string/Q_pa02" />
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/pa02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/pa021"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/pa021" />
+
+                        <RadioButton
+                            android:id="@+id/pa022"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/pa022" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- pa03  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVpa03"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_pa03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_pa03"
+                            android:text="@string/pa03" />
+
+                        <TextView
+                            android:id="@+id/q_pa03"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_pa03"
+                            android:layout_alignBottom="@id/qtxt_pa03"
+                            android:text="@string/Q_pa03" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pa03_dd" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/pa03dd"
+                                style="@style/textInput"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/pa03_dd"
+                                android:inputType="number"
+                                app:defaultValue="98"
+                                app:mask="##"
+                                app:maxValue="31"
+                                app:minValue="1"
+                                app:type="range" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/pa03_mm" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/pa03mm"
+                                style="@style/textInput"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/pa03_mm"
+                                android:inputType="number"
+                                app:defaultValue="98"
+                                app:mask="##"
+                                app:maxValue="11"
+                                app:minValue="1"
+                                app:type="range" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:text="@string/pa03_yy" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/pa03yy"
+                                style="@style/textInput"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/pa03_yy"
+                                android:inputType="number"
+                                android:onTextChanged="@{callback::pa03yyOnTextChanged}"
+                                app:defaultValue="9998"
+                                app:mask="####"
+                                app:maxValue="2020"
+                                app:minValue="1930"
+                                app:type="range" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- pa04  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVpa04"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_pa04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_pa04"
+                            android:text="@string/pa04" />
+
+                        <TextView
+                            android:id="@+id/q_pa04"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_pa04"
+                            android:layout_alignBottom="@id/qtxt_pa04"
+                            android:text="@string/Q_pa04" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/sub"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/pa04y" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/pa04y"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/pa04y"
+                            android:inputType="number"
+                            android:onTextChanged="@{callback::pa04yOnTextChanged}"
+                            app:mask="##"
+                            app:maxValue="99"
+                            app:minValue="0"
+                            app:type="range" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/sub"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/pa04m" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/pa04m"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/pa04m"
+                            android:inputType="number"
+                            app:mask="##"
+                            app:maxValue="11"
+                            app:minValue="0"
+                            app:type="range" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/fldGrpSectionA01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- pa05  TextArea   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVpa05"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_pa05"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_pa05"
+                                android:text="@string/pa05" />
+
+                            <TextView
+                                android:id="@+id/q_pa05"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_pa05"
+                                android:layout_alignBottom="@id/qtxt_pa05"
+                                android:text="@string/Q_pa05" />
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/pa05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                            android:hint="@string/pa05"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- pa06  Input-Numeric   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVpa06"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_pa06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_pa06"
+                                android:text="@string/pa06" />
+
+                            <TextView
+                                android:id="@+id/q_pa06"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_pa06"
+                                android:layout_alignBottom="@id/qtxt_pa06"
+                                android:text="@string/Q_pa06" />
+                        </RelativeLayout>
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/pa06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="@string/pa06"
+                            android:inputType="number"
+                            app:mask="##"
+                            app:maxValue="99"
+                            app:minValue="15"
+                            app:type="range" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- pa07  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVpa07"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_pa07"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_pa07"
+                                android:text="@string/pa07" />
+
+                            <TextView
+                                android:id="@+id/q_pa07"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_pa07"
+                                android:layout_alignBottom="@id/qtxt_pa07"
+                                android:text="@string/Q_pa07" />
+                        </RelativeLayout>
+
+                        <RadioGroup
+                            android:id="@+id/pa07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/pa071"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pa071" />
+
+                            <RadioButton
+                                android:id="@+id/pa072"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pa072" />
+
+                            <RadioButton
+                                android:id="@+id/pa073"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pa073" />
+
+                            <RadioButton
+                                android:id="@+id/pa074"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pa074" />
+
+                            <RadioButton
+                                android:id="@+id/pa0796"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pa07x" />
+
+                            <EditText
+                                android:id="@+id/pa0796x"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                                android:hint="@string/other"
+                                android:tag="pa0796"
+                                android:text='@{pa0796.checked ? pa0796x.getText().toString() : ""}'
+                                android:visibility="@{pa0796.checked ? View.VISIBLE : View.GONE}" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <!-- pa08  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVpa08"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_pa08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_pa08"
+                            android:text="@string/pa08" />
+
+                        <TextView
+                            android:id="@+id/q_pa08"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_pa08"
+                            android:layout_alignBottom="@id/qtxt_pa08"
+                            android:text="@string/Q_pa08" />
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/pa08"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/pa081"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pa081" />
+
+                        <RadioButton
+                            android:id="@+id/pa082"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pa082" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- pa09  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVpa09"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_pa09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_pa09"
+                            android:text="@string/pa09" />
+
+                        <TextView
+                            android:id="@+id/q_pa09"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_pa09"
+                            android:layout_alignBottom="@id/qtxt_pa09"
+                            android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                            android:drawablePadding="16dp"
+                            android:onClick="@{callback::showTooltipView}"
+                            android:text="@string/Q_pa09" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/sub"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/pa09a" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/pa09a"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/pa09a"
+                            android:inputType="number"
+                            app:defaultValue="77" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/sub"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/pa09b" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/pa09b"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/pa09b"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/fldGrpSectionA02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- pa10  Title   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVpa10"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_pa10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_pa10"
+                                android:text="@string/pa10" />
+
+                            <TextView
+                                android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                                android:drawablePadding="16dp"
+                                android:onClick="@{callback::showTooltipView}"
+                                android:id="@+id/q_pa10"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_pa10"
+                                android:layout_alignBottom="@id/qtxt_pa10"
+                                android:text="@string/Q_pa10" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/pa10a" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/pa10a"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/pa10a"
+                                android:inputType="number"
+                                app:defaultValue="77" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/pa10b" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/pa10b"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/pa10b"
+                                android:inputType="number" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- pa11  Title   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVpa11"
+                    style="@style/cardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom">
+
+                            <TextView
+                                android:id="@+id/qtxt_pa11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_pa11"
+                                android:text="@string/pa11" />
+
+                            <TextView
+                                android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                                android:drawablePadding="16dp"
+                                android:onClick="@{callback::showTooltipView}"
+                                android:id="@+id/q_pa11"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_pa11"
+                                android:layout_alignBottom="@id/qtxt_pa11"
+                                android:text="@string/Q_pa11" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/pa11a" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/pa11a"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/pa11a"
+                                android:inputType="number"
+                                app:defaultValue="77" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/pa11b" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/pa11b"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="@string/pa11b"
+                                android:inputType="number" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <!--EndButton LinearLayout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/red_overlay"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:visibility="@{pa082.checked ? View.VISIBLE : View.GONE}" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/green_overlay"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:visibility="@{pa081.checked ? View.VISIBLE : View.GONE}" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
