@@ -255,7 +255,6 @@
                         android:textSize="30sp" />
 
 
-
                     <Button
                         android:id="@+id/formCHD"
                         android:layout_width="wrap_content"

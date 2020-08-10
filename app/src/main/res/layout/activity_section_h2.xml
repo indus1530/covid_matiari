@@ -402,50 +402,53 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
-                        <TextView
-                            style="@style/sub"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/hb08" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/hb08"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/hb08"
-                            android:inputType="number"
-                            app:defaultValue="95"
-                            app:mask="##"
-                            app:maxValue="94"
-                            app:minValue="1"
-                            app:type="range" />
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hb08" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/hb08"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="12dp"
+                                android:layout_weight="1"
+                                android:hint="@string/hb08"
+                                android:inputType="number"
+                                app:defaultValue="95"
+                                app:mask="##"
+                                app:maxValue="94"
+                                app:minValue="1"
+                                app:type="range" />
                         </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            style="@style/sub"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/hb08present" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/hb08present"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="12dp"
-                            android:hint="@string/hb08present"
-                            android:inputType="number"
-                            app:defaultValue="95"
-                            app:mask="##"
-                            app:maxValue="94"
-                            app:minValue="1"
-                            app:type="range" />
-                    </LinearLayout>
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hb08present" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/hb08present"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="12dp"
+                                android:layout_weight="1"
+                                android:hint="@string/hb08present"
+                                android:inputType="number"
+                                app:defaultValue="95"
+                                app:mask="##"
+                                app:maxValue="94"
+                                app:minValue="1"
+                                app:type="range" />
+                        </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -491,15 +494,15 @@
                             <RadioButton
                                 android:id="@+id/hb0901"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb0901" />
 
                             <RadioButton
                                 android:id="@+id/hb0902"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb0902" />
                         </RadioGroup>
                     </LinearLayout>
@@ -593,15 +596,15 @@
                             <RadioButton
                                 android:id="@+id/hb1101"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb1101" />
 
                             <RadioButton
                                 android:id="@+id/hb1102"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb1102" />
                         </RadioGroup>
                     </LinearLayout>
@@ -695,15 +698,15 @@
                             <RadioButton
                                 android:id="@+id/hb1301"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb1301" />
 
                             <RadioButton
                                 android:id="@+id/hb1302"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb1302" />
                         </RadioGroup>
                     </LinearLayout>
@@ -797,15 +800,15 @@
                             <RadioButton
                                 android:id="@+id/hb1501"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb1501" />
 
                             <RadioButton
                                 android:id="@+id/hb1502"
                                 android:layout_width="0dp"
-                                android:layout_weight="1"
                                 android:layout_height="wrap_content"
+                                android:layout_weight="1"
                                 android:text="@string/hb1502" />
                         </RadioGroup>
                     </LinearLayout>

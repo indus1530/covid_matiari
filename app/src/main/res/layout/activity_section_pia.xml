@@ -668,15 +668,15 @@
                                 android:text="@string/pa10" />
 
                             <TextView
-                                android:drawableStart="@drawable/ic_info_outline_black_24dp"
-                                android:drawablePadding="16dp"
-                                android:onClick="@{callback::showTooltipView}"
                                 android:id="@+id/q_pa10"
                                 style="@style/quesNum"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignTop="@id/qtxt_pa10"
                                 android:layout_alignBottom="@id/qtxt_pa10"
+                                android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                                android:drawablePadding="16dp"
+                                android:onClick="@{callback::showTooltipView}"
                                 android:text="@string/Q_pa10" />
                         </RelativeLayout>
 
@@ -748,15 +748,15 @@
                                 android:text="@string/pa11" />
 
                             <TextView
-                                android:drawableStart="@drawable/ic_info_outline_black_24dp"
-                                android:drawablePadding="16dp"
-                                android:onClick="@{callback::showTooltipView}"
                                 android:id="@+id/q_pa11"
                                 style="@style/quesNum"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignTop="@id/qtxt_pa11"
                                 android:layout_alignBottom="@id/qtxt_pa11"
+                                android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                                android:drawablePadding="16dp"
+                                android:onClick="@{callback::showTooltipView}"
                                 android:text="@string/Q_pa11" />
                         </RelativeLayout>
 

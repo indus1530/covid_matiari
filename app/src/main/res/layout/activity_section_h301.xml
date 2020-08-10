@@ -537,9 +537,9 @@
                                 android:hint="@string/nh304min"
                                 android:inputType="number"
                                 app:mask="###"
-                                app:minValue="1"
                                 app:maxValue="999"
-                                app:type="range"/>
+                                app:minValue="1"
+                                app:type="range" />
 
                             <LinearLayout
                                 android:id="@+id/fldGrnh304check"

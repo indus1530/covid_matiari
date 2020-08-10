@@ -40,9 +40,9 @@
 
         <TextView
             android:id="@+id/subInfoInstruction"
+            style="@style/sub"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-style="@style/sub"
             android:gravity="center"
             android:padding="16dp"
             android:text="@string/memlistinfo"

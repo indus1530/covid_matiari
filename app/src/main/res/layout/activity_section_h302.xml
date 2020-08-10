@@ -601,9 +601,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                                     android:hint="@string/other"
                                     android:inputType="text"
-                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                                     android:tag="nh31396"
                                     android:text='@{nh31396.checked ? nh31396x.getText().toString() : ""}'
                                     android:visibility='@{nh31396.checked ? View.VISIBLE : View.GONE}' />
@@ -1524,9 +1524,9 @@
                                 android:hint="@string/nh320"
                                 android:inputType="number"
                                 app:mask="##"
-                                app:minValue="1"
                                 app:maxValue="10"
-                                app:type="range"/>
+                                app:minValue="1"
+                                app:type="range" />
 
                         </LinearLayout>
 
