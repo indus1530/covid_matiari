@@ -39,6 +39,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/nh3sub" />
 
         <ScrollView
@@ -241,8 +242,11 @@
                                 android:tag="nh30296"
                                 android:text='@{nh30296.checked ? nh30296x.getText().toString() : ""}'
                                 android:visibility="@{nh30296.checked ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
 
                 </androidx.cardview.widget.CardView>
 
@@ -282,12 +286,13 @@
                                     android:layout_alignTop="@id/qtxt_nh303"
                                     android:layout_alignBottom="@id/qtxt_nh303"
                                     android:text="@string/Q_nh303" />
+
                             </RelativeLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@color/colorPrimaryLight_overlay"
+                                android:gravity="center"
                                 android:text="Piped Water"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="@color/colorPrimaryDark" />
@@ -309,7 +314,6 @@
                                         android:layout_width="0dp"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="2"
-                                        android:background="@color/colorPrimary_overlay"
                                         android:text="@string/nh303a" />
 
                                     <RadioGroup
@@ -335,7 +339,9 @@
                                             android:layout_height="wrap_content"
                                             android:layout_weight="1"
                                             android:text="@string/no" />
+
                                     </RadioGroup>
+
                                 </LinearLayout>
 
                                 <RadioButton
@@ -528,40 +534,48 @@
                                     android:layout_alignTop="@id/qtxt_nh304"
                                     android:layout_alignBottom="@id/qtxt_nh304"
                                     android:text="@string/Q_nh304" />
-                            </RelativeLayout>
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/nh304"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/nh304min"
-                                android:inputType="number"
-                                app:mask="###"
-                                app:maxValue="999"
-                                app:minValue="1"
-                                app:type="range" />
+                            </RelativeLayout>
 
                             <LinearLayout
                                 android:id="@+id/fldGrnh304check"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:tag="-1">
+                                android:orientation="horizontal">
+
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/nh304"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:hint="@string/nh304min"
+                                    android:inputType="number"
+                                    app:mask="###"
+                                    app:maxValue="999"
+                                    app:minValue="1"
+                                    app:type="range" />
 
                                 <CheckBox
                                     android:id="@+id/nh30499"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:tag="-1"
                                     android:text="@string/none" />
 
                                 <CheckBox
                                     android:id="@+id/nh30498"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:tag="-1"
                                     android:text="@string/dkn" />
 
                             </LinearLayout>
+
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
@@ -783,7 +797,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:gravity="center"
                                     android:text="@string/nh307info"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
@@ -824,7 +838,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:gravity="center"
                                     android:text="@string/nh307info1"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
@@ -1130,9 +1144,13 @@
                                 android:tag="nh31096"
                                 android:text='@{nh31096.checked ? nh31096x.getText().toString() : ""}'
                                 android:visibility="@{nh31096.checked ? View.VISIBLE : View.GONE}" />
+
                         </RadioGroup>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- 11 -->
                 <LinearLayout
@@ -1170,9 +1188,12 @@
                                     android:layout_alignTop="@id/qtxt_nh311"
                                     android:layout_alignBottom="@id/qtxt_nh311"
                                     android:text="@string/Q_nh311" />
+
                             </RelativeLayout>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31101"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1180,37 +1201,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31101"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31101"
+                                <RadioButton
+                                    android:id="@+id/nh31101a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31101a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31101b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31101b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31102"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1218,37 +1233,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31102"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31102"
+                                <RadioButton
+                                    android:id="@+id/nh31102a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31102a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31102b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31102b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31103"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1256,37 +1265,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31103"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31103"
+                                <RadioButton
+                                    android:id="@+id/nh31103a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31103a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31103b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31103b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31104"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1294,37 +1297,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31104"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31104"
+                                <RadioButton
+                                    android:id="@+id/nh31104a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31104a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31104b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31104b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31105"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1332,37 +1329,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31105"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31105"
+                                <RadioButton
+                                    android:id="@+id/nh31105a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31105a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31105b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31105b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31106"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1370,37 +1361,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31106"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31106"
+                                <RadioButton
+                                    android:id="@+id/nh31106a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31106a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31106b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31106b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31107"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1408,37 +1393,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31107"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31107"
+                                <RadioButton
+                                    android:id="@+id/nh31107a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31107a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31107b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31107b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31108"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1446,37 +1425,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31108"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31108"
+                                <RadioButton
+                                    android:id="@+id/nh31108a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31108a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31108b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31108b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31109"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1484,37 +1457,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31109"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31109"
+                                <RadioButton
+                                    android:id="@+id/nh31109a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31109a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31109b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31109b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31110"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1522,37 +1489,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31110"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31110"
+                                <RadioButton
+                                    android:id="@+id/nh31110a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31110a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31110b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31110b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31111"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1560,37 +1521,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31111"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31111"
+                                <RadioButton
+                                    android:id="@+id/nh31111a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31111a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31111b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31111b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31112"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1598,37 +1553,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31112"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31112"
+                                <RadioButton
+                                    android:id="@+id/nh31112a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31112a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31112b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31112b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31113"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1636,37 +1585,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31113"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31113"
+                                <RadioButton
+                                    android:id="@+id/nh31113a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31113a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31113b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31113b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31114"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1674,37 +1617,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31114"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31114"
+                                <RadioButton
+                                    android:id="@+id/nh31114a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31114a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31114b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31114b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31115"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1712,37 +1649,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31115"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31115"
+                                <RadioButton
+                                    android:id="@+id/nh31115a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31115a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31115b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31115b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31116"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1750,37 +1681,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31116"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31116"
+                                <RadioButton
+                                    android:id="@+id/nh31116a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31116a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31116b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31116b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31117"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1788,37 +1713,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31117"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31117"
+                                <RadioButton
+                                    android:id="@+id/nh31117a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31117a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31117b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31117b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31118"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1826,37 +1745,31 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31118"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31118"
+                                <RadioButton
+                                    android:id="@+id/nh31118a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31118a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31118b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31118b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
 
-                            <LinearLayout
+
+                            <RadioGroup
+                                android:id="@+id/nh31119"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -1864,37 +1777,32 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:background="@color/colorPrimaryLight_overlay"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
                                     android:text="@string/nh31119"
                                     android:textAppearance="?android:attr/textAppearanceLarge"
                                     android:textColor="@color/colorPrimaryDark" />
 
-                                <RadioGroup
-                                    android:id="@+id/nh31119"
+                                <RadioButton
+                                    android:id="@+id/nh31119a"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:orientation="horizontal"
-                                    android:weightSum="2">
+                                    android:layout_weight="1"
+                                    android:text="@string/yes" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31119a"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/yes" />
+                                <RadioButton
+                                    android:id="@+id/nh31119b"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/no" />
 
-                                    <RadioButton
-                                        android:id="@+id/nh31119b"
-                                        android:layout_width="0dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:text="@string/no" />
-                                </RadioGroup>
-                            </LinearLayout>
+                            </RadioGroup>
+
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
+
 
                 </LinearLayout>
 

@@ -64,13 +64,15 @@
                             android:id="@+id/hh01"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
+                            android:gravity="center"
                             android:hint="DD/MM/YYYY"
                             android:onTextChanged="@{callback::hh01OnTextChanged}"
                             app:dateFormat="dd-MM-yyyy"
                             app:maxDate="CR_DATE"
                             app:minDate="07/07/2020" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- hh02  TextArea   -->
@@ -103,15 +105,18 @@
                                 android:layout_alignTop="@id/qtxt_hh02"
                                 android:layout_alignBottom="@id/qtxt_hh02"
                                 android:text="@string/Q_hh02" />
+
                         </RelativeLayout>
 
                         <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
                             android:id="@+id/hh02"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/hh02" />
+                            android:gravity="center"
+                            android:hint="HH:mm" />
 
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- hh04  TextArea   -->
@@ -146,16 +151,18 @@
                                 android:text="@string/Q_hh04" />
                         </RelativeLayout>
 
-                        <EditText
+                        <TextView
                             android:id="@+id/hh04"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:gravity="center"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                             android:enabled="false"
                             android:hint="@string/hh04"
                             android:inputType="text" />
 
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- hh05  Input-Numeric   -->
