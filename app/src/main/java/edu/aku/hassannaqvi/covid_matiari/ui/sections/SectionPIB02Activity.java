@@ -46,6 +46,38 @@ public class SectionPIB02Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
+        //Skip for married
+        int age = personal.getHhModel().getMemAge();
+        if (age <= 5) {
+            bi.llpb06.setVisibility(View.GONE);
+            bi.llpb07.setVisibility(View.GONE);
+            bi.fldGrpCVpb09.setVisibility(View.GONE);
+        } else {
+            bi.llpb06.setVisibility(View.VISIBLE);
+            bi.llpb07.setVisibility(View.VISIBLE);
+            bi.fldGrpCVpb09.setVisibility(View.VISIBLE);
+        }
+
+        if (MainApp.PB03.equals("2") || MainApp.PB03.equals("4") || !MainApp.PB04.equals("2")) {
+            bi.llpb06.setVisibility(View.GONE);
+        }
+
+        bi.pb06a.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb06b);
+            Clear.clearAllFields(bi.cvpb06c);
+            Clear.clearAllFields(bi.cvpb06d);
+        });
+
+        bi.pb06c.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb06d));
+        bi.pb06e.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb06f));
+        bi.pb06g.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb06h));
+
+        bi.pb09.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.pb0902.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVpb10);
+            }
+        }));
+
         bi.pb1101.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.pb1101b.getId()) {
                 bi.fldGrpCVpb12.setVisibility(View.GONE);
@@ -191,8 +223,8 @@ public class SectionPIB02Activity extends AppCompatActivity {
         });
 
         //Skip on age
-        int age = personal.getHhModel().getMemAge();
-        if (age <= 5) {
+        int age1 = personal.getHhModel().getMemAge();
+        if (age1 <= 5) {
             bi.fldGrpCVpb11text.setVisibility(View.GONE);
             bi.fldGrpCVpb12.setVisibility(View.GONE);
         }

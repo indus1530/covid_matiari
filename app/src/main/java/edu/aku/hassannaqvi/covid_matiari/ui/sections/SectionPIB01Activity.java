@@ -40,63 +40,67 @@ public class SectionPIB01Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        if (Integer.parseInt(personal.getAgey()) < 15 || Integer.parseInt(personal.getAgey()) > 49) {
-            Clear.clearAllFields(bi.fldGrpCVpb03);
-            bi.fldGrpCVpb03.setVisibility(View.GONE);
+        //Skip for married
+        int age = personal.getHhModel().getMemAge();
+        if (age < 15) {
+            bi.cvpb03.setVisibility(View.GONE);
+            bi.cvpb04.setVisibility(View.GONE);
+            bi.cvpb05.setVisibility(View.GONE);
+            bi.llpb05a.setVisibility(View.GONE);
+        } else {
+            bi.cvpb03.setVisibility(View.VISIBLE);
+            if (personal.getHhModel().getGenderFemale()) {
+                bi.cvpb04.setVisibility(View.VISIBLE);
+                bi.cvpb05.setVisibility(View.VISIBLE);
+                bi.llpb05a.setVisibility(View.VISIBLE);
+            }
         }
 
-        bi.pb0201.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.fldGrpCVpb0202));
+        bi.pb0201.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb0202));
 
         bi.pb03.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.pb0302.getId() || i == bi.pb0304.getId()) {
-                bi.fldGrpSectionB01.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpSectionB01);
+                bi.cvpb04.setVisibility(View.GONE);
+                bi.cvpb05.setVisibility(View.GONE);
+                bi.llpb05a.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.llpb05a);
             } else {
-                if (personal.getHhModel().getGenderFemale())
-                    bi.fldGrpSectionB01.setVisibility(View.VISIBLE);
-                else
-                    bi.fldGrpSectionB01.setVisibility(View.GONE);
+                if (personal.getHhModel().getGenderFemale()) {
+                    bi.cvpb04.setVisibility(View.VISIBLE);
+                    bi.cvpb05.setVisibility(View.VISIBLE);
+                    bi.llpb05a.setVisibility(View.VISIBLE);
+                } else
+                    bi.cvpb04.setVisibility(View.GONE);
+                bi.cvpb05.setVisibility(View.GONE);
+                bi.llpb05a.setVisibility(View.GONE);
             }
         }));
 
         /*if (personal.getHhModel().getGenderFemale()) {
-            bi.fldGrpSectionB01.setVisibility(View.VISIBLE);
+            bi.llpb05a.setVisibility(View.VISIBLE);
         }*/
 
 
-        bi.pb04.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.pb0402.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVpb05);
-            }
-        }));
+        bi.pb04.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05);
+            Clear.clearAllFields(bi.llpb05a);
+        });
 
+        bi.pb05a.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05b);
+            Clear.clearAllFields(bi.cvpb05c);
+            Clear.clearAllFields(bi.cvpb05d);
+        });
 
-        /*bi.pb09.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.pb0902.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVpb10);
-            }
-        }));
+        bi.pb05e.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05g);
+            Clear.clearAllFields(bi.cvpb05h);
+        });
 
-        //Skip for married
-        int age = personal.getHhModel().getMemAge();
-        if (age < 15) {
-            bi.fldGrpCVpb03.setVisibility(View.GONE);
-            bi.fldGrpSectionB01.setVisibility(View.GONE);
-            if (age <= 5) {
-                bi.fldGrpSectionB02.setVisibility(View.GONE);
-                bi.fldGrpCVpb09.setVisibility(View.GONE);
-            } else {
-                bi.fldGrpSectionB02.setVisibility(View.VISIBLE);
-                bi.fldGrpCVpb09.setVisibility(View.VISIBLE);
-            }
-        } else {
-            bi.fldGrpCVpb03.setVisibility(View.VISIBLE);
-            bi.fldGrpSectionB02.setVisibility(View.VISIBLE);
-            bi.fldGrpCVpb09.setVisibility(View.VISIBLE);
-            if (personal.getHhModel().getGenderFemale()) {
-                bi.fldGrpSectionB01.setVisibility(View.VISIBLE);
-            }
-        }*/
+        bi.pb05f.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05g);
+            Clear.clearAllFields(bi.cvpb05h);
+        });
 
     }
 
@@ -250,16 +254,18 @@ public class SectionPIB01Activity extends AppCompatActivity {
         json.put("pb0202m", bi.pb0202m.isChecked() ? "13" : "-1");
 
 
-        json.put("pb03", bi.pb0301.isChecked() ? "1"
+        MainApp.PB03 = bi.pb0301.isChecked() ? "1"
                 : bi.pb0302.isChecked() ? "2"
                 : bi.pb0303.isChecked() ? "3"
                 : bi.pb0304.isChecked() ? "4"
-                : "-1");
+                : "-1";
+        json.put("pb03", MainApp.PB03);
 
-        json.put("pb04", bi.pb0401.isChecked() ? "1"
+        MainApp.PB04 = bi.pb0401.isChecked() ? "1"
                 : bi.pb0402.isChecked() ? "2"
                 : bi.pb043.isChecked() ? "3"
-                : "-1");
+                : "-1";
+        json.put("pb04", MainApp.PB04);
 
         json.put("pb05", bi.pb0501.isChecked() ? "1"
                 : bi.pb0502.isChecked() ? "2"
