@@ -794,7 +794,7 @@
     <string name="pb0901">ہاں </string>
     <string name="pb0902">نہیں</string>
     <string name="pb10">اگر ہاں تو دن میں کتنی مرتبہ(تعداد بتائیں)</string>
-    <string name="pb11text">فہرست میں دی گئی نشہ آور اشیاء کے استعمال کے بارے میں پوچھیں.</string>
+    <string name="pb11text"> فہرست میں دی گئی نشہ آور اشیاء کے استعمال کے بارے میں پوچھیں. </string>
     <string name="pb1101">پان</string>
     <string name="pb1101a">ہاں </string>
     <string name="pb1101b">نہیں</string>
@@ -952,7 +952,7 @@
     <string name='Q_pb1102'>pb1102</string>
     <string name='Q_pb1103'>pb1103</string>
     <string name='Q_pb1104'>pb1104</string>
-    <string name='Q_pb11text'>pb11text</string>
+    <string name='Q_pb11text'> pb11 </string>
     <string name='Q_pb12'>pb12</string>
     <string name='Q_pb13'>pb13</string>
     <string name='Q_pb13c'>pb13c</string>
