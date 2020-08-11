@@ -135,7 +135,7 @@
                             android:id="@+id/h502"
                             android:layout_width="match_parent"
                             android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+
                             android:hint="@string/h502"
                             android:inputType="number" />
                     </LinearLayout>
@@ -190,7 +190,7 @@
                                 android:id="@+id/h50301x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:inputType="number"
                                 android:tag="h50301"
@@ -201,7 +201,7 @@
                                 android:id="@+id/h50301xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50301"
@@ -218,7 +218,7 @@
                                 android:id="@+id/h50302x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50302"
                                 android:text='@{h50302.checked ? h50302x.getText().toString() : ""}'
@@ -228,7 +228,7 @@
                                 android:id="@+id/h50302xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50302"
@@ -245,7 +245,7 @@
                                 android:id="@+id/h50303x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50303"
                                 android:text='@{h50303.checked ? h50303x.getText().toString() : ""}'
@@ -255,7 +255,7 @@
                                 android:id="@+id/h50303xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50303"
@@ -272,7 +272,7 @@
                                 android:id="@+id/h50304x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50304"
                                 android:text='@{h50304.checked ? h50304x.getText().toString() : ""}'
@@ -282,7 +282,7 @@
                                 android:id="@+id/h50304xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50304"
@@ -299,7 +299,7 @@
                                 android:id="@+id/h50305x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50305"
                                 android:text='@{h50305.checked ? h50305x.getText().toString() : ""}'
@@ -309,7 +309,7 @@
                                 android:id="@+id/h50305xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50305"
@@ -326,7 +326,7 @@
                                 android:id="@+id/h50306x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50306"
                                 android:text='@{h50306.checked ? h50306x.getText().toString() : ""}'
@@ -336,7 +336,7 @@
                                 android:id="@+id/h50306xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50306"
@@ -353,7 +353,7 @@
                                 android:id="@+id/h50307x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50307"
                                 android:text='@{h50307.checked ? h50307x.getText().toString() : ""}'
@@ -363,7 +363,7 @@
                                 android:id="@+id/h50307xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50307"
@@ -380,7 +380,7 @@
                                 android:id="@+id/h50308x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50308"
                                 android:text='@{h50308.checked ? h50308x.getText().toString() : ""}'
@@ -390,7 +390,7 @@
                                 android:id="@+id/h50308xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50308"
@@ -407,7 +407,7 @@
                                 android:id="@+id/h50309x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h50309"
                                 android:text='@{h50309.checked ? h50309x.getText().toString() : ""}'
@@ -417,7 +417,7 @@
                                 android:id="@+id/h50309xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50309"
@@ -434,7 +434,7 @@
                                 android:id="@+id/h503010x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h503010"
                                 android:text='@{h503010.checked ? h503010x.getText().toString() : ""}'
@@ -444,7 +444,7 @@
                                 android:id="@+id/h503010xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h503010"
@@ -461,7 +461,7 @@
                                 android:id="@+id/h503011x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h503011"
                                 android:text='@{h503011.checked ? h503011x.getText().toString() : ""}'
@@ -471,7 +471,7 @@
                                 android:id="@+id/h503011xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h503011"
@@ -488,7 +488,7 @@
                                 android:id="@+id/h503096x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h1"
                                 android:tag="h503096"
                                 android:text='@{h503096.checked ? h503096x.getText().toString() : ""}'
@@ -498,7 +498,7 @@
                                 android:id="@+id/h503096xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-                                android:layout_marginBottom="12dp"
+
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h503096"
