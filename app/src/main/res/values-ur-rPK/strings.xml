@@ -324,6 +324,8 @@
     <string name="h501b">نہیں</string>
     <string name="h502">گھرانے کے کتنے افراد کو یہ امداد ملی  ؟  وصول کنندہ کی تعداد</string>
     <string name="h503">پروگرام کا نام</string>
+    <string name="h503h1">پچھلے چھ ماہ میں  وصول کی گئی کل رقم</string>
+    <string name="h503h2">گزشتہ مہیا کی گئی امداد میں سے  آپ نے کتنی رقم کھانا  خریدنے پر استعمال کی؟</string>
     <string name="h50301">احساس پروگرام سپورٹ</string>
     <string name="h50302"> غیر مشروط ادائیگی </string>
     <string name="h50303">وسیلہ حق</string>
@@ -1068,6 +1070,8 @@
     <string name='Q_im23'>Im23</string>
     <string name='Q_im23a'>Im23A</string>
     <string name='Q_im24'>Im24</string>
+    <string name='Q_im25'>Im25</string>
+    <string name='Q_im26'>Im26</string>
     <string name='Q_im26a'>Im26a</string>
     <string name='Q_im26b'>Im26b</string>
     <string name='Q_im26c'>Im26c</string>
@@ -1119,6 +1123,23 @@
     <string name='Q_hb14'>HB14</string>
     <string name='Q_hb15'>HB15</string>
     <string name='Q_hb16'>HB16</string>
+
+    <string name='Q_h501'>h501</string>
+    <string name='Q_h501_title'>h501_title</string>
+    <string name='Q_h502'>h502</string>
+    <string name='Q_h503'>h503</string>
+    <string name='Q_h503010xx'>h503010xx</string>
+    <string name='Q_h503011xx'>h503011xx</string>
+    <string name='Q_h50301xx'>h50301xx</string>
+    <string name='Q_h50302xx'>h50302xx</string>
+    <string name='Q_h50303xx'>h50303xx</string>
+    <string name='Q_h50304xx'>h50304xx</string>
+    <string name='Q_h50305xx'>h50305xx</string>
+    <string name='Q_h50306xx'>h50306xx</string>
+    <string name='Q_h50307xx'>h50307xx</string>
+    <string name='Q_h50308xx'>h50308xx</string>
+    <string name='Q_h503096xx'>h503096xx</string>
+    <string name='Q_h50309xx'>h50309xx</string>
 
 
     <string name="end_interview"> انٹرویو ختم کریں </string>

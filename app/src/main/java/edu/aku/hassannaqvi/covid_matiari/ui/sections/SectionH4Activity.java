@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -84,8 +85,8 @@ public class SectionH4Activity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (updateDB()) {
-                SectionSubInfoActivity.Companion.setIstatusFlag(1);
                 finish();
+                startActivity(new Intent(this, SectionH5Activity.class));
             } else {
                 Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
             }

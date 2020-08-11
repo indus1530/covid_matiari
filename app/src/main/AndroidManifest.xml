@@ -19,7 +19,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name="edu.aku.hassannaqvi.covid_matiari.core.MainApp"
+        android:name=".core.MainApp"
         android:allowBackup="false"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
@@ -27,41 +27,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
+
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIB02Activity"
+            android:name=".ui.sections.SectionPIB02Activity"
             android:label="@string/nh3heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.InfoSectionActivity"
+            android:name=".ui.sections.InfoSectionActivity"
             android:label="@string/nh3heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH302Activity"
+            android:name=".ui.sections.SectionH302Activity"
             android:label="@string/nh3heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.list_activity.FormsReportCluster"
+            android:name=".ui.list_activity.FormsReportCluster"
             android:label="Forms Report"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.list_activity.FormsReportDate"
+            android:name=".ui.list_activity.FormsReportDate"
             android:label="Forms Report"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.list_activity.PendingFormsActivity"
+            android:name=".ui.list_activity.PendingFormsActivity"
             android:label="Unfinished Forms"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.SplashscreenActivity"
+            android:name=".ui.other.SplashscreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -71,91 +72,95 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.LoginActivity"
+            android:name=".ui.other.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.MainActivity"
+            android:name=".ui.other.MainActivity"
             android:theme="@style/AppThemeEnglish" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.EndingActivity"
+            android:name=".ui.other.EndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.PIEndingActivity"
+            android:name=".ui.other.PIEndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu" />
-
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH2Activity"
+            android:name=".ui.sections.SectionH2Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu" />
-
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionSubInfoActivity"
+            android:name=".ui.sections.SectionSubInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH301Activity"
+            android:name=".ui.sections.SectionH301Activity"
             android:label="@string/nh3heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH4Activity"
+            android:name=".ui.sections.SectionH4Activity"
             android:label="@string/na5heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHCActivity"
+            android:name=".ui.sections.SectionH5Activity"
+            android:label="@string/sectionh5_mainheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.sections.SectionCHCActivity"
             android:label="@string/IMheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHDActivity"
+            android:name=".ui.sections.SectionCHDActivity"
             android:label="@string/IMheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHEActivity"
+            android:name=".ui.sections.SectionCHEActivity"
             android:label="@string/IMheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIAActivity"
+            android:name=".ui.sections.SectionPIAActivity"
             android:label="@string/section1_mainheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIB01Activity"
+            android:name=".ui.sections.SectionPIB01Activity"
             android:label="@string/section2_mainheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPICActivity"
+            android:name=".ui.sections.SectionPICActivity"
             android:label="@string/section3_mainheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.core.AndroidDatabaseManager"
-            android:parentActivityName="edu.aku.hassannaqvi.covid_matiari.ui.other.MainActivity"
+            android:name=".core.AndroidDatabaseManager"
+            android:parentActivityName=".ui.other.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="edu.aku.hassannaqvi.covid_matiari.ui.other.SyncActivity"
-            android:parentActivityName="edu.aku.hassannaqvi.covid_matiari.ui.other.MainActivity"
+            android:name=".ui.other.SyncActivity"
+            android:parentActivityName=".ui.other.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
 
-        <service android:name="edu.aku.hassannaqvi.covid_matiari.services.DownloadFileService" />
+        <service android:name=".services.DownloadFileService" />
     </application>
 
 </manifest>
