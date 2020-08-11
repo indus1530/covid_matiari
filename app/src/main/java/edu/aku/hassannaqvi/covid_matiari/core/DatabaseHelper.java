@@ -994,7 +994,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 db.close();
             }
         }
-        return allForms;
+        return allForms.size() > 0 ? allForms : null;
     }
 
     public Random getClusterHH(String district, String cluster, String hhno) {
