@@ -234,6 +234,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_SH2, form.getsH2());
         values.put(FormsTable.COLUMN_SH3, form.getsH3());
         values.put(FormsTable.COLUMN_SH4, form.getsH4());
+        values.put(FormsTable.COLUMN_SH5, form.getsH5());
         values.put(FormsTable.COLUMN_GPSLAT, form.getGpsLat());
         values.put(FormsTable.COLUMN_GPSLNG, form.getGpsLng());
         values.put(FormsTable.COLUMN_GPSDATE, form.getGpsDT());
@@ -330,6 +331,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_SH2,
                 FormsTable.COLUMN_SH3,
                 FormsTable.COLUMN_SH4,
+                FormsTable.COLUMN_SH5,
                 FormsTable.COLUMN_GPSLAT,
                 FormsTable.COLUMN_GPSLNG,
                 FormsTable.COLUMN_GPSDATE,
@@ -450,6 +452,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_SH2,
                 FormsTable.COLUMN_SH3,
                 FormsTable.COLUMN_SH4,
+                FormsTable.COLUMN_SH5,
                 FormsTable.COLUMN_GPSLAT,
                 FormsTable.COLUMN_GPSLNG,
                 FormsTable.COLUMN_GPSDATE,
@@ -634,6 +637,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_SH2,
                 FormsTable.COLUMN_SH3,
                 FormsTable.COLUMN_SH4,
+                FormsTable.COLUMN_SH5,
                 FormsTable.COLUMN_GPSLAT,
                 FormsTable.COLUMN_GPSLNG,
                 FormsTable.COLUMN_GPSDATE,
@@ -1059,6 +1063,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_SH2,
                 FormsTable.COLUMN_SH3,
                 FormsTable.COLUMN_SH4,
+                FormsTable.COLUMN_SH5,
                 FormsTable.COLUMN_GPSLAT,
                 FormsTable.COLUMN_GPSLNG,
                 FormsTable.COLUMN_GPSDATE,

@@ -45,6 +45,7 @@ public class Form extends LiveData<Form> {
     private String sH2 = "";
     private String sH3 = "";
     private String sH4 = "";
+    private String sH5 = "";
 
     //Date Settings
     private LocalDate localDate = null, calculatedDOB = null;
@@ -125,6 +126,14 @@ public class Form extends LiveData<Form> {
 
     public void setsH4(String sH4) {
         this.sH4 = sH4;
+    }
+
+    public String getsH5() {
+        return sH5;
+    }
+
+    public void setsH5(String sH5) {
+        this.sH5 = sH5;
     }
 
     public String getAppversion() {
@@ -313,6 +322,7 @@ public class Form extends LiveData<Form> {
         this.sH2 = jsonObject.getString(FormsTable.COLUMN_SH2);
         this.sH3 = jsonObject.getString(FormsTable.COLUMN_SH3);
         this.sH4 = jsonObject.getString(FormsTable.COLUMN_SH4);
+        this.sH5 = jsonObject.getString(FormsTable.COLUMN_SH5);
 
         return this;
     }
@@ -341,6 +351,7 @@ public class Form extends LiveData<Form> {
         this.sH2 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH2));
         this.sH3 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH3));
         this.sH4 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH4));
+        this.sH5 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH5));
 
         return this;
     }
@@ -381,6 +392,9 @@ public class Form extends LiveData<Form> {
             }
             if (this.sH4 != null && !this.sH4.equals("")) {
                 json.put(FormsTable.COLUMN_SH4, new JSONObject(this.sH4));
+            }
+            if (this.sH5 != null && !this.sH5.equals("")) {
+                json.put(FormsTable.COLUMN_SH5, new JSONObject(this.sH5));
             }
 
             json.put(FormsTable.COLUMN_GPSLAT, this.gpsLat == null ? JSONObject.NULL : this.gpsLat);
