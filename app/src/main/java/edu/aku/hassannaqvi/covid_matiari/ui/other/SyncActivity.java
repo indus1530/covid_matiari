@@ -175,7 +175,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     Form.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     PersonalContract.PersonalTable.TABLE_NAME,
-                    db.getUnsyncedPersonal(), 0, syncListAdapter, uploadlist
+                    db.getUnsyncedPersonal(), 1, syncListAdapter, uploadlist
             ).execute();
 
             bi.noDataItem.setVisibility(View.GONE);
