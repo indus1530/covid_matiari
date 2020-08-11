@@ -39,6 +39,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.form;
+import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.setGPS;
 
 public class InfoSectionActivity extends AppCompatActivity implements EndSectionActivity {
 
@@ -135,6 +136,8 @@ public class InfoSectionActivity extends AppCompatActivity implements EndSection
         form.setsInfo(json.toString());
 
         form.setLocalDate(localDate);
+
+        setGPS(this);
 
     }
 
