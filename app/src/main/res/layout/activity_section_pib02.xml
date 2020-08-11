@@ -1,21 +1,21 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
+    <data>
         <import type="android.view.View" />
-        <!--<variable
-            name="form"
-            type="edu.aku.hassannaqvi.uencovid19.models.Form" />-->
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIB02Activity" />
     </data>
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true">
+
 
         <LinearLayout
             android:id="@+id/fldGrpSectionB"
@@ -255,7 +255,9 @@
                         app:maxValue="50"
                         app:minValue="1"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- pb13  Radio   -->
@@ -615,6 +617,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1801"
                 style="@style/cardView">
@@ -666,6 +669,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1802"
                 style="@style/cardView"
@@ -710,6 +714,7 @@
                         android:hint="@string/pb1802ad" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1803"
@@ -756,6 +761,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1804"
                 style="@style/cardView"
@@ -800,6 +806,7 @@
                         android:hint="@string/pb1804ad" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1805"
@@ -846,6 +853,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1806"
                 style="@style/cardView"
@@ -891,6 +899,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1807"
                 style="@style/cardView"
@@ -935,6 +944,7 @@
                         android:hint="@string/pb1807ad" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpb1808"
@@ -1012,6 +1022,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
 
     </ScrollView>
 
