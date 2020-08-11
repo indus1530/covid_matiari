@@ -364,33 +364,19 @@ public class SectionPIB01Activity extends AppCompatActivity {
                 : "-1");
 
         json.put("pb06b01", bi.pb06b01.isChecked() ? "1" : "-1");
-
         json.put("pb06b02", bi.pb06b02.isChecked() ? "2" : "-1");
-
         json.put("pb06b03", bi.pb06b03.isChecked() ? "3" : "-1");
-
         json.put("pb06b04", bi.pb06b04.isChecked() ? "4" : "-1");
-
         json.put("pb06b05", bi.pb06b05.isChecked() ? "5" : "-1");
-
         json.put("pb06b06", bi.pb06b06.isChecked() ? "6" : "-1");
-
         json.put("pb06b07", bi.pb06b07.isChecked() ? "7" : "-1");
-
         json.put("pb06b08", bi.pb06b08.isChecked() ? "8" : "-1");
-
         json.put("pb06b09", bi.pb06b09.isChecked() ? "9" : "-1");
-
         json.put("pb06b10", bi.pb06b10.isChecked() ? "10" : "-1");
-
         json.put("pb06b11", bi.pb06b11.isChecked() ? "11" : "-1");
-
         json.put("pb06b12", bi.pb06b12.isChecked() ? "12" : "-1");
-
         json.put("pb06b13", bi.pb06b13.isChecked() ? "13" : "-1");
-
         json.put("pb06b14", bi.pb06b14.isChecked() ? "14" : "-1");
-
         json.put("pb06b15", bi.pb06b15.isChecked() ? "15" : "-1");
 
         json.put("pb06c", bi.pb06c01.isChecked() ? "1"
