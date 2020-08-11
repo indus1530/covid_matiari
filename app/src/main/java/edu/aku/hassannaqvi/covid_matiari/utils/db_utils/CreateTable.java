@@ -36,6 +36,7 @@ public final class CreateTable {
             + FormsTable.COLUMN_SH2 + " TEXT,"
             + FormsTable.COLUMN_SH3 + " TEXT,"
             + FormsTable.COLUMN_SH4 + " TEXT,"
+            + FormsTable.COLUMN_SH5 + " TEXT,"
             + FormsTable.COLUMN_ENDINGDATETIME + " TEXT,"
             + FormsTable.COLUMN_ISTATUS + " TEXT,"
             + FormsTable.COLUMN_ISTATUS96x + " TEXT,"
