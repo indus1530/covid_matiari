@@ -208,7 +208,9 @@
                             app:minValue="5.00"
                             app:pattern="^(\\d{2,2}\\.\\d{2,2})$"
                             app:type="range" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- pc03  Input-Numeric   -->

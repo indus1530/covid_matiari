@@ -72,21 +72,30 @@ public class SectionPICActivity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
+
         json.put("pc01", bi.pc011.isChecked() ? "1"
                 : bi.pc012.isChecked() ? "2"
                 : "-1");
+
         json.put("pc02", bi.pc02.getText().toString());
+
         json.put("pc02a", bi.pc02a.getText().toString());
+
         json.put("pc03", bi.pc03.getText().toString());
+
         json.put("pc03a", bi.pc03a1.isChecked() ? "1"
                 : bi.pc03a2.isChecked() ? "2"
                 : "-1");
-        json.put("pc03b", bi.pc03b.getText().toString());
-        json.put("pc04", bi.pc04.getText().toString());
-        json.put("pc04a", bi.pc04a.getText().toString());
-        json.put("pc05", bi.pc05.getText().toString());
-        json.put("pc06", bi.pc06.getText().toString());
 
+        json.put("pc03b", bi.pc03b.getText().toString());
+
+        json.put("pc04", bi.pc04.getText().toString());
+
+        json.put("pc04a", bi.pc04a.getText().toString());
+
+        json.put("pc05", bi.pc05.getText().toString());
+
+        json.put("pc06", bi.pc06.getText().toString());
 
         MainApp.personal.setsC(json.toString());
 
