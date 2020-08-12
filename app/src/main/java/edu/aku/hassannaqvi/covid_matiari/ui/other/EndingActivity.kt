@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.covid_matiari.ui.other
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -9,6 +10,7 @@ import com.validatorcrawler.aliazaz.Validator
 import edu.aku.hassannaqvi.covid_matiari.R
 import edu.aku.hassannaqvi.covid_matiari.core.MainApp
 import edu.aku.hassannaqvi.covid_matiari.databinding.ActivityEndingBinding
+import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.showTooltip
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -78,4 +80,20 @@ class EndingActivity : AppCompatActivity() {
     override fun onBackPressed() {
         Toast.makeText(applicationContext, "You Can't go back", Toast.LENGTH_LONG).show()
     }
+
+    /*    private void handleUncaughtException (Thread thread, Throwable e) {
+
+        // The following shows what I'd like, though it won't work like this.
+        Intent intent = new Intent (getApplicationContext(), LoginActivity.class);
+        Toast.makeText(this, e.getCause().getMessage(), Toast.LENGTH_LONG).show();
+        startActivity(intent);
+
+        // Add some code logic if needed based on your requirement
+    }*/
+
+
+    fun showTooltipView(view: View?) {
+        showTooltip(this, view!!)
+    }
+
 }

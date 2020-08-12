@@ -51,6 +51,9 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_istatus"
                             android:layout_alignBottom="@id/qtxt_istatus"
+                            android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                            android:drawablePadding="16dp"
+                            android:onClick="@{callback::showTooltipView}"
                             android:text="@string/Q_istatus" />
 
                     </RelativeLayout>
