@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.covid_matiari.ui.sections
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -158,4 +159,7 @@ class SectionSubInfoActivity : AppCompatActivity(), EndSectionActivity {
         bi.formScroll.recyclerViewChildren.adapter = adapter
     }
 
+    override fun onBackPressed() {
+        Toast.makeText(this, "Sorry. You can't able to go back!!", Toast.LENGTH_SHORT).show()
+    }
 }
