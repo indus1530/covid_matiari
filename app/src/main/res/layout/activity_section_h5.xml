@@ -219,6 +219,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50302"
                                 android:text='@{h50302.checked ? h50302x.getText().toString() : ""}'
@@ -246,6 +247,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50303"
                                 android:text='@{h50303.checked ? h50303x.getText().toString() : ""}'
@@ -273,6 +275,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50304"
                                 android:text='@{h50304.checked ? h50304x.getText().toString() : ""}'
@@ -300,6 +303,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50305"
                                 android:text='@{h50305.checked ? h50305x.getText().toString() : ""}'
@@ -327,6 +331,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50306"
                                 android:text='@{h50306.checked ? h50306x.getText().toString() : ""}'
@@ -336,6 +341,7 @@
                                 android:id="@+id/h50306xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
+
 
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
@@ -354,6 +360,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50307"
                                 android:text='@{h50307.checked ? h50307x.getText().toString() : ""}'
@@ -381,6 +388,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50308"
                                 android:text='@{h50308.checked ? h50308x.getText().toString() : ""}'
@@ -408,6 +416,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50309"
                                 android:text='@{h50309.checked ? h50309x.getText().toString() : ""}'
@@ -435,6 +444,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h503010"
                                 android:text='@{h503010.checked ? h503010x.getText().toString() : ""}'
@@ -462,6 +472,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h503011"
                                 android:text='@{h503011.checked ? h503011x.getText().toString() : ""}'
@@ -489,6 +500,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
 
+                                android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h503096"
                                 android:text='@{h503096.checked ? h503096x.getText().toString() : ""}'
