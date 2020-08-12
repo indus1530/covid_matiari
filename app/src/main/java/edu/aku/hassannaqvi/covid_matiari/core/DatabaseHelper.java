@@ -161,7 +161,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (mCursor != null) {
             if (mCursor.getCount() > 0) {
 
-                while (mCursor.moveToFirst()) {
+                while (mCursor.moveToNext()) {
 //                    MainApp.DIST_ID = mCursor.getString(mCursor.getColumnIndex(Users.UsersTable.ROW_USERNAME));
                     MainApp.user = new Users().Hydrate(mCursor);
                 }
