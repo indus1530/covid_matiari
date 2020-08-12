@@ -379,7 +379,7 @@
                                 android:id="@+id/hh0807"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:tag="11"
+                                android:tag="17"
                                 android:text="@string/hh0807" />
                         </RadioGroup>
                     </LinearLayout>
