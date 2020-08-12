@@ -60,9 +60,10 @@
     <string name="istatus96">دیگر(وضاحت کریں)</string>
     <string name="Q_istatus">iStatus</string>
 
-    <!--NNS Section H3-->
-    <string name="IMheading">حفاظتی ٹیکوں کی تفصیلات</string>
 
+    <!--NNS Section 3-->
+    <string name="na5heading"> سیکشن ایچ 4 : ہاتھ دھونے سے متعلق معلومات </string>
+    <string name="IMheading">حفاظتی ٹیکوں کی تفصیلات</string>
     <string name="nh3heading"> سیکشن ایچ 3 : سماجی امداد کے حوالے سے معلومات </string>
     <string name="nh3sub">یہ سیکشن گھر کے سربراہ سے یا گھر میں کم سے کم 18 سال یا اس سے ذائد عمر کے کسی سمجھدار شخص سے پوچھا جائیگا </string>
     <string name="nh301a"> اردو </string>
@@ -77,12 +78,12 @@
     <string name="nh302b"> کرائے کا </string>
 
     <!--<string name="nh303sub"> میونسپل کمیٹی کا پانی کاکنکشن  </string>-->
-    <string name="nh303a"> میونسپل کمیٹی کا پانی کاکنکشن </string>
-    <string name="nh303b">گھر میں کانلکا </string>
-    <string name="nh303c"> صحن میں کا نلکا </string>
+    <string name="nh303a"> میونسپل کمیٹی کا پانی کا کنکشن </string>
+    <string name="nh303b"> گھر میں نلکا </string>
+    <string name="nh303c"> صحن میں نلکا </string>
     <string name="nh303d"> پڑوسی کے گھر کا نلکا </string>
     <string name="nh303e"> گلی / علاقہ کا نلکا </string>
-    <string name="nh303f">  پانی کھینچنے کی مشین /ٹیوب ویل/ بورنگ کا پانی</string>
+    <string name="nh303f">  پانی کھینچنے کی مشین /ٹیوب ویل/ بورنگ کا پانی </string>
     <string name="nh303g">  ہاتھ والا نلکا  </string>
     <string name="nh303h"> محفوظ کنواں </string>
     <string name="nh303i"> غیر محفوظ کنواں </string>
@@ -95,7 +96,7 @@
     <string name="nh303p"> فلٹیرشن پلانٹ </string>
     <string name="nh303q"> بوتل کا پانی </string>
 
-    <string name="nh304"> ۔H304 - آپکوپانی کے اہم ذریعے تک پہنچنے میں اور وہاں سے پانی لے کر گھر آنے تک کتنا وقت لگتا ہے  </string>
+    <string name="nh304"> آپ کو پانی کے اہم ذریعے تک پہنچنے میں اور وہاں سے پانی لے کر گھر آنے تک کتنا وقت لگتا ہے </string>
     <string name="nh304min">وقت منٹوں میں لکھیں</string>
 
 
@@ -220,7 +221,7 @@
     <string name="nh318m"> چھت میں استعمال ہونے والے ٹائلز </string>
     <string name="nh318n"> اینٹیں </string>
 
-    <string name="nh319sub">قدرتی دیواریں    </string>
+    <string name="nh319sub"> قدرتی دیواریں </string>
     <string name="nh319a"> کوئی دیوار نہیں </string>
     <string name="nh319b"> کھجور کے درخت  /بانس </string>
     <string name="nh319c"> مٹی </string>
@@ -230,13 +231,13 @@
     <string name="nh319f"> کچی اینٹوں سے  </string>
     <string name="nh319g"> لکڑی کی پلائی  </string>
     <string name="nh319h"> گّتہ </string>
-    <string name="nh319i"> استعمال کی ہوئی لکڑی</string>
-    <string name="nh319j"> کپڑا/پردے/شامیانہ</string>
+    <string name="nh319i"> استعمال کی ہوئی لکڑی </string>
+    <string name="nh319j"> کپڑا/پردے/شامیانہ </string>
     <string name="nh319sub2"> تیاردیواریں     </string>
     <string name="nh319k"> سیمنٹ </string>
-    <string name="nh319l"> پتھرچونے/سیمنٹ کے ساتھ</string>
-    <string name="nh319m">پکی اینٹیں</string>
-    <string name="nh319n">سیمنٹ سے بنی ہوئی بلاکس</string>
+    <string name="nh319l"> پتھر چونے / سیمنٹ کے ساتھ </string>
+    <string name="nh319m">پکی اینٹیں </string>
+    <string name="nh319n">سیمنٹ سے بنی ہوئی بلاکس </string>
     <string name="nh319o">کچی اینٹوں سے بنی(لیپ کی ہوئی) </string>
     <string name="nh319p">لکڑی کے تختے </string>
     <string name="nh320a"> کمرے </string>
@@ -251,33 +252,31 @@
     <string name="nh324e"> مرغیاں </string>
     <string name="nh324f"> بھینسیں </string>
     <string name="nh324g"> اونٹ </string>
-    <string name="nh301">۔H301 - گھرانےکے سربراہ کی مادری زبان کیا ہے ؟</string>
-    <string name="nh302">۔H302 - آپ کے گھرکی مالکانہ حیثیت کیا ہے ؟</string>
-    <string name="nh303">۔H303 - آپ کے گھر میں پینے کے پانی کا سب سے اہم ذریعہ کیا ہے ؟</string>
-    <string name="nh305">۔H305 - کیا  آپ پانی کو محفوظ بنانے کے لیے کوئی قدم اٹھاتے ہیں؟</string>
-    <string name="nh306">۔H306 - عموماً آپ  پینے کے پانی کو محفوظ  بنانے  کے لیے کیا کرتے ہیں؟</string>
-    <string name="nh307">۔H307 - آپ کے گھرانے کے افراد عام طورپر کس قسم کا بیت الخلاء استعمال کرتے ہیں ؟</string>
-    <string name="nh308"> ۔H308- کیا اس بیت الخلاء کی سہولت کو   دوسرے   گھرانوں کے افراد بھی استعمال کر تےہیں [جو آپ کے گھرانے کے فرد نہیں ہیں] </string>
-    <string name="nh309">۔H309 - اگر ہاں،تو کتنے گھرانےاس بیت الخلاء کی  سہولت کواستعمال کرتے ہیں ؟</string>
-    <string name="nh310">۔H310 - سب سے چھوٹے بچے کا پاخانہ پھینکنے کے لیے کیاکرتے ہیں؟</string>
-    <string name="nh311">۔H311 - کیا  آپ کے گھر میں ان میں سے کچھ موجود ہے؟</string>
-    <string name="nh312">۔H312 - کیا گھر کے کسی فرد کے پاس یہ چیزیں موجود ہیں؟</string>
-    <string name="nh313"> ۔H313 - مشاہدہ کریں، کہ گھرمیں روشنی کرنے کے لئے کونسے ذرائع استعمال کرتے ہیں </string>
-    <string name="nh314">۔H314 - عام طورپر آپ کے گھر میں کھانا پکانے کے لیے کس قسم کا ایندھن استعمال ہوتا ہے ؟</string>
-    <string name="nh315">۔H315 - کیاعام طورپرکھانا گھرمیں،کسی الگ کمرہ /جگہ یاگھر سے باہر بنتا ہے؟</string>
-    <string name="nh316">۔H316 - کیا آپ کے پاس باروچی خانہ کے استعمال کے لیے علیحدہ کمر ہ موجو د ہے ؟</string>
-    <string name="nh317"> ۔H317 - گھر کے  فرش  بنانے میں کس قسم کا  مواد استعمال کیاگیا ہے</string>
-    <string name="nh318">۔H318 - گھر کی چھت میں استعمال ہونے والا بنیادی مواد۔ </string>
-    <string name="nh319">۔H319 -  گھر کی دیوار وں میں استعمال ہونے والا بنیادی مواد: </string>
-    <string name="nh320">۔H320 - آپ کے گھر میں کتنے کمرے سونے کے لیے استعمال ہوتے ہیں ؟</string>
-    <string name="nh321">۔H321 - کیا اس گھر میں رہنے والا کوئی فرد زرعی زمین کا مالک ہے؟</string>
-    <string name="nh322">۔H322 - اگر ہاں، تو اس گھر کے افراد کے پاس کتنے مربہ/ایکٹرپر مشتمل زمین ہیں؟</string>
-    <string name="nh323">۔H323 - کیاآپ اپنا مال مویشی،جانور یا مرغی خانہ رکھتے ہیں؟</string>
-    <string name="nh324">۔H324 - اگر ہاں تو آپ کے گھر میں کتنے مویشی جانور یا مرغیاں موجود ہیں؟</string>
+    <string name="nh301"> گھرانے کے سربراہ کی مادری زبان کیا ہے ؟ </string>
+    <string name="nh302"> آپ کے گھر کی مالکانہ حیثیت کیا ہے ؟ </string>
+    <string name="nh303"> آپ کے گھر میں پینے کے پانی کا سب سے اہم ذریعہ کیا ہے ؟ </string>
+    <string name="nh305"> کیا  آپ پانی کو محفوظ بنانے کے لیے کوئی قدم اٹھاتے ہیں ؟ </string>
+    <string name="nh306"> عموماً آپ  پینے کے پانی کو محفوظ  بنانے  کے لیے کیا کرتے ہیں ؟ </string>
+    <string name="nh307"> آپ کے گھرانے کے افراد عام طورپر کس قسم کا بیت الخلاء استعمال کرتے ہیں ؟ </string>
+    <string name="nh308"> کیا اس بیت الخلاء کی سہولت کو دوسرے گھرانوں کے افراد بھی استعمال کر تے ہیں [جو آپ کے گھرانے کے فرد نہیں ہیں] </string>
+    <string name="nh309"> اگر ہاں، تو کتنے گھرانے اس بیت الخلاء کی  سہولت کو استعمال کرتے ہیں ؟ </string>
+    <string name="nh310"> سب سے چھوٹے بچے کا پاخانہ پھینکنے کے لیے کیا کرتے ہیں ؟ </string>
+    <string name="nh311"> کیا  آپ کے گھر میں ان میں سے کچھ موجود ہے ؟ </string>
+    <string name="nh312"> کیا گھر کے کسی فرد کے پاس یہ چیزیں موجود ہیں ؟ </string>
+    <string name="nh313"> مشاہدہ کریں، کہ گھر میں روشنی کرنے کے لئے کونسے ذرائع استعمال کرتے ہیں </string>
+    <string name="nh314"> عام طور پر آپ کے گھر میں کھانا پکانے کے لیے کس قسم کا ایندھن استعمال ہوتا ہے ؟ </string>
+    <string name="nh315"> کیا عام طور پر کھانا گھر میں ، کسی الگ کمرہ /جگہ یاگھر سے باہر بنتا ہے ؟ </string>
+    <string name="nh316"> کیا آپ کے پاس باروچی خانہ کے استعمال کے لیے علیحدہ کمر ہ موجو د ہے ؟ </string>
+    <string name="nh317"> گھر کے  فرش  بنانے میں کس قسم کا  مواد استعمال کیاگیا ہے </string>
+    <string name="nh318"> گھر کی چھت میں استعمال ہونے والا بنیادی مواد۔ </string>
+    <string name="nh319"> گھر کی دیوار وں میں استعمال ہونے والا بنیادی مواد: </string>
+    <string name="nh320"> آپ کے گھر میں کتنے کمرے سونے کے لیے استعمال ہوتے ہیں ؟ </string>
+    <string name="nh321"> کیا اس گھر میں رہنے والا کوئی فرد زرعی زمین کا مالک ہے ؟ </string>
+    <string name="nh322"> اگر ہاں، تو اس گھر کے افراد کے پاس کتنے مربہ/ایکٹرپر مشتمل زمین ہیں ؟ </string>
+    <string name="nh323"> کیاآپ اپنا مال مویشی،جانور یا مرغی خانہ رکھتے ہیں ؟ </string>
+    <string name="nh324"> اگر ہاں تو آپ کے گھر میں کتنے مویشی جانور یا مرغیاں موجود ہیں ؟ </string>
 
     <!--NNS Section H4-->
-
-    <string name="na5heading"> سیکشن ایچ 4 : ہاتھ دھونے سے متعلق معلومات </string>
     <string name="nh401">۔H401 - کیا آپ ہمیں وہ جگہ دکھا سکتی/سکتے ہیں جسے گھر والے اکثرہا تھ دھونے کے لیے استعمال کرتے ہیں؟</string>
     <string name="nh402">۔H402 - ہاتھ دھونے کی جگہ پر پانی کی موجودگی کا مشاہدہ کریں</string>
     <string name="nh403">۔H403 - مشاہدہ کریں کہ ہاتھ دھونے کی جگہ پر صابن یا ڈٹرجنٹ موجود ہے</string>
@@ -324,6 +323,8 @@
     <string name="h501b">نہیں</string>
     <string name="h502">گھرانے کے کتنے افراد کو یہ امداد ملی  ؟  وصول کنندہ کی تعداد</string>
     <string name="h503">پروگرام کا نام</string>
+    <string name="h503h1">پچھلے چھ ماہ میں  وصول کی گئی کل رقم</string>
+    <string name="h503h2">گزشتہ مہیا کی گئی امداد میں سے  آپ نے کتنی رقم کھانا  خریدنے پر استعمال کی؟</string>
     <string name="h50301">احساس پروگرام سپورٹ</string>
     <string name="h50302"> غیر مشروط ادائیگی </string>
     <string name="h50303">وسیلہ حق</string>
@@ -371,25 +372,6 @@
     <string name="im042">ہاں، صرف دیگر دستاویزات دیکھی ہیں</string>
     <string name="im043">ہاں، کارڈز اور دیگر دستاویزات دیکھے ہیں</string>
     <string name="im044">نہیں،کارڈ اور نہ ہی کوئی دوسری دستاویزدیکھی</string>
-
-    <!--from tpvics-->
-    <!--<string name="im01"> کیا آپ کے پاس کسی سرکاری یا نجی مرکز صحت سے ملا ہوا حفاظتی ٹیکوں کا کارڈ موجود ہے جس میں بچہ / بچی (نام) کو لگنے والے حفاظتی ٹیکوں کا اندراج ہو ؟  اگر ہاں:  تو برائے مہربانی کیا میں اسے دیکھ سکتا / سکتی ہوں </string>
-    <string name="im011"> ہاں دیکھ لیا </string>
-    <string name="im012">  ہاں، کار ڈنہیں دیکھا </string>
-    <string name="im013"> کارڈ نہیں ہے </string>
-
-    <string name="im02"> کیا بچے کے لئے آپ کے پاس کبھی کسی سرکاری یا نجی مرکز صحت کا حفاظتی ٹیکوں کا کارڈ موجود تھا ؟ </string>
-    <string name="im021"> ہاں </string>
-    <string name="im022"> نہیں </string>
-
-    <string name="im03"> اگر نہیں تو ، آپ کو کوئی ویکسینیشن کارڈ کیوں نہیں ملا ؟ </string>
-    <string name="im031"> میرے خیال سے اتنا اہم نہیں </string>
-    <string name="im032"> کبھی مرکز صحت میں نہیں گئے </string>
-    <string name="im033"> گم گیا ہے </string>
-    <string name="im034"> سہولت فراہم کرنے والے کے پاس کارڈ دستیاب نہیں تھا</string>
-    <string name="im035"> ویکسینیٹر/ مرکزصحت نے کارڈ مہیا نہیں کی</string>
-    <string name="im036"> ایسے کارڈوں سے واقف نہیں </string>
-    <string name="im0396"> دیگر وضاحت کریں</string>-->
 
     <string name="im04d"> کارڈ پر لکھی ہوئی تاریخ پیدائش چیک کر یں اور درج کریں۔ </string>
     <string name="im04dd"> دن </string>
@@ -563,6 +545,7 @@
     <string name="im23a3"> ضلع / شہر سے باہر </string>
     <string name="im23a96"> دیگر </string>
 
+
     <string name="im24"> بچے کو حفاظتی ٹیکے کیوں نہیں لگوائے ؟ اگر بچے کو تمام حفاظتی ٹیکے نہیں لگوائے گئے، تو ماں / دیکھ بھال کرنے والے سے  پوچھیں۔ بتائی گئیں تمام وجوہات کو ریکارڈ کریں لیکن فوری طور پر کسی مخصوص وجہ پر مت جائیں۔ ماں کو تمام وجوہات فراہم کرنے کی ترغیب دیں۔ </string>
     <string name="im241"> حفاظتی ٹیکوں کا مرکزبہت دور تھا </string>
     <string name="im242"> حفاظتی ٹیکے لگائے جانے کا وقت مناسب نہیں تھا </string>
@@ -707,11 +690,10 @@
     <string name="pa10b">مذہبی تعلیم </string>
     <string name="pa10dk">معلوم نہیں</string>
     <string name="pa11_info"> (اگر غیر تعلیم تافتہ یا ان پڑھ تو 77 لکھیں اور مذہبی تعلیم کے لئے 88 لھکیں)</string>
-    <string name="pa11">بچہ/بچی (نام)کے والد کی مکمل کردہ زیادہ سے زیادہ تعلیم کتنی ہے؟ اگر غیر تعلیم تافتہ یا ان پڑھ ہیں تو 77 لکھیں۔ کسی بھی قسم کی مذہبی تعلیم کے لئے </string>
+    <string name="pa11">بچہ/بچی (نام)کے والد کی مکمل کردہ زیادہ سے زیادہ تعلیم کتنی ہے؟ </string>
     <string name="pa11a">گریڈ</string>
     <string name="pa11b">مذہبی تعلیم </string>
     <string name="pa11dk">معلوم نہیں</string>
-
     <string name="pb01">کیا بچے کو پچھلے 2 ہفتوں میں مندرجہ ذیل علامات میں سے کوئی علامت  ہے یا  تھی؟</string>
     <string name="pb011">بخار       </string>
     <string name="pb011a">ہاں</string>
@@ -792,7 +774,7 @@
     <string name="pb0302">غیر شادی شدہ</string>
     <string name="pb0303">بیوہ</string>
     <string name="pb0304">طلاق یافتہ/علیحدگی</string>
-    <string name="pb04">کیا آپ اس وقت حمل سے ہیں؟</string>
+    <!--<string name="pb04">کیا آپ اس وقت حمل سے ہیں؟</string>
     <string name="pb0401">ہاں</string>
     <string name="pb0402">نہیں</string>
     <string name="pb05">حمل  کی سہ ماہی </string>
@@ -801,7 +783,7 @@
     <string name="pb0503">تیسری</string>
     <string name="pb06">کیا آپ کی گزشتہ ۶ ہفتوں کے درمیان زچگی ہوئی ہے؟ </string>
     <string name="pb0601">ہاں </string>
-    <string name="pb0602">نہیں</string>
+    <string name="pb0602">نہیں</string>-->
     <string name="pb07">کیا (منتخب فرد/بچہ)کو بی سی جی کی ویکسین لگی ہے؟</string>
     <string name="pb0701">ہاں </string>
     <string name="pb0702">نہیں</string>
@@ -836,7 +818,7 @@
     <string name="pb15">کیا (منتخب فرد/ بچہ) نے گزشتہ 2 ہفتوں میں کسی مرکز صحت کا دورہ کیا ہے؟</string>
     <string name="pb15a">ہاں</string>
     <string name="pb15b">نہیں</string>
-    <string name="pb16"></string>
+    <string name="pb16">صحت کی سہولت کا نام</string>
     <string name="pb17"> کیا اس (منتخب فرد/بچہ)کاگذشتہ 2 ہفتوںمیں کسی تصدیق شدہ کورونا وائرس کے مریض سے رابطہ ہواہے؟</string>
     <string name="pb17a">ہاں</string>
     <string name="pb17b">نہیں</string>
@@ -858,7 +840,6 @@
     <string name="pb1807ad">تصدیق شدہ کورونا وائرس کے مریض کا مکمل پتہ</string>
     <string name="pb1808n">تصدیق شدہ کورونا وائرس کے مریض  کا نام</string>
     <string name="pb1808ad">تصدیق شدہ کورونا وائرس کے مریض کا مکمل پتہ</string>
-
     <string name="pc01">کیا خون کا نمونہ حاصل کیا گیا ہے</string>
     <string name="pc011">ہاں</string>
     <string name="pc012">نہیں</string>
@@ -875,6 +856,7 @@
     <string name="pc05"> قد سینٹی میٹر میں</string>
     <string name="pc06">وزن کلو گرام میں</string>
 
+    <!--    SectionInfo-->
     <string name="newHHheadname"> نیا سربراہ کا نام </string>
     <string name="hh01">انٹرویو کی تاریخ</string>
     <string name="hh02">انٹرویو شروع کرنے کا وقت(24 گھنٹوں میں)</string>
@@ -908,39 +890,6 @@
     <string name="hh1407">رہائش نہیں ملی</string>
     <string name="hh1496">دیگر(وضاحت کریں)</string>
 
-    <!-- Household -->
-    <string name="hb01">جواب دہندہ کا نام </string>
-    <string name="hb02">جواب دہندہ  سےرابطہ کا نمبر </string>
-    <string name="hb03">جواب دہندہ کی عمر (مکمل سالوں میں)</string>
-    <string name="hb04">کیا جواب دہندہ ہی اس گھر کا سربراہ ہے؟</string>
-    <string name="hb0401">ہاں</string>
-    <string name="hb0402">نہیں</string>
-    <string name="hb05">گھرانے کے سربراہ کا نام </string>
-    <string name="hb06">گھرانے کے سربراہ سے رابطہ کا نمبر </string>
-    <string name="hb07">کیا میں انٹرویو شروع کر سکتا /سکتی ہوں؟</string>
-    <string name="hb0701">ہاں</string>
-    <string name="hb0702">نہیں</string>
-    <string name="hb08_info">نوٹ: وہ افراد جو اس گھر میں رہتے ہیں اور عام طور پر ایک ساتھ کھانا کھاتے  ہیں۔
-    اگر 95 یا اس سے زیادہ، تو 95 ریکارڈ کریں۔</string>
-    <string name="hb08">اس گھرانے میں کتنے افراد رہتے ہیں؟ </string>
-    <string name="hb08present">گھر میں موجودافراد کی تعداد</string>
-    <string name="hb09">کیا اس گھرمیں 0 سے 59 مہینے کی عمر کے بچے ہیں؟</string>
-    <string name="hb0901">ہاں</string>
-    <string name="hb0902">نہیں</string>
-    <string name="hb10">اگر ہاں تو 0 سے 59 مہینے کی عمر کے بچےکتنے ہیں</string>
-    <string name="hb11">کیا اس گھرمیں اسکول جانے والے  بچے ہیں؟ (5 سال سے 19 سال کی عمر کے)</string>
-    <string name="hb1101">ہاں</string>
-    <string name="hb1102">نہیں</string>
-    <string name="hb12">(گر ہاں تو کتنے(5 سال سے 19 سال کی عمر کے</string>
-    <string name="hb13">کیا اس گھرمیں بالغ افراد  ہیں؟(20 سے 49 سال کی عمر کے)</string>
-    <string name="hb1301">ہاں</string>
-    <string name="hb1302">نہیں</string>
-    <string name="hb14">(گر ہاں تو کتنے(20 سے 49 سال کی عمر کے</string>
-    <string name="hb15"> (کیا اس گھرمیں عمر رسیدہ یا بوڑھے  افراد  ہیں؟(    49سال سے ذیادہ</string>
-    <string name="hb1501">ہاں</string>
-    <string name="hb1502">نہیں</string>
-    <string name="hb16">(گر ہاں تو کتنے افراد( 49سال سے ذیادہ</string>
-
     <string name='Q_hh01'>hh01</string>
     <string name='Q_hh02'>hh02</string>
     <string name='Q_hh03'>hh03</string>
@@ -956,6 +905,7 @@
     <string name='Q_hh13'>hh13</string>
     <string name='Q_hh14'>hh14</string>
 
+
     <string name='Q_pa01'>pa01</string>
     <string name='Q_pa02'>pa02</string>
     <string name='Q_pa03'>pa03</string>
@@ -967,6 +917,7 @@
     <string name='Q_pa09'>pa09</string>
     <string name='Q_pa10'>pa10</string>
     <string name='Q_pa11'>pa11</string>
+
     <string name='Q_pb01'>pb01</string>
     <string name='Q_pb011'>pb011</string>
     <string name='Q_pb0110'>pb0110</string>
@@ -993,9 +944,6 @@
     <string name='Q_pb027'>pb027</string>
     <string name='Q_pb028'>pb028</string>
     <string name='Q_pb03'>pb03</string>
-    <string name='Q_pb04'>pb04</string>
-    <string name='Q_pb05'>pb05</string>
-    <string name='Q_pb06'>pb06</string>
     <string name='Q_pb07'>pb07</string>
     <string name='Q_pb08'>pb08</string>
     <string name='Q_pb09'>pb09</string>
@@ -1030,8 +978,8 @@
     <string name='Q_im03'>Im03</string>
     <string name='Q_im04'>Im04</string>
     <string name='Q_im04d'>Im04D</string>
-    <string name='Q_im05t1'>Im0501</string>
     <string name='Q_im0501'>Im0501</string>
+    <string name='Q_im05t1'>Im0501</string>
     <string name='Q_im0502'>Im0502</string>
     <string name='Q_im0503'>Im0503</string>
     <string name='Q_im0504'>Im0504</string>
@@ -1068,6 +1016,8 @@
     <string name='Q_im23'>Im23</string>
     <string name='Q_im23a'>Im23A</string>
     <string name='Q_im24'>Im24</string>
+    <string name='Q_im25'>Im25</string>
+    <string name='Q_im26'>Im26</string>
     <string name='Q_im26a'>Im26a</string>
     <string name='Q_im26b'>Im26b</string>
     <string name='Q_im26c'>Im26c</string>
@@ -1103,6 +1053,40 @@
     <string name='Q_nh323'>H323</string>
     <string name='Q_nh324'>H324</string>
 
+
+    <!-- Household Section HB-->
+    <string name="hb01">جواب دہندہ کا نام </string>
+    <string name="hb02">جواب دہندہ  سےرابطہ کا نمبر </string>
+    <string name="hb03">جواب دہندہ کی عمر (مکمل سالوں میں)</string>
+    <string name="hb04">کیا جواب دہندہ ہی اس گھر کا سربراہ ہے؟</string>
+    <string name="hb0401">ہاں</string>
+    <string name="hb0402">نہیں</string>
+    <string name="hb05">گھرانے کے سربراہ کا نام </string>
+    <string name="hb06">گھرانے کے سربراہ سے رابطہ کا نمبر </string>
+    <string name="hb07">کیا میں انٹرویو شروع کر سکتا /سکتی ہوں؟</string>
+    <string name="hb0701">ہاں</string>
+    <string name="hb0702">نہیں</string>
+    <string name="hb08_info">نوٹ: وہ افراد جو اس گھر میں رہتے ہیں اور عام طور پر ایک ساتھ کھانا کھاتے  ہیں۔
+    اگر 95 یا اس سے زیادہ، تو 95 ریکارڈ کریں۔</string>
+    <string name="hb08">اس گھرانے میں کتنے افراد رہتے ہیں؟ </string>
+    <string name="hb08present">گھر میں موجودافراد کی تعداد</string>
+    <string name="hb09">کیا اس گھرمیں 0 سے 59 مہینے کی عمر کے بچے ہیں؟</string>
+    <string name="hb0901">ہاں</string>
+    <string name="hb0902">نہیں</string>
+    <string name="hb10">اگر ہاں تو 0 سے 59 مہینے کی عمر کے بچےکتنے ہیں</string>
+    <string name="hb11">کیا اس گھرمیں اسکول جانے والے  بچے ہیں؟ (5 سال سے 19 سال کی عمر کے)</string>
+    <string name="hb1101">ہاں</string>
+    <string name="hb1102">نہیں</string>
+    <string name="hb12">(گر ہاں تو کتنے(5 سال سے 19 سال کی عمر کے</string>
+    <string name="hb13">کیا اس گھرمیں بالغ افراد  ہیں؟(20 سے 49 سال کی عمر کے)</string>
+    <string name="hb1301">ہاں</string>
+    <string name="hb1302">نہیں</string>
+    <string name="hb14">(گر ہاں تو کتنے(20 سے 49 سال کی عمر کے</string>
+    <string name="hb15"> (کیا اس گھرمیں عمر رسیدہ یا بوڑھے  افراد  ہیں؟(    49سال سے ذیادہ</string>
+    <string name="hb1501">ہاں</string>
+    <string name="hb1502">نہیں</string>
+    <string name="hb16">(گر ہاں تو کتنے افراد( 49سال سے ذیادہ</string>
+
     <string name='Q_hb01'>HB01</string>
     <string name='Q_hb02'>HB02</string>
     <string name='Q_hb03'>HB03</string>
@@ -1120,6 +1104,23 @@
     <string name='Q_hb15'>HB15</string>
     <string name='Q_hb16'>HB16</string>
 
+    <string name='Q_h501'>h501</string>
+    <string name='Q_h501_title'>h501_title</string>
+    <string name='Q_h502'>h502</string>
+    <string name='Q_h503'>h503</string>
+    <string name='Q_h503010xx'>h503010xx</string>
+    <string name='Q_h503011xx'>h503011xx</string>
+    <string name='Q_h50301xx'>h50301xx</string>
+    <string name='Q_h50302xx'>h50302xx</string>
+    <string name='Q_h50303xx'>h50303xx</string>
+    <string name='Q_h50304xx'>h50304xx</string>
+    <string name='Q_h50305xx'>h50305xx</string>
+    <string name='Q_h50306xx'>h50306xx</string>
+    <string name='Q_h50307xx'>h50307xx</string>
+    <string name='Q_h50308xx'>h50308xx</string>
+    <string name='Q_h503096xx'>h503096xx</string>
+    <string name='Q_h50309xx'>h50309xx</string>
+
 
     <string name="end_interview"> انٹرویو ختم کریں </string>
     <string name="hhformInfo"> ۔HOUSEHOLD بٹن پر کلک کر کے گھر کی معلومات کا اندراج کریں</string>
@@ -1130,5 +1131,172 @@
     <string name="pa1201">مکمل</string>
     <string name="pa1202">انکار کردیا</string>
     <string name="pa1203">جواب دینے سے قاصر</string>
+
+
+    <!--11-Aug-2020-->
+    <string name="pb0201">کیا گذشتہ چھ ماہ کے دوران کسی صحت کے مرکز کا دورہ کیا؟</string>
+    <string name="pb0201a">ہاں </string>
+    <string name="pb0201b">نہیں</string>
+    <string name="pb0202">دورہ نہ کرنے کی وجوہات کی نشاندہی کریں</string>
+    <string name="pb0202a">سواری نہیں تھی</string>
+    <string name="pb0202b">ہسپتال کے عملے کا رویہ صحیح نہیں تھا </string>
+    <string name="pb0202c">ہسپتال میں کام نہیں ہو رہا تھا </string>
+    <string name="pb0202d">مرکز صحت بہت دور تھا</string>
+    <string name="pb0202e">ناقص معیار کی خدمات </string>
+    <string name="pb0202f">ضروری نہیں سمجھا</string>
+    <string name="pb0202g">علاج مہنگا ہے</string>
+    <string name="pb0202h">ہسپتال  کرونا کی وجہ سے بند تھا</string>
+    <string name="pb0202i">کرونا کا ڈریا خوف</string>
+    <string name="pb0202j">سماجی مفاصلہ</string>
+    <string name="pb0202k">کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی</string>
+    <string name="pb0202l">حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے  </string>
+    <string name="pb0202m">ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے)</string>
+    <string name="pb04">آپ کی موجودہ تولیدی حیثیت کیا ہے؟</string>
+    <string name="pb0401">اس وقت حاملہ ہیں</string>
+    <string name="pb0402">گذشتہ چھ ماہ کے دوران پیدائش</string>
+    <string name="pb043"> گزشت 6 ماہ کے دوران نہ حاملہ ہوئی  اور نہ ہی کسی بچے کی پیدائش ہوئی</string>
+    <string name="pb05">حمل  کی سہ ماہی </string>
+    <string name="pb0501">پہلی</string>
+    <string name="pb05a">کیا آپ نے اپنے  حمل کے دوران  حمل کی دیکھ بھال کے لئے کسی سے معائنہ یا چیک اپ کروایا تھا؟</string>
+    <string name="pb05a01">ہاں </string>
+    <string name="pb05a02">نہیں</string>
+    <string name="pb0502">دوسری</string>
+    <string name="pb05b">آپ نے حمل کی دیکھ بھال کے لئےمعائنہ کہاں سے کروایا تھا؟</string>
+    <string name="pb05c">آخری حمل کے دوران پیدائش  سے قبل معائنہ کس نے کیا تھا؟</string>
+    <string name="pb05d">آپ نے اپنے آخری حمل کے دوران معائنہ کیوں نہیں کروایا تھا؟</string>
+    <string name="pb05e">کیا حمل کے دوران(ایل ایچ ڈبلیو) لیڈی ہیلتھ آپ کے گھر کا دورہ کیا تھا؟</string>
+    <string name="pb05f">کیاحمل کے دوران(ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکرنے کرونا کی وبا کے دوران آپ کے گھر کا دورہ کیا تھا؟</string>
+    <string name="pb05g"> حمل کے دوران آپ کے حمل کی دیکھ بھال کا ایک حصہ ہونے کے ناتے، (ایل ایچ ڈبلیو) لیڈی ہیلتھ ورکر نے کتنی بار آپ کے گھر کا دورہ کیا تھا ؟ </string>
+    <string name="pb05ga">  دوروں کی تعداد </string>
+    <string name="pb05h"> حمل کےدوران آپ کےحمل کی دیکھ بھال کے لئے کئے گئے ایل ایچ ڈبلیو کے دورے کا مقصد کیا تھا؟</string>
+    <string name="pb05i">لیڈی ہیلتھ ورکر کا وزٹ نہیں کرنے کا سبب کیا تھا؟</string>
+    <string name="pb05b01">سرکاری مرکز صحت</string>
+    <string name="pb05c01">ڈاکٹر</string>
+    <string name="pb05d01">سواری نہیں تھی </string>
+    <string name="pb05e01">ہاں</string>
+    <string name="pb05f01">ہاں</string>
+    <string name="pb05h01">زچگی کی متوقع تاریخ کی معلومات  دینا</string>
+    <string name="pb05i01">ایل ایچھ ڈبلیو اکثر وزت پرنہیں آتی</string>
+    <string name="pb05b02">نجی مرکز صحت</string>
+    <string name="pb05c02">(ایل ایچ وی(لیڈی ہیلتھ وزیٹر</string>
+    <string name="pb05d02">ہسپتال کے عملے کا رویہ صحیح نہیں تھا </string>
+    <string name="pb05e02">نہیں</string>
+    <string name="pb05f02">نہیں</string>
+    <string name="pb05h02">صحت،غذائیت، صفائی کا مشورہ دینا</string>
+    <string name="pb05i02">ایل ایچھ ڈبلیوکرونا کی وجہ سےوزٹ نہیں کرسکی</string>
+    <string name="pb05b03">ہیلتھ ہائوس</string>
+    <string name="pb05c03">نرس</string>
+    <string name="pb05d03">ہسپتال میں کام بند تھا </string>
+    <string name="pb05h03">حمل کی دیکھ بھال کے لئے مرکز صحت جانے کاحوالہ دینا</string>
+    <string name="pb05i03">ایل ایچھ ڈبلیوآئی مگر ہم نے گھر میں آنے نہیں دیا</string>
+    <string name="pb05b04">میٹرنیٹی ہوم</string>
+    <string name="pb05c04">(سی ایم ڈبلیو(کمیونیٹی مڈوائف</string>
+    <string name="pb05d04">مرکز صحت بہت دور تھا</string>
+    <string name="pb05h04">تشنج کے حفاظتی ٹیکے لگوانے کا مشورہ دینا</string>
+    <string name="pb05i04">ایل ایچھ ڈبلیونے ماسک نہیں پہنا ہوا تھا</string>
+    <string name="pb05c05">(ایل ایچ ڈبلیو(لیڈی ہیلتھ ورکر</string>
+    <string name="pb05d05">کوئی مرد/شوہر مرکز صحت لے جانے کے لیئے موجود نہیں تھا</string>
+    <string name="pb05h05">پیدائش  سے پہلے تیاری کی مشاورت</string>
+    <string name="pb05i05">کرونا کا ڈریا خوف</string>
+    <string name="pb05d06">ناقص معیار کی خدمات</string>
+    <string name="pb05h06">فولاد یا آئرن کی گولیاں فراہم کرنا</string>
+    <string name="pb05i06">سماجی فاصلہ</string>
+    <string name="pb05d07">مرکز صحت میں کوئی خاتون ڈاکٹر دستیاب نہیں</string>
+    <string name="pb05h07">زچگی کے دوران خطرناک علامات کی آگاہی دینا</string>
+    <string name="pb05i07">حفاظتی سامان گھر پر موجود نہیں تھا</string>
+    <string name="pb05d08">ضروری نہیں سمجھا</string>
+    <string name="pb05h08">کرونا  کی  احتیاطی تدابیر کےبارے میں معلومات</string>
+    <string name="pb05d09">علاج مہنگا ہے</string>
+    <string name="pb05d10">ہسپتال  کرونا کی وجہ سے بند تھا</string>
+    <string name="pb05d11">کرونا کا ڈریا خوف</string>
+    <string name="pb05d12">سماجی مفاصلہ</string>
+    <string name="pb05d13">کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی</string>
+    <string name="pb05d14">حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے</string>
+    <string name="pb05d15">ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے </string>
+    <string name="pb0503">تیسری</string>
+    <string name="pb06">کیا آپ کی گزشتہ ۶ ہفتوں کے درمیان زچگی ہوئی ہے؟ </string>
+    <string name="pb06a">نام) (کی پیدائش کہاں ہوئی تھی؟</string>
+    <string name="pb06b">آپ نے (نام) کی پیدائش مرکز صحت پر کیوں نہیں کروائی؟</string>
+    <string name="pb06c">کیاآپ کےبچے کی پیدائش  کے وقت ایل-ایچ-ڈبلیو موجود تھی؟</string>
+    <string name="pb06d">لیڈی ہیلتھ ورکر کے موجود نہ ہونے کا سبب  کیا تھا؟</string>
+    <string name="pb06e">کیا آپ(نام) کو حفاظتی ٹیکوں کے لیے لے کر گئی تھیں؟</string>
+    <string name="pb06f">کیا آپ(نام) کو حفاظتی ٹیکےکیوں نہیں لگوائے؟</string>
+    <string name="pb06g">کیانوزائیدہ کی پیدائش کے بعد ایل ایچ ڈبلیو نے دورہ کیا تھا ؟</string>
+    <string name="pb06h">کیا وجہ تھی کہ ایل ایچ ڈبلیو نے آپ کے گھر کا دورہ نہیں کیا تھا؟</string>
+    <string name="pb06a01">گھر پر</string>
+    <string name="pb06b01">سواری نہیں تھی</string>
+    <string name="pb06c01">ہاں</string>
+    <string name="pb06d01">ایل ایچھ ڈبلیو اکثر وزٹ  پر نہیں آتی </string>
+    <string name="pb06e01">ہاں</string>
+    <string name="pb06f01">اتنا اہم نہیں تھا</string>
+    <string name="pb06g01">ہاں</string>
+    <string name="pb06h01">ایل ایچھ ڈبلیو اکثر وزٹ  پر نہیں آتی</string>
+    <string name="pb06a02">سرکاری مرکز صحت</string>
+    <string name="pb06b02">ہسپتال کے عملے کا رویہ صحیح نہیں تھا</string>
+    <string name="pb06c02">نہیں</string>
+    <string name="pb06d02">ایل ایچھ ڈبلیوکرونا کی وجہ سےوزٹ نہیں کرسکی</string>
+    <string name="pb06e02">نہیں</string>
+    <string name="pb06f02">ہسپتال  کرونا کی وجہ سے بند تھا</string>
+    <string name="pb06g02">نہیں</string>
+    <string name="pb06h02">ایل ایچھ ڈبلیوکرونا کی وجہ سےوزٹ نہیں کرسکی</string>
+    <string name="pb06a03">نجی مرکز صحت</string>
+    <string name="pb06b03">ہسپتال میں کام بند تھا</string>
+    <string name="pb06d03">ایل ایچھ ڈبلیوآئی مگر ہم نے گھر میں آنے نہیں دیا</string>
+    <string name="pb06f03">کرونا کا ڈریا خوف</string>
+    <string name="pb06g03">زچگی کسی اور علاقہ میں ہوئی تھی</string>
+    <string name="pb06h03">ایل ایچھ ڈبلیوآئی مگر ہم نے گھر میں آنے نہیں دیا</string>
+    <string name="pb06a04">رفاہی ادارہ یا مرکز صحت</string>
+    <string name="pb06b04">مرکز صحت بہت دور تھا</string>
+    <string name="pb06d04">ایل ایچھ ڈبلیونے ماسک نہیں پہنا ہوا تھا</string>
+    <string name="pb06f04">سماجی فاصلہ</string>
+    <string name="pb06h04"> ایل ایچھ ڈبلیونے ماسک نہیں پہنا ہوا تھا</string>
+    <string name="pb06a05">مرکز صحت جاتے ہوئے راستے میں</string>
+    <string name="pb06b05">کوئی مرد/شوہر مرکز صحت لے جانے کے لیئے موجود نہیں تھا</string>
+    <string name="pb06d05">کرونا کا ڈریا خوف </string>
+    <string name="pb06f05">کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی</string>
+    <string name="pb06h05">کرونا کا ڈریا خوف</string>
+    <string name="pb06a06">میٹرنیٹی ہوم</string>
+    <string name="pb06b06">ناقص معیار کی خدمات</string>
+    <string name="pb06d06">سماجی فاصلہ</string>
+    <string name="pb06f06">حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے</string>
+    <string name="pb06h06"> سماجی فاصلہ</string>
+    <string name="pb06b07">مرکز صحت میں کوئی خاتون ڈاکٹر دستیاب نہیں</string>
+    <string name="pb06d07">حفاظتی سامان گھر پر موجود نہیں تھا</string>
+    <string name="pb06f07">ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے)</string>
+    <string name="pb06h07">  حفاظتی سامان گھر پر موجود نہیں تھا</string>
+    <string name="pb06b08">ضروری نہیں سمجھا</string>
+    <string name="pb06b09">علاج مہنگا ہے</string>
+    <string name="pb06b10">ہسپتال  کرونا کی وجہ سے بند تھا</string>
+    <string name="pb06b11"> کرونا کا ڈریا خوف</string>
+    <string name="pb06b12"> سماجی فاصلہ</string>
+    <string name="pb06b13">کرونا کے لاک ڈائون کی وجہ سے سواری نہیں تھی</string>
+    <string name="pb06b14">حفاظتی سامان (ماسک، دستانے) گھر پر موجود نہیں تھے</string>
+    <string name="pb06b15">ڈاکٹر احتیاطی تدابیر پر عمل نہیں کر رہا تھا (ماسک اور دستانے نہیں پہنےہوئے تھے</string>
+    <string name="pb0601">ہاں </string>
+    <string name="pb0602">نہیں</string>
+
+    <string name='Q_pb0201'>pb0201</string>
+    <string name='Q_pb0202'>pb0202</string>
+    <string name='Q_pb04'>pb04</string>
+    <string name='Q_pb05'>pb05</string>
+    <string name='Q_pb05a'>pb05a</string>
+    <string name='Q_pb05b'>pb05b</string>
+    <string name='Q_pb05c'>pb05c</string>
+    <string name='Q_pb05d'>pb05d</string>
+    <string name='Q_pb05e'>pb05e</string>
+    <string name='Q_pb05f'>pb05f</string>
+    <string name='Q_pb05g'>pb05g</string>
+    <string name='Q_pb05h'>pb05h</string>
+    <string name='Q_pb05i'>pb05i</string>
+    <string name='Q_pb06'>pb06</string>
+    <string name='Q_pb06a'>pb06a</string>
+    <string name='Q_pb06b'>pb06b</string>
+    <string name='Q_pb06c'>pb06c</string>
+    <string name='Q_pb06d'>pb06d</string>
+    <string name='Q_pb06e'>pb06e</string>
+    <string name='Q_pb06f'>pb06f</string>
+    <string name='Q_pb06g'>pb06g</string>
+    <string name='Q_pb06h'>pb06h</string>
+
 
 </resources>

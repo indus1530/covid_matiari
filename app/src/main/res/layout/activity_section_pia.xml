@@ -179,6 +179,7 @@
                                 app:maxValue="31"
                                 app:minValue="1"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -203,9 +204,10 @@
                                 android:inputType="number"
                                 app:defaultValue="98"
                                 app:mask="##"
-                                app:maxValue="11"
+                                app:maxValue="12"
                                 app:minValue="1"
                                 app:type="range" />
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -234,6 +236,7 @@
                                 app:maxValue="2020"
                                 app:minValue="1930"
                                 app:type="range" />
+
                         </LinearLayout>
 
                     </LinearLayout>
@@ -296,6 +299,7 @@
                             app:maxValue="99"
                             app:minValue="0"
                             app:type="range" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -591,6 +595,7 @@
                             android:drawablePadding="16dp"
                             android:onClick="@{callback::showTooltipView}"
                             android:text="@string/Q_pa09" />
+
                     </RelativeLayout>
 
                     <LinearLayout
@@ -613,6 +618,7 @@
                             android:hint="@string/pa09a"
                             android:inputType="number"
                             app:defaultValue="77" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -634,8 +640,11 @@
                             android:layout_weight="1"
                             android:hint="@string/pa09b"
                             android:inputType="number" />
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
 

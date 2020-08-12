@@ -413,7 +413,7 @@
                                 android:id="@+id/hb08"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="12dp"
+
                                 android:layout_weight="1"
                                 android:hint="@string/hb08"
                                 android:inputType="number"
@@ -439,7 +439,7 @@
                                 android:id="@+id/hb08present"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="12dp"
+
                                 android:layout_weight="1"
                                 android:hint="@string/hb08present"
                                 android:inputType="number"

@@ -40,61 +40,67 @@ public class SectionPIB01Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.pb03.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.pb0302.getId() || i == bi.pb0304.getId()) {
-                bi.fldGrpSectionB01.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpSectionB01);
-            } else {
-                if (personal.getHhModel().getGenderFemale())
-                    bi.fldGrpSectionB01.setVisibility(View.VISIBLE);
-                else
-                    bi.fldGrpSectionB01.setVisibility(View.GONE);
-            }
-        }));
-
-/*        if (personal.getHhModel().getGenderFemale()) {
-            bi.fldGrpSectionB01.setVisibility(View.VISIBLE);
-        }*/
-
-
-        bi.pb04.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.pb0402.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVpb05);
-            }
-        }));
-
-        bi.pb09.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.pb0902.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVpb10);
-            }
-        }));
-
-        bi.pb09.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.pb0902.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVpb10);
-            }
-        }));
-
         //Skip for married
         int age = personal.getHhModel().getMemAge();
         if (age < 15) {
-            bi.fldGrpCVpb03.setVisibility(View.GONE);
-            bi.fldGrpSectionB01.setVisibility(View.GONE);
-            if (age <= 5) {
-                bi.fldGrpSectionB02.setVisibility(View.GONE);
-                bi.fldGrpCVpb09.setVisibility(View.GONE);
-            } else {
-                bi.fldGrpSectionB02.setVisibility(View.VISIBLE);
-                bi.fldGrpCVpb09.setVisibility(View.VISIBLE);
-            }
+            bi.cvpb03.setVisibility(View.GONE);
+            bi.cvpb04.setVisibility(View.GONE);
+            bi.cvpb05.setVisibility(View.GONE);
+            bi.llpb05a.setVisibility(View.GONE);
         } else {
-            bi.fldGrpCVpb03.setVisibility(View.VISIBLE);
-            bi.fldGrpSectionB02.setVisibility(View.VISIBLE);
-            bi.fldGrpCVpb09.setVisibility(View.VISIBLE);
+            bi.cvpb03.setVisibility(View.VISIBLE);
             if (personal.getHhModel().getGenderFemale()) {
-                bi.fldGrpSectionB01.setVisibility(View.VISIBLE);
+                bi.cvpb04.setVisibility(View.VISIBLE);
+                bi.cvpb05.setVisibility(View.VISIBLE);
+                bi.llpb05a.setVisibility(View.VISIBLE);
             }
         }
+
+        bi.pb0201.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb0202));
+
+        bi.pb03.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.pb0302.getId() || i == bi.pb0304.getId()) {
+                bi.cvpb04.setVisibility(View.GONE);
+                bi.cvpb05.setVisibility(View.GONE);
+                bi.llpb05a.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.llpb05a);
+            } else {
+                if (personal.getHhModel().getGenderFemale()) {
+                    bi.cvpb04.setVisibility(View.VISIBLE);
+                    bi.cvpb05.setVisibility(View.VISIBLE);
+                    bi.llpb05a.setVisibility(View.VISIBLE);
+                } else
+                    bi.cvpb04.setVisibility(View.GONE);
+                bi.cvpb05.setVisibility(View.GONE);
+                bi.llpb05a.setVisibility(View.GONE);
+            }
+        }));
+
+        /*if (personal.getHhModel().getGenderFemale()) {
+            bi.llpb05a.setVisibility(View.VISIBLE);
+        }*/
+
+
+        bi.pb04.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05);
+            Clear.clearAllFields(bi.llpb05a);
+        });
+
+        bi.pb05a.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05b);
+            Clear.clearAllFields(bi.cvpb05c);
+            Clear.clearAllFields(bi.cvpb05d);
+        });
+
+        bi.pb05e.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05g);
+            Clear.clearAllFields(bi.cvpb05h);
+        });
+
+        bi.pb05f.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb05g);
+            Clear.clearAllFields(bi.cvpb05h);
+        });
 
     }
 
@@ -229,39 +235,99 @@ public class SectionPIB01Activity extends AppCompatActivity {
                 : bi.pb02x.isChecked() ? "96"
                 : "-1");
 
-        json.put("pb03", bi.pb0301.isChecked() ? "1"
+        json.put("pb0201", bi.pb0201a.isChecked() ? "1"
+                : bi.pb0201b.isChecked() ? "2"
+                : "-1");
+
+        json.put("pb0202a", bi.pb0202a.isChecked() ? "1" : "-1");
+        json.put("pb0202b", bi.pb0202b.isChecked() ? "2" : "-1");
+        json.put("pb0202c", bi.pb0202c.isChecked() ? "3" : "-1");
+        json.put("pb0202d", bi.pb0202d.isChecked() ? "4" : "-1");
+        json.put("pb0202e", bi.pb0202e.isChecked() ? "5" : "-1");
+        json.put("pb0202f", bi.pb0202f.isChecked() ? "6" : "-1");
+        json.put("pb0202g", bi.pb0202g.isChecked() ? "7" : "-1");
+        json.put("pb0202h", bi.pb0202h.isChecked() ? "8" : "-1");
+        json.put("pb0202i", bi.pb0202i.isChecked() ? "9" : "-1");
+        json.put("pb0202j", bi.pb0202j.isChecked() ? "10" : "-1");
+        json.put("pb0202k", bi.pb0202k.isChecked() ? "11" : "-1");
+        json.put("pb0202l", bi.pb0202l.isChecked() ? "12" : "-1");
+        json.put("pb0202m", bi.pb0202m.isChecked() ? "13" : "-1");
+
+
+        MainApp.PB03 = bi.pb0301.isChecked() ? "1"
                 : bi.pb0302.isChecked() ? "2"
                 : bi.pb0303.isChecked() ? "3"
                 : bi.pb0304.isChecked() ? "4"
-                : "-1");
+                : "-1";
+        json.put("pb03", MainApp.PB03);
 
-        json.put("pb04", bi.pb0401.isChecked() ? "1"
+        MainApp.PB04 = bi.pb0401.isChecked() ? "1"
                 : bi.pb0402.isChecked() ? "2"
-                : "-1");
+                : bi.pb043.isChecked() ? "3"
+                : "-1";
+        json.put("pb04", MainApp.PB04);
 
         json.put("pb05", bi.pb0501.isChecked() ? "1"
                 : bi.pb0502.isChecked() ? "2"
                 : bi.pb0503.isChecked() ? "3"
                 : "-1");
 
-        json.put("pb06", bi.pb0601.isChecked() ? "1"
-                : bi.pb0602.isChecked() ? "2"
+        json.put("pb05a", bi.pb05a01.isChecked() ? "1"
+                : bi.pb05a02.isChecked() ? "2"
                 : "-1");
 
-        json.put("pb07", bi.pb0701.isChecked() ? "1"
-                : bi.pb0702.isChecked() ? "2"
+        json.put("pb05b01", bi.pb05b01.isChecked() ? "1" : "-1");
+        json.put("pb05b02", bi.pb05b02.isChecked() ? "2" : "-1");
+        json.put("pb05b03", bi.pb05b03.isChecked() ? "3" : "-1");
+        json.put("pb05b04", bi.pb05b04.isChecked() ? "4" : "-1");
+        json.put("pb05c01", bi.pb05c01.isChecked() ? "1" : "-1");
+        json.put("pb05c02", bi.pb05c02.isChecked() ? "2" : "-1");
+        json.put("pb05c03", bi.pb05c03.isChecked() ? "3" : "-1");
+        json.put("pb05c04", bi.pb05c04.isChecked() ? "4" : "-1");
+        json.put("pb05c05", bi.pb05c05.isChecked() ? "5" : "-1");
+        json.put("pb05d01", bi.pb05d01.isChecked() ? "1" : "-1");
+        json.put("pb05d02", bi.pb05d02.isChecked() ? "2" : "-1");
+        json.put("pb05d03", bi.pb05d03.isChecked() ? "3" : "-1");
+        json.put("pb05d04", bi.pb05d04.isChecked() ? "4" : "-1");
+        json.put("pb05d05", bi.pb05d05.isChecked() ? "5" : "-1");
+        json.put("pb05d06", bi.pb05d06.isChecked() ? "6" : "-1");
+        json.put("pb05d07", bi.pb05d07.isChecked() ? "7" : "-1");
+        json.put("pb05d08", bi.pb05d08.isChecked() ? "8" : "-1");
+        json.put("pb05d09", bi.pb05d09.isChecked() ? "9" : "-1");
+        json.put("pb05d10", bi.pb05d10.isChecked() ? "10" : "-1");
+        json.put("pb05d11", bi.pb05d11.isChecked() ? "11" : "-1");
+        json.put("pb05d12", bi.pb05d12.isChecked() ? "12" : "-1");
+        json.put("pb05d13", bi.pb05d13.isChecked() ? "13" : "-1");
+        json.put("pb05d14", bi.pb05d14.isChecked() ? "14" : "-1");
+        json.put("pb05d15", bi.pb05d15.isChecked() ? "15" : "-1");
+
+        json.put("pb05e", bi.pb05e01.isChecked() ? "1"
+                : bi.pb05e02.isChecked() ? "2"
                 : "-1");
 
-        json.put("pb08", bi.pb0801.isChecked() ? "1"
-                : bi.pb0802.isChecked() ? "2"
+        json.put("pb05f", bi.pb05f01.isChecked() ? "1"
+                : bi.pb05f02.isChecked() ? "2"
                 : "-1");
 
-        json.put("pb09", bi.pb0901.isChecked() ? "1"
-                : bi.pb0902.isChecked() ? "2"
+        json.put("pb05g", bi.pb05g.getText().toString());
+
+        json.put("pb05h01", bi.pb05h01.isChecked() ? "1" : "-1");
+        json.put("pb05h02", bi.pb05h02.isChecked() ? "2" : "-1");
+        json.put("pb05h03", bi.pb05h03.isChecked() ? "3" : "-1");
+        json.put("pb05h04", bi.pb05h04.isChecked() ? "4" : "-1");
+        json.put("pb05h05", bi.pb05h05.isChecked() ? "5" : "-1");
+        json.put("pb05h06", bi.pb05h06.isChecked() ? "6" : "-1");
+        json.put("pb05h07", bi.pb05h07.isChecked() ? "7" : "-1");
+        json.put("pb05h08", bi.pb05h08.isChecked() ? "8" : "-1");
+
+        json.put("pb05i", bi.pb05i01.isChecked() ? "1"
+                : bi.pb05i02.isChecked() ? "2"
+                : bi.pb05i03.isChecked() ? "3"
+                : bi.pb05i04.isChecked() ? "4"
+                : bi.pb05i05.isChecked() ? "5"
+                : bi.pb05i06.isChecked() ? "6"
+                : bi.pb05i07.isChecked() ? "7"
                 : "-1");
-
-        json.put("pb10", bi.pb10.getText().toString());
-
 
         personal.setsB(json.toString());
 

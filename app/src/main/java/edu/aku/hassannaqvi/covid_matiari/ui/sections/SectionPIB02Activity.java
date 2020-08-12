@@ -46,6 +46,38 @@ public class SectionPIB02Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
+        //Skip for married
+        int age = personal.getHhModel().getMemAge();
+        if (age <= 5) {
+            bi.llpb06.setVisibility(View.GONE);
+            bi.llpb07.setVisibility(View.GONE);
+            bi.fldGrpCVpb09.setVisibility(View.GONE);
+        } else {
+            bi.llpb06.setVisibility(View.VISIBLE);
+            bi.llpb07.setVisibility(View.VISIBLE);
+            bi.fldGrpCVpb09.setVisibility(View.VISIBLE);
+        }
+
+        if (MainApp.PB03.equals("2") || MainApp.PB03.equals("4") || !MainApp.PB04.equals("2")) {
+            bi.llpb06.setVisibility(View.GONE);
+        }
+
+        bi.pb06a.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvpb06b);
+            Clear.clearAllFields(bi.cvpb06c);
+            Clear.clearAllFields(bi.cvpb06d);
+        });
+
+        bi.pb06c.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb06d));
+        bi.pb06e.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb06f));
+        bi.pb06g.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvpb06h));
+
+        bi.pb09.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.pb0902.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVpb10);
+            }
+        }));
+
         bi.pb1101.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.pb1101b.getId()) {
                 bi.fldGrpCVpb12.setVisibility(View.GONE);
@@ -191,8 +223,8 @@ public class SectionPIB02Activity extends AppCompatActivity {
         });
 
         //Skip on age
-        int age = personal.getHhModel().getMemAge();
-        if (age <= 5) {
+        int age1 = personal.getHhModel().getMemAge();
+        if (age1 <= 5) {
             bi.fldGrpCVpb11text.setVisibility(View.GONE);
             bi.fldGrpCVpb12.setVisibility(View.GONE);
         }
@@ -232,6 +264,90 @@ public class SectionPIB02Activity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
+
+
+        json.put("pb06", bi.pb0601.isChecked() ? "1"
+                : bi.pb0602.isChecked() ? "2"
+                : "-1");
+
+        json.put("pb06a", bi.pb06a01.isChecked() ? "1"
+                : bi.pb06a02.isChecked() ? "2"
+                : bi.pb06a03.isChecked() ? "3"
+                : bi.pb06a04.isChecked() ? "4"
+                : bi.pb06a05.isChecked() ? "5"
+                : bi.pb06a06.isChecked() ? "6"
+                : "-1");
+
+        json.put("pb06b01", bi.pb06b01.isChecked() ? "1" : "-1");
+        json.put("pb06b02", bi.pb06b02.isChecked() ? "2" : "-1");
+        json.put("pb06b03", bi.pb06b03.isChecked() ? "3" : "-1");
+        json.put("pb06b04", bi.pb06b04.isChecked() ? "4" : "-1");
+        json.put("pb06b05", bi.pb06b05.isChecked() ? "5" : "-1");
+        json.put("pb06b06", bi.pb06b06.isChecked() ? "6" : "-1");
+        json.put("pb06b07", bi.pb06b07.isChecked() ? "7" : "-1");
+        json.put("pb06b08", bi.pb06b08.isChecked() ? "8" : "-1");
+        json.put("pb06b09", bi.pb06b09.isChecked() ? "9" : "-1");
+        json.put("pb06b10", bi.pb06b10.isChecked() ? "10" : "-1");
+        json.put("pb06b11", bi.pb06b11.isChecked() ? "11" : "-1");
+        json.put("pb06b12", bi.pb06b12.isChecked() ? "12" : "-1");
+        json.put("pb06b13", bi.pb06b13.isChecked() ? "13" : "-1");
+        json.put("pb06b14", bi.pb06b14.isChecked() ? "14" : "-1");
+        json.put("pb06b15", bi.pb06b15.isChecked() ? "15" : "-1");
+
+        json.put("pb06c", bi.pb06c01.isChecked() ? "1"
+                : bi.pb06c02.isChecked() ? "2"
+                : "-1");
+
+        json.put("pb06d", bi.pb06d01.isChecked() ? "1"
+                : bi.pb06d02.isChecked() ? "2"
+                : bi.pb06d03.isChecked() ? "3"
+                : bi.pb06d04.isChecked() ? "4"
+                : bi.pb06d05.isChecked() ? "5"
+                : bi.pb06d06.isChecked() ? "6"
+                : bi.pb06d07.isChecked() ? "7"
+                : "-1");
+
+        json.put("pb06e", bi.pb06e01.isChecked() ? "1"
+                : bi.pb06e02.isChecked() ? "2"
+                : "-1");
+
+        json.put("pb06f", bi.pb06f01.isChecked() ? "1"
+                : bi.pb06f02.isChecked() ? "2"
+                : bi.pb06f03.isChecked() ? "3"
+                : bi.pb06f04.isChecked() ? "4"
+                : bi.pb06f05.isChecked() ? "5"
+                : bi.pb06f06.isChecked() ? "6"
+                : bi.pb06f07.isChecked() ? "7"
+                : "-1");
+
+        json.put("pb06g", bi.pb06g01.isChecked() ? "1"
+                : bi.pb06g02.isChecked() ? "2"
+                : bi.pb06g03.isChecked() ? "3"
+                : "-1");
+
+        json.put("pb06h", bi.pb06h01.isChecked() ? "1"
+                : bi.pb06h02.isChecked() ? "2"
+                : bi.pb06h03.isChecked() ? "3"
+                : bi.pb06h04.isChecked() ? "4"
+                : bi.pb06h05.isChecked() ? "5"
+                : bi.pb06h06.isChecked() ? "6"
+                : bi.pb06h07.isChecked() ? "7"
+                : "-1");
+
+        json.put("pb07", bi.pb0701.isChecked() ? "1"
+                : bi.pb0702.isChecked() ? "2"
+                : "-1");
+
+        json.put("pb08", bi.pb0801.isChecked() ? "1"
+                : bi.pb0802.isChecked() ? "2"
+                : "-1");
+
+        json.put("pb09", bi.pb0901.isChecked() ? "1"
+                : bi.pb0902.isChecked() ? "2"
+                : "-1");
+
+        json.put("pb10", bi.pb10.getText().toString());
+
 
         json.put("pb1101", bi.pb1101a.isChecked() ? "1"
                 : bi.pb1101b.isChecked() ? "2"
