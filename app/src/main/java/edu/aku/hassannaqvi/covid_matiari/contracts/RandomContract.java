@@ -10,7 +10,7 @@ public class RandomContract {
 
     private static final String TAG = "Random_CONTRACT";
 
-    public static String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.covid_sero";
+    public static String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.covid_matiari";
 
     public static abstract class RandomTable implements BaseColumns {
 
