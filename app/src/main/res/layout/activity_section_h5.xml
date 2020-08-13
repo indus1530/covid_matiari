@@ -130,6 +130,7 @@
                                 android:layout_alignTop="@id/qtxt_h502"
                                 android:layout_alignBottom="@id/qtxt_h502"
                                 android:text="@string/Q_h502" />
+
                         </RelativeLayout>
 
                         <com.edittextpicker.aliazaz.EditTextPicker
@@ -176,6 +177,7 @@
                                 android:layout_alignTop="@id/qtxt_h503"
                                 android:layout_alignBottom="@id/qtxt_h503"
                                 android:text="@string/Q_h503" />
+
                         </RelativeLayout>
 
                         <LinearLayout
@@ -195,7 +197,6 @@
                                 android:id="@+id/h50301x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h1"
                                 android:inputType="number"
                                 android:tag="h50301"
@@ -206,7 +207,6 @@
                                 android:id="@+id/h50301xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50301"
@@ -223,7 +223,6 @@
                                 android:id="@+id/h50302x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50302"
@@ -234,7 +233,6 @@
                                 android:id="@+id/h50302xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50302"
@@ -251,7 +249,6 @@
                                 android:id="@+id/h50303x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50303"
@@ -262,7 +259,6 @@
                                 android:id="@+id/h50303xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50303"
@@ -279,7 +275,6 @@
                                 android:id="@+id/h50304x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50304"
@@ -290,7 +285,6 @@
                                 android:id="@+id/h50304xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50304"
@@ -307,7 +301,6 @@
                                 android:id="@+id/h50305x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50305"
@@ -318,7 +311,6 @@
                                 android:id="@+id/h50305xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50305"
@@ -335,7 +327,6 @@
                                 android:id="@+id/h50306x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50306"
@@ -346,8 +337,6 @@
                                 android:id="@+id/h50306xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50306"
@@ -364,7 +353,6 @@
                                 android:id="@+id/h50307x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50307"
@@ -375,7 +363,6 @@
                                 android:id="@+id/h50307xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50307"
@@ -392,7 +379,6 @@
                                 android:id="@+id/h50308x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50308"
@@ -403,7 +389,6 @@
                                 android:id="@+id/h50308xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50308"
@@ -420,7 +405,6 @@
                                 android:id="@+id/h50309x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h50309"
@@ -431,7 +415,6 @@
                                 android:id="@+id/h50309xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h50309"
@@ -448,7 +431,6 @@
                                 android:id="@+id/h503010x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h503010"
@@ -459,7 +441,6 @@
                                 android:id="@+id/h503010xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h503010"
@@ -476,7 +457,6 @@
                                 android:id="@+id/h503011x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h503011"
@@ -487,7 +467,6 @@
                                 android:id="@+id/h503011xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h503011"
@@ -504,7 +483,6 @@
                                 android:id="@+id/h503096x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:inputType="number"
                                 android:hint="@string/h503h1"
                                 android:tag="h503096"
@@ -515,7 +493,6 @@
                                 android:id="@+id/h503096xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
-
                                 android:hint="@string/h503h2"
                                 android:inputType="number"
                                 android:tag="h503096"
@@ -523,7 +500,9 @@
                                 android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}' />
 
                         </LinearLayout>
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
