@@ -97,8 +97,9 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
-            if (sync_flag) new SyncData(SyncActivity.this, MainApp.DIST_ID).execute(true);
-            else new SyncDevice(SyncActivity.this, true).execute();
+            /*if (sync_flag) new SyncData(SyncActivity.this, MainApp.DIST_ID).execute(true);
+            else new SyncDevice(SyncActivity.this, true).execute();*/
+            new SyncData(SyncActivity.this, MainApp.DIST_ID).execute(true);
         } else {
             Toast.makeText(this, "No network connection available.", Toast.LENGTH_SHORT).show();
         }
