@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -135,10 +136,14 @@
                             android:id="@+id/h502"
                             android:layout_width="match_parent"
                             android:layout_height="56dp"
+                            android:hint="@string/h502a"
+                            android:inputType="number"
+                            app:maxValue="999"
+                            app:minValue="1"
+                            app:type="range" />
 
-                            android:hint="@string/h502"
-                            android:inputType="number" />
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- h503  CheckBox   -->

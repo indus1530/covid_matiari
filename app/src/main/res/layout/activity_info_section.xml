@@ -1,20 +1,20 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
+    <data>
         <import type="android.view.View" />
-        <!--<variable
-            name="form"
-            type="edu.aku.hassannaqvi.uencovid19.models.Form" />-->
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.covid_matiari.ui.sections.InfoSectionActivity" />
     </data>
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:id="@+id/GrpName"
@@ -415,6 +415,7 @@
                                 android:layout_alignTop="@id/qtxt_hh12"
                                 android:layout_alignBottom="@id/qtxt_hh12"
                                 android:text="@string/Q_hh12" />
+
                         </RelativeLayout>
 
                         <EditText
@@ -425,10 +426,13 @@
                             android:inputType="number"
                             android:maxLength="4"
                             android:onTextChanged="@{callback::hh03OnTextChanged}" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
+
 
             <Button
                 style="@style/button"
@@ -445,6 +449,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility="gone">
+
 
                 <!-- hh09  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
@@ -487,6 +492,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+
                 <!-- hh10  Input   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVhh10"
@@ -527,6 +533,7 @@
                             android:hint="@string/hh10" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- hh11  Input   -->
                 <androidx.cardview.widget.CardView
@@ -569,6 +576,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+
                 <!-- hh13  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVhh13"
@@ -599,6 +607,7 @@
                                 android:layout_alignTop="@id/qtxt_hh13"
                                 android:layout_alignBottom="@id/qtxt_hh13"
                                 android:text="@string/Q_hh13" />
+
                         </RelativeLayout>
 
                         <EditText
@@ -607,10 +616,14 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/hh13"
                             android:inputType="number"
-                            android:maxLength="2"
+                            android:maxLength="5"
+                            android:tag="-1"
                             android:onTextChanged="@{callback.hh13OnTextChanged}" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <Button
                     style="@style/button"
@@ -649,10 +662,14 @@
                         android:onClick="@{() -> callback.BtnContinue()}"
                         android:text="Save"
                         android:textColor="@color/white" />
+
                 </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
+
+
     </ScrollView>
+
 </layout>
