@@ -403,11 +403,16 @@
                             android:text="@string/Q_pc04" />
                     </RelativeLayout>
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
+                    <EditText
                         android:id="@+id/pc04"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                        android:inputType="text"
+                        android:maxLength="20" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- pc04?  Input-Numeric   -->
@@ -442,13 +447,16 @@
                             android:text="@string/Q_pc04a" />
                     </RelativeLayout>
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
+                    <EditText
                         android:id="@+id/pc04a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:hint="@string/pc04a"
+                        android:inputType="number"
+                        android:maxLength="15" />
 
-                        android:hint="@string/pc04a" />
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- pc05  Input-Numeric   -->

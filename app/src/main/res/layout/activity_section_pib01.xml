@@ -1950,6 +1950,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:hint="@string/pb05ga"
+                            android:inputType="number"
                             android:maxLength="3"
                             android:padding="5dp"
                             app:maxValue="999"
