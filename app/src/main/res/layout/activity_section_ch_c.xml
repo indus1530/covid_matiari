@@ -1,8 +1,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
+    <data>
         <import type="android.view.View" />
 
         <variable
@@ -10,15 +10,18 @@
             type="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHCActivity" />
     </data>
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:id="@+id/fldGrpSectionCHC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <!-- im1title1  Title   -->
             <androidx.cardview.widget.CardView
@@ -38,6 +41,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- imtitle2  Title   -->
             <androidx.cardview.widget.CardView

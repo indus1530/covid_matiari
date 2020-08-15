@@ -193,7 +193,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50301" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50301x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -201,9 +201,12 @@
                                 android:inputType="number"
                                 android:tag="h50301"
                                 android:text='@{h50301.checked ? h50301x.getText().toString() : ""}'
-                                android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50301xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -211,7 +214,10 @@
                                 android:inputType="number"
                                 android:tag="h50301"
                                 android:text='@{h50301.checked ? h50301xx.getText().toString() : ""}'
-                                android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50302"
@@ -219,7 +225,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50302" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50302x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -227,9 +233,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50302"
                                 android:text='@{h50302.checked ? h50302x.getText().toString() : ""}'
-                                android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50302xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -237,7 +246,10 @@
                                 android:inputType="number"
                                 android:tag="h50302"
                                 android:text='@{h50302.checked ? h50302xx.getText().toString() : ""}'
-                                android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50303"
@@ -245,7 +257,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50303" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50303x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -253,9 +265,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50303"
                                 android:text='@{h50303.checked ? h50303x.getText().toString() : ""}'
-                                android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50303xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -263,7 +278,10 @@
                                 android:inputType="number"
                                 android:tag="h50303"
                                 android:text='@{h50303.checked ? h50303xx.getText().toString() : ""}'
-                                android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50304"
@@ -271,7 +289,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50304" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50304x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -279,9 +297,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50304"
                                 android:text='@{h50304.checked ? h50304x.getText().toString() : ""}'
-                                android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50304xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -289,7 +310,10 @@
                                 android:inputType="number"
                                 android:tag="h50304"
                                 android:text='@{h50304.checked ? h50304xx.getText().toString() : ""}'
-                                android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50305"
@@ -297,7 +321,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50305" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50305x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -305,9 +329,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50305"
                                 android:text='@{h50305.checked ? h50305x.getText().toString() : ""}'
-                                android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50305xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -315,7 +342,10 @@
                                 android:inputType="number"
                                 android:tag="h50305"
                                 android:text='@{h50305.checked ? h50305xx.getText().toString() : ""}'
-                                android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50306"
@@ -323,7 +353,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50306" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50306x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -331,9 +361,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50306"
                                 android:text='@{h50306.checked ? h50306x.getText().toString() : ""}'
-                                android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50306xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -341,7 +374,10 @@
                                 android:inputType="number"
                                 android:tag="h50306"
                                 android:text='@{h50306.checked ? h50306xx.getText().toString() : ""}'
-                                android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50307"
@@ -349,7 +385,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50307" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50307x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -357,9 +393,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50307"
                                 android:text='@{h50307.checked ? h50307x.getText().toString() : ""}'
-                                android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50307xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -367,7 +406,10 @@
                                 android:inputType="number"
                                 android:tag="h50307"
                                 android:text='@{h50307.checked ? h50307xx.getText().toString() : ""}'
-                                android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50308"
@@ -375,7 +417,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50308" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50308x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -383,9 +425,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50308"
                                 android:text='@{h50308.checked ? h50308x.getText().toString() : ""}'
-                                android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50308xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -393,7 +438,10 @@
                                 android:inputType="number"
                                 android:tag="h50308"
                                 android:text='@{h50308.checked ? h50308xx.getText().toString() : ""}'
-                                android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h50309"
@@ -401,7 +449,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50309" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50309x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -409,9 +457,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h50309"
                                 android:text='@{h50309.checked ? h50309x.getText().toString() : ""}'
-                                android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h50309xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -419,7 +470,10 @@
                                 android:inputType="number"
                                 android:tag="h50309"
                                 android:text='@{h50309.checked ? h50309xx.getText().toString() : ""}'
-                                android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h503010"
@@ -427,7 +481,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h503010" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h503010x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -435,9 +489,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h503010"
                                 android:text='@{h503010.checked ? h503010x.getText().toString() : ""}'
-                                android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h503010xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -445,7 +502,10 @@
                                 android:inputType="number"
                                 android:tag="h503010"
                                 android:text='@{h503010.checked ? h503010xx.getText().toString() : ""}'
-                                android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h503011"
@@ -453,7 +513,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h503011" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h503011x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -461,9 +521,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h503011"
                                 android:text='@{h503011.checked ? h503011x.getText().toString() : ""}'
-                                android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h503011xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -471,7 +534,10 @@
                                 android:inputType="number"
                                 android:tag="h503011"
                                 android:text='@{h503011.checked ? h503011xx.getText().toString() : ""}'
-                                android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                             <CheckBox
                                 android:id="@+id/h503096"
@@ -479,7 +545,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h503096" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h503096x"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -487,9 +553,12 @@
                                 android:hint="@string/h503h1"
                                 android:tag="h503096"
                                 android:text='@{h503096.checked ? h503096x.getText().toString() : ""}'
-                                android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
-                            <EditText
+                            <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/h503096xx"
                                 android:layout_width="match_parent"
                                 android:layout_height="56dp"
@@ -497,7 +566,10 @@
                                 android:inputType="number"
                                 android:tag="h503096"
                                 android:text='@{h503096.checked ? h503096xx.getText().toString() : ""}'
-                                android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}' />
+                                android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
+                                app:maxValue="99999"
+                                app:minValue="0"
+                                app:type="range" />
 
                         </LinearLayout>
 

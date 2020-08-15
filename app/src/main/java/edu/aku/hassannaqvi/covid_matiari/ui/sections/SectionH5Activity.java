@@ -1,11 +1,15 @@
 package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.edittextpicker.aliazaz.EditTextPicker;
 import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -41,6 +45,41 @@ public class SectionH5Activity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpSectionh1);
             }
         }));
+
+        editTextImplementation(bi.h50301x, bi.h50301xx);
+        editTextImplementation(bi.h50302x, bi.h50302xx);
+        editTextImplementation(bi.h50303x, bi.h50303xx);
+        editTextImplementation(bi.h50304x, bi.h50304xx);
+        editTextImplementation(bi.h50305x, bi.h50305xx);
+        editTextImplementation(bi.h50306x, bi.h50306xx);
+        editTextImplementation(bi.h50307x, bi.h50307xx);
+        editTextImplementation(bi.h50308x, bi.h50308xx);
+        editTextImplementation(bi.h50309x, bi.h50309xx);
+        editTextImplementation(bi.h503010x, bi.h503010xx);
+        editTextImplementation(bi.h503011x, bi.h503011xx);
+        editTextImplementation(bi.h503096x, bi.h503096xx);
+    }
+
+
+    public void editTextImplementation(EditTextPicker edit01, EditTextPicker edit02) {
+
+        edit01.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (TextUtils.isEmpty(edit01.getText()))
+                    return;
+                edit02.setMaxvalue(Integer.parseInt(edit01.getText().toString().trim()));
+            }
+        });
 
     }
 
