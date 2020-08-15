@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="edu.aku.hassannaqvi.covid_matiari.ui.other.EndingActivity">
 
-    <data>
 
+    <data>
         <import type="android.view.View" />
 
         <variable
@@ -12,9 +12,11 @@
             type="edu.aku.hassannaqvi.covid_matiari.ui.other.EndingActivity" />
     </data>
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
 
         <LinearLayout
             android:id="@+id/fldGrpEnd"
