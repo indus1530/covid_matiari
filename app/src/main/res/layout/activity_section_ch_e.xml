@@ -13,13 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <!--<LinearLayout
             android:id="@+id/fldGrpSectionCHE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- im25  Radio   -->
+            &lt;!&ndash; im25  Radio   &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVim25"
                 style="@style/cardView">
@@ -49,6 +49,7 @@
                             android:layout_alignTop="@id/qtxt_im25"
                             android:layout_alignBottom="@id/qtxt_im25"
                             android:text="@string/Q_im25" />
+
                     </RelativeLayout>
 
                     <RadioGroup
@@ -82,7 +83,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- im26  TextArea   -->
+            &lt;!&ndash; im26  TextArea   &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVim26"
                 style="@style/cardView"
@@ -127,7 +128,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- im26a  TextArea   -->
+            &lt;!&ndash; im26a  TextArea   &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVim26a"
                 style="@style/cardView">
@@ -175,7 +176,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- im26b  TextArea   -->
+            &lt;!&ndash; im26b  TextArea   &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVim26b"
                 style="@style/cardView">
@@ -223,7 +224,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- im26c  TextArea   -->
+            &lt;!&ndash; im26c  TextArea   &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVim26c"
                 style="@style/cardView">
@@ -271,7 +272,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- im26d  TextArea   -->
+            &lt;!&ndash; im26d  TextArea   &ndash;&gt;
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVim26d"
                 style="@style/cardView">
@@ -318,7 +319,7 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!--EndButton LinearLayout-->
+            &lt;!&ndash;EndButton LinearLayout&ndash;&gt;
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -347,7 +348,7 @@
                     android:textColor="@color/white" />
             </LinearLayout>
 
-        </LinearLayout>
+        </LinearLayout>-->
 
     </ScrollView>
 

@@ -1,50 +1,17 @@
 package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
-import com.validatorcrawler.aliazaz.Validator;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.threeten.bp.Instant;
-import org.threeten.bp.LocalDateTime;
-import org.threeten.bp.ZoneId;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 import edu.aku.hassannaqvi.covid_matiari.R;
-import edu.aku.hassannaqvi.covid_matiari.contracts.PersonalContract;
-import edu.aku.hassannaqvi.covid_matiari.core.DatabaseHelper;
-import edu.aku.hassannaqvi.covid_matiari.core.MainApp;
 import edu.aku.hassannaqvi.covid_matiari.databinding.ActivitySectionChCBinding;
-import edu.aku.hassannaqvi.covid_matiari.ui.other.PIEndingActivity;
-import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt;
-import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.EndSectionActivity;
-import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.DateRepository;
-import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.DateUtils;
-import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.model.AgeModel;
-import kotlin.Pair;
-
-import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM01CARDSEEN;
-import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM03FLAG;
-import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.form;
-import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.personal;
-import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.contextBackActivity;
-import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.openWarningActivity;
 
 
-public class SectionCHCActivity extends AppCompatActivity implements EndSectionActivity {
+public class SectionCHCActivity extends AppCompatActivity {
 
     ActivitySectionChCBinding bi;
     boolean im03Flag = false, imFlag = true;
@@ -56,22 +23,22 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ch_c);
         bi.setCallback(this);
 
-        setupListeners();
+        //setupListeners();
 
         /*if (formgetCalculatedDOB() != null) {
             int maxYears = formgetCalculatedDOB().getYear();
             int minYears = formgetCalculatedDOB().minusYears(2).getYear();
             setYearOfBirth(minYears, maxYears);
-        } else */
+        } else
         if (form.getLocalDate() != null) {
             int maxYears = form.getLocalDate().getYear();
             int minYears = form.getLocalDate().minusYears(5).getYear();
             setYearOfBirth(minYears, maxYears);
-        }
+        }*/
 
     }
 
-    private void setYearOfBirth(int minYears, int maxYears) {
+   /* private void setYearOfBirth(int minYears, int maxYears) {
         bi.im04yy.setMinvalue(minYears);
         bi.im04yy.setMaxvalue(maxYears);
     }
@@ -82,33 +49,33 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
                 //    Clear.clearAllFields(bi.fldGrpCVim02, false);
                 Clear.clearAllFields(bi.fldGrpCVim03, false);
                 Clear.clearAllFields(bi.fldGrpCVim04, true);
-                /*bi.frontPhoto.setEnabled(true);
+                *//*bi.frontPhoto.setEnabled(true);
                 bi.backPhoto.setEnabled(true);
                 bi.frontPhoto.setBackground(getResources().getDrawable(R.drawable.outline_btn));
                 bi.backPhoto.setBackground(getResources().getDrawable(R.drawable.outline_btn));
                 bi.frontFileName.setText(null);
-                bi.backFileName.setText(null);*/
+                bi.backFileName.setText(null);*//*
             } else if (i == bi.im023.getId()) {
                 //    Clear.clearAllFields(bi.fldGrpCVim02, false);
                 Clear.clearAllFields(bi.fldGrpCVim03, false);
                 Clear.clearAllFields(bi.fldGrpCVim04, false);
-                /*bi.frontPhoto.setEnabled(false);
+                *//*bi.frontPhoto.setEnabled(false);
                 bi.backPhoto.setEnabled(false);
                 bi.frontPhoto.setBackground(null);
                 bi.backPhoto.setBackground(null);
                 bi.frontFileName.setText(null);
-                bi.backFileName.setText(null);*/
+                bi.backFileName.setText(null);*//*
                 im03Flag = true;
             } else {
                 //    Clear.clearAllFields(bi.fldGrpCVim02, true);
                 Clear.clearAllFields(bi.fldGrpCVim03, true);
                 Clear.clearAllFields(bi.fldGrpCVim04, false);
-                /*bi.frontPhoto.setEnabled(false);
+                *//*bi.frontPhoto.setEnabled(false);
                 bi.backPhoto.setEnabled(false);
                 bi.frontPhoto.setBackground(null);
                 bi.backPhoto.setBackground(null);
                 bi.frontFileName.setText(null);
-                bi.backFileName.setText(null);*/
+                bi.backFileName.setText(null);*//*
             }
 
         }));
@@ -232,7 +199,7 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
                 : bi.im044.isChecked() ? "4"
                 : "-1");
 
-        /*f1.put("im01",
+        *//*f1.put("im01",
                 bi.im011.isChecked() ? "1" :
                         bi.im012.isChecked() ? "2" :
                                 bi.im013.isChecked() ? "3" :
@@ -255,9 +222,9 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
         f1.put("im04dd", bi.im04dd.getText().toString());
         f1.put("im04mm", bi.im04mm.getText().toString());
         f1.put("im04yy", bi.im04yy.getText().toString());
-        f1.put("im0497", bi.im0497.isChecked() ? "97" : "-1");*/
-        /*f1.put("frontFileName", bi.frontFileName.getText().toString());
-        f1.put("backFileName", bi.backFileName.getText().toString());*/
+        f1.put("im0497", bi.im0497.isChecked() ? "97" : "-1");*//*
+     *//*f1.put("frontFileName", bi.frontFileName.getText().toString());
+        f1.put("backFileName", bi.backFileName.getText().toString());*//*
 
         personal.setsI(String.valueOf(f1));
 
@@ -270,10 +237,10 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
             Toast.makeText(this, "Invalid date!", Toast.LENGTH_SHORT).show();
             return false;
         }
-        /*if (bi.im011.isChecked() && (TextUtils.isEmpty(bi.frontFileName.getText()) || TextUtils.isEmpty(bi.backFileName.getText()))) {
+        *//*if (bi.im011.isChecked() && (TextUtils.isEmpty(bi.frontFileName.getText()) || TextUtils.isEmpty(bi.backFileName.getText()))) {
             Toast.makeText(this, "No Photos attached", Toast.LENGTH_SHORT).show();
             return false;
-        }*/
+        }*//*
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionCHC);
     }
 
@@ -337,7 +304,7 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
         contextBackActivity(this);
     }
 
-/*    public void takePhoto(int id) {
+*//*    public void takePhoto(int id) {
         Intent intent = new Intent(this, TakePhoto.class);
         intent.putExtra("picID", personal.getHh12() + "_" + personal.getHh13() + "_" + personal.getMemberSerial() + "_");
         intent.putExtra("childName", personal.getMemberName());
@@ -380,7 +347,7 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
                 bi.backFileName.setText("Photo not taken.");
             }
         }
-    }*/
+    }*//*
 
     @Override
     public void endSecActivity(boolean flag) {
@@ -395,5 +362,5 @@ public class SectionCHCActivity extends AppCompatActivity implements EndSectionA
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 }

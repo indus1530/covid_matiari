@@ -57,7 +57,7 @@ public class SectionPICActivity extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, MainApp.personal.getHhModel().getMemAge() < 5 ? SectionCHCActivity.class : PIEndingActivity.class).putExtra("complete", true));
+            startActivity(new Intent(this, MainApp.personal.getHhModel().getMemAge() < 5 ? SectionIM1Activity.class : PIEndingActivity.class).putExtra("complete", true));
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }

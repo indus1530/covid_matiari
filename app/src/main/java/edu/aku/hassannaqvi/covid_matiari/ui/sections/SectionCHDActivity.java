@@ -1,6 +1,5 @@
 package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -11,8 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.edittextpicker.aliazaz.EditTextPicker;
-import com.validatorcrawler.aliazaz.Clear;
-import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,8 +34,6 @@ import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt;
 import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.DateRepository;
 import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.model.AgeModel;
 
-import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM01CARDSEEN;
-import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM03FLAG;
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.form;
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.personal;
 import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.contextBackActivity;
@@ -54,17 +49,16 @@ public class SectionCHDActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ch_d);
         bi.setCallback(this);
-        setTitle(R.string.im05title1);
-        setupListeners();
-        setupTextWatchers();
+        /*setupListeners();
+        setupTextWatchers();*/
         setupYears();
-
+/*
         //imo7 Check
         im07 = getIntent().getBooleanExtra(IM01CARDSEEN, false);
         if (im07) {
             Clear.clearAllFields(bi.fldGrpCVim07, false);
             bi.im071.setChecked(true);
-        }
+        }*/
 
     }
 
@@ -132,7 +126,7 @@ public class SectionCHDActivity extends AppCompatActivity {
         }
     }
 
-    private void setupTextWatchers() {
+    /*private void setupTextWatchers() {
 
         EditTextPicker[] BCG = new EditTextPicker[]{bi.im0501dd, bi.im0501mm, bi.im0501yy};
         editTextImplementation("BCG", BCG, null, null);
@@ -196,7 +190,7 @@ public class SectionCHDActivity extends AppCompatActivity {
             }
         });
         editTextImplementation("MEASLES2", MEASLES2, MEASLES1, null);
-    }
+    }*/
 
     public void editTextImplementation(String type, EditTextPicker[] editTextsArray, EditTextPicker[] respTextsArray, ArrayList<EditTextPicker[]> respArrayList) {
         if (editTextsArray.length != 3) return;
@@ -343,16 +337,16 @@ public class SectionCHDActivity extends AppCompatActivity {
 
     }
 
-    private void setupListeners() {
+    /*private void setupListeners() {
 
         boolean flag = getIntent().getBooleanExtra(IM03FLAG, true);
         if (!flag) imFlag = true;
         Clear.clearAllFields(bi.fldGrpSecChc2, flag);
 
-       /* bi.im06.setOnCheckedChangeListener((radioGroup, i) -> {
+       *//* bi.im06.setOnCheckedChangeListener((radioGroup, i) -> {
             if (i != bi.im061.getId()) {
-                *//*bi.qim07.setEnabled(false);
-                Clear.clearAllFields(bi.qIm08, false);*//*
+                *//**//*bi.qim07.setEnabled(false);
+                Clear.clearAllFields(bi.qIm08, false);*//**//*
                 Clear.clearAllFields(bi.fldGrpCVim07, false);
                 Clear.clearAllFields(bi.fldGrpSecChc3, false);
                 Clear.clearAllFields(bi.fldGrpCVim08, false);
@@ -365,7 +359,7 @@ public class SectionCHDActivity extends AppCompatActivity {
                 Clear.clearAllFields(bi.fldGrpCVim23, false);
                 Clear.clearAllFields(bi.fldGrpCVim23a, false);
             }
-        });*/
+        });*//*
 
         bi.im07.setOnCheckedChangeListener((radioGroup, i) -> {
             if (i == bi.im071.getId()) {
@@ -512,7 +506,7 @@ public class SectionCHDActivity extends AppCompatActivity {
             }
         });
 
-    }
+    }*/
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -529,7 +523,7 @@ public class SectionCHDActivity extends AppCompatActivity {
 
         JSONObject f1 = new JSONObject();
 
-        f1.put("im0501dd", bi.im0501dd.getText().toString());
+        /*f1.put("im0501dd", bi.im0501dd.getText().toString());
         f1.put("im0501mm", bi.im0501mm.getText().toString());
         f1.put("im0501yy", bi.im0501yy.getText().toString());
         f1.put("im0502dd", bi.im0502dd.getText().toString());
@@ -577,11 +571,11 @@ public class SectionCHDActivity extends AppCompatActivity {
         f1.put("im0516dd", bi.im0516dd.getText().toString());
         f1.put("im0516mm", bi.im0516mm.getText().toString());
         f1.put("im0516yy", bi.im0516yy.getText().toString());
-       /* f1.put("im06",
+       *//* f1.put("im06",
                 bi.im061.isChecked() ? "1" :
                         bi.im062.isChecked() ? "2" :
                                 bi.im063.isChecked() ? "98" :
-                                        "0");*/
+                                        "0");*//*
         f1.put("im07",
                 bi.im071.isChecked() ? "1" :
                         bi.im072.isChecked() ? "2" :
@@ -683,7 +677,7 @@ public class SectionCHDActivity extends AppCompatActivity {
         f1.put("im2416", bi.im2416.isChecked() ? "16" : "-1");
         f1.put("im2417", bi.im2417.isChecked() ? "98" : "-1");
         f1.put("im2499", bi.im2499.isChecked() ? "98" : "-1");
-        f1.put("im2417x", bi.im2417x.getText().toString());
+        f1.put("im2417x", bi.im2417x.getText().toString());*/
 
 
         try {
@@ -697,15 +691,15 @@ public class SectionCHDActivity extends AppCompatActivity {
 
     }
 
-    private boolean formValidation() {
+    /*private boolean formValidation() {
         if (!imFlag) {
             Toast.makeText(this, "Invalid date!", Toast.LENGTH_SHORT).show();
             return false;
         }
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionCHD);
-    }
+    }*/
 
-    public void BtnContinue() {
+    /*public void BtnContinue() {
 
         if (formValidation()) {
             try {
@@ -721,7 +715,7 @@ public class SectionCHDActivity extends AppCompatActivity {
             }
         }
 
-    }
+    }*/
 
     public void BtnEnd() {
         AppUtilsKt.openEndActivity(this, PIEndingActivity.class);

@@ -27,6 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
+        <activity android:name=".ui.sections.SectionIM1Activity"></activity>
         <activity
             android:name=".ui.sections.SectionPIB02Activity"
             android:label="@string/nh3heading"

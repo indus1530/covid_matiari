@@ -1,29 +1,12 @@
 package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
-import com.validatorcrawler.aliazaz.Validator;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import edu.aku.hassannaqvi.covid_matiari.R;
-import edu.aku.hassannaqvi.covid_matiari.contracts.PersonalContract;
-import edu.aku.hassannaqvi.covid_matiari.core.DatabaseHelper;
-import edu.aku.hassannaqvi.covid_matiari.core.MainApp;
 import edu.aku.hassannaqvi.covid_matiari.databinding.ActivitySectionChEBinding;
-import edu.aku.hassannaqvi.covid_matiari.ui.other.PIEndingActivity;
-import edu.aku.hassannaqvi.covid_matiari.utils.JSONUtils;
-import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt;
-
-import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.personal;
-import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.contextBackActivity;
 
 public class SectionCHEActivity extends AppCompatActivity {
 
@@ -35,11 +18,11 @@ public class SectionCHEActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_ch_e);
         bi.setCallback(this);
 
-        setupListeners();
+        //setupListeners();
 
     }
 
-    private void setupListeners() {
+    /*private void setupListeners() {
 
         bi.im25.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.im251.getId()) {
@@ -115,7 +98,7 @@ public class SectionCHEActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         contextBackActivity(this);
-    }
+    }*/
 
 
 }
