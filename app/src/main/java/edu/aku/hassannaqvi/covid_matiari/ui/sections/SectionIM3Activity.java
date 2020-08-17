@@ -221,7 +221,6 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
 
 
     public void BtnContinue() {
-
         if (!formValidation()) return;
         try {
             SaveDraft();
@@ -230,11 +229,12 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, PIEndingActivity.class));
+            startActivity(new Intent(this, PIEndingActivity.class).putExtra("complete", true));
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private Pair<String, String> getMonthAndYearFromDate(String date) {
         Calendar cal = DateUtils.getCalendarDate(date.replace("-", "/"));

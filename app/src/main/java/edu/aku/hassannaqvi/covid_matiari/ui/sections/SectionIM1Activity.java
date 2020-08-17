@@ -2,11 +2,13 @@ package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -47,6 +49,7 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_im1);
         bi.setCallback(this);
+        setupSkips();
 
         if (form.getLocalDate() != null) {
             int maxYears = form.getLocalDate().getYear();
@@ -59,6 +62,37 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
     private void setYearOfBirth(int minYears, int maxYears) {
         bi.im04yy.setMinvalue(minYears);
         bi.im04yy.setMaxvalue(maxYears);
+    }
+
+
+    private void setupSkips() {
+
+        bi.im01.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvim02);
+            Clear.clearAllFields(bi.cvim02a);
+            Clear.clearAllFields(bi.cvim04);
+            bi.cvim02.setVisibility(View.GONE);
+            bi.cvim02a.setVisibility(View.GONE);
+            bi.cvim04.setVisibility(View.GONE);
+            if (i == bi.im011.getId() || i == bi.im013.getId() || i == bi.im015.getId()) {
+                bi.cvim04.setVisibility(View.VISIBLE);
+            } else if (i == bi.im012.getId() || i == bi.im014.getId()) {
+                bi.cvim02.setVisibility(View.VISIBLE);
+            }
+        });
+
+        bi.im02.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvim02a);
+            Clear.clearAllFields(bi.cvim04);
+            bi.cvim02a.setVisibility(View.GONE);
+            bi.cvim04.setVisibility(View.GONE);
+            if (i == bi.im021.getId()) {
+                bi.cvim04.setVisibility(View.VISIBLE);
+            } else if (i == bi.im022.getId()) {
+                bi.cvim02a.setVisibility(View.VISIBLE);
+            }
+        });
+
     }
 
 
