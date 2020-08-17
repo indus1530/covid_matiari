@@ -162,7 +162,6 @@ public class SectionIM2Activity extends AppCompatActivity implements EndSectionA
 
 
     public void BtnContinue() {
-
         if (!formValidation()) return;
         try {
             SaveDraft();

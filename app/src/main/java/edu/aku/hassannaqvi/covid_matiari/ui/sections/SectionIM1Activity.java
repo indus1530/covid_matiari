@@ -48,11 +48,11 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_im1);
         bi.setCallback(this);
 
-        /*if (form.getLocalDate() != null) {
+        if (form.getLocalDate() != null) {
             int maxYears = form.getLocalDate().getYear();
             int minYears = form.getLocalDate().minusYears(5).getYear();
             setYearOfBirth(minYears, maxYears);
-        }*/
+        }
 
     }
 
@@ -141,7 +141,7 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
                 }
                 if (UpdateDB()) {
                     finish();
-                    startActivity(new Intent(this, SectionCHDActivity.class).putExtra(IM03FLAG, !im03Flag).putExtra(IM01CARDSEEN, bi.im021.isChecked() || bi.im022.isChecked()));
+                    startActivity(new Intent(this, SectionIM2Activity.class).putExtra(IM03FLAG, !im03Flag).putExtra(IM01CARDSEEN, bi.im021.isChecked() || bi.im022.isChecked()));
                 } else {
                     Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
                 }
