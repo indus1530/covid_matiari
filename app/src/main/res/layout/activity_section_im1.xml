@@ -123,16 +123,16 @@
                             android:text="@string/im013" />
 
                         <RadioButton
-                            android:id="@+id/im015"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/im015" />
-
-                        <RadioButton
                             android:id="@+id/im014"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/im014" />
+
+                        <RadioButton
+                            android:id="@+id/im015"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im015" />
 
                     </RadioGroup>
 

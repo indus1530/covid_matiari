@@ -175,7 +175,8 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
                 }
                 if (UpdateDB()) {
                     finish();
-                    startActivity(new Intent(this, SectionIM2Activity.class).putExtra(IM03FLAG, !im03Flag).putExtra(IM01CARDSEEN, bi.im021.isChecked() || bi.im022.isChecked()));
+                    startActivity(new Intent(this, bi.im04yy.getText().toString().trim().isEmpty() ? SectionIM3Activity.class
+                            : SectionIM2Activity.class).putExtra(IM03FLAG, !im03Flag).putExtra(IM01CARDSEEN, bi.im021.isChecked() || bi.im022.isChecked()));
                 } else {
                     Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
                 }
