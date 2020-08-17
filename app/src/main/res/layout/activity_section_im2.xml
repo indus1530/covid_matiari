@@ -1,0 +1,1736 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionIM2Activity" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/GrpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- im4title1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim4title1"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/im4title1" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im4title2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim4title2"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/im4title2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im41bcg  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim41bcg"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im41bcg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im41bcg"
+                            android:text="@string/im41bcg" />
+
+                        <TextView
+                            android:id="@+id/q_im41bcg"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im41bcg"
+                            android:layout_alignBottom="@id/qtxt_im41bcg"
+                            android:text="@string/Q_im41bcg" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im41bcgdd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im41bcgdd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im41bcgdd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im41bcgmm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im41bcgmm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im41bcgmm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im41bcgyy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im41bcgyy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im41bcgyy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im42opv0 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim42opv0"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im42opv0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im42opv0"
+                            android:text="@string/im42opv0" />
+
+                        <TextView
+                            android:id="@+id/q_im42opv0"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im42opv0"
+                            android:layout_alignBottom="@id/qtxt_im42opv0"
+                            android:text="@string/Q_im42opv0" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im42opv0dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im42opv0dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im42opv0dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im42opv0mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im42opv0mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im42opv0mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im42opv0yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im42opv0yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im42opv0yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im43opv1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim43opv1"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im43opv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im43opv1"
+                            android:text="@string/im43opv1" />
+
+                        <TextView
+                            android:id="@+id/q_im43opv1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im43opv1"
+                            android:layout_alignBottom="@id/qtxt_im43opv1"
+                            android:text="@string/Q_im43opv1" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im43opv1dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im43opv1dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im43opv1dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im43opv1mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im43opv1mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im43opv1mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im43opv1yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im43opv1yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im43opv1yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im44penta1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim44penta1"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im44penta1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im44penta1"
+                            android:text="@string/im44penta1" />
+
+                        <TextView
+                            android:id="@+id/q_im44penta1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im44penta1"
+                            android:layout_alignBottom="@id/qtxt_im44penta1"
+                            android:text="@string/Q_im44penta1" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im44penta1dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im44penta1dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im44penta1dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im44penta1mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im44penta1mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im44penta1mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im44penta1yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im44penta1yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im44penta1yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im45pcv1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim45pcv1"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im45pcv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im45pcv1"
+                            android:text="@string/im45pcv1" />
+
+                        <TextView
+                            android:id="@+id/q_im45pcv1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im45pcv1"
+                            android:layout_alignBottom="@id/qtxt_im45pcv1"
+                            android:text="@string/Q_im45pcv1" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im45pcv1dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im45pcv1dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im45pcv1dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im45pcv1mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im45pcv1mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im45pcv1mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im45pcv1yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im45pcv1yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im45pcv1yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im46rv1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim46rv1"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im46rv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im46rv1"
+                            android:text="@string/im46rv1" />
+
+                        <TextView
+                            android:id="@+id/q_im46rv1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im46rv1"
+                            android:layout_alignBottom="@id/qtxt_im46rv1"
+                            android:text="@string/Q_im46rv1" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im46rv1dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im46rv1dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im46rv1dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im46rv1mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im46rv1mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im46rv1mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im46rv1yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im46rv1yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im46rv1yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im47opv2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim47opv2"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im47opv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im47opv2"
+                            android:text="@string/im47opv2" />
+
+                        <TextView
+                            android:id="@+id/q_im47opv2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im47opv2"
+                            android:layout_alignBottom="@id/qtxt_im47opv2"
+                            android:text="@string/Q_im47opv2" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im47opv2dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im47opv2dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im47opv2dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im47opv2mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im47opv2mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im47opv2mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im47opv2yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im47opv2yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im47opv2yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im48penta2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim48penta2"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im48penta2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im48penta2"
+                            android:text="@string/im48penta2" />
+
+                        <TextView
+                            android:id="@+id/q_im48penta2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im48penta2"
+                            android:layout_alignBottom="@id/qtxt_im48penta2"
+                            android:text="@string/Q_im48penta2" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im48penta2dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im48penta2dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im48penta2dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im48penta2mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im48penta2mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im48penta2mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im48penta2yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im48penta2yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im48penta2yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im49pcv2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim49pcv2"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im49pcv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im49pcv2"
+                            android:text="@string/im49pcv2" />
+
+                        <TextView
+                            android:id="@+id/q_im49pcv2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im49pcv2"
+                            android:layout_alignBottom="@id/qtxt_im49pcv2"
+                            android:text="@string/Q_im49pcv2" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im49pcv2dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im49pcv2dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im49pcv2dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im49pcv2mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im49pcv2mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im49pcv2mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im49pcv2yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im49pcv2yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im49pcv2yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im410rv2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim410rv2"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im410rv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im410rv2"
+                            android:text="@string/im410rv2" />
+
+                        <TextView
+                            android:id="@+id/q_im410rv2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im410rv2"
+                            android:layout_alignBottom="@id/qtxt_im410rv2"
+                            android:text="@string/Q_im410rv2" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im410rv2dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im410rv2dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im410rv2dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im410rv2mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im410rv2mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im410rv2mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im410rv2yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im410rv2yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im410rv2yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im411opv3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim411opv3"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im411opv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im411opv3"
+                            android:text="@string/im411opv3" />
+
+                        <TextView
+                            android:id="@+id/q_im411opv3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im411opv3"
+                            android:layout_alignBottom="@id/qtxt_im411opv3"
+                            android:text="@string/Q_im411opv3" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im411opv3dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im411opv3dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im411opv3dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im411opv3mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im411opv3mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im411opv3mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im411opv3yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im411opv3yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im411opv3yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im412penta3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim412penta3"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im412penta3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im412penta3"
+                            android:text="@string/im412penta3" />
+
+                        <TextView
+                            android:id="@+id/q_im412penta3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im412penta3"
+                            android:layout_alignBottom="@id/qtxt_im412penta3"
+                            android:text="@string/Q_im412penta3" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im412penta3dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im412penta3dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im412penta3dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im412penta3mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im412penta3mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im412penta3mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im412penta3yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im412penta3yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im412penta3yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im413pcv3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim413pcv3"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im413pcv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im413pcv3"
+                            android:text="@string/im413pcv3" />
+
+                        <TextView
+                            android:id="@+id/q_im413pcv3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im413pcv3"
+                            android:layout_alignBottom="@id/qtxt_im413pcv3"
+                            android:text="@string/Q_im413pcv3" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im413pcv3dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im413pcv3dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im413pcv3dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im413pcv3mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im413pcv3mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im413pcv3mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im413pcv3yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im413pcv3yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im413pcv3yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im414ipv -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim414ipv"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im414ipv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im414ipv"
+                            android:text="@string/im414ipv" />
+
+                        <TextView
+                            android:id="@+id/q_im414ipv"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im414ipv"
+                            android:layout_alignBottom="@id/qtxt_im414ipv"
+                            android:text="@string/Q_im414ipv" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im414ipvdd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im414ipvdd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im414ipvdd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im414ipvmm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im414ipvmm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im414ipvmm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im414ipvyy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im414ipvyy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im414ipvyy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im415measles1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim415measles1"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im415measles1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im415measles1"
+                            android:text="@string/im415measles1" />
+
+                        <TextView
+                            android:id="@+id/q_im415measles1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im415measles1"
+                            android:layout_alignBottom="@id/qtxt_im415measles1"
+                            android:text="@string/Q_im415measles1" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im415measles1dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im415measles1dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im415measles1dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im415measles1mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im415measles1mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im415measles1mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im415measles1yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im415measles1yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im415measles1yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- im416measles2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvim416measles2"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_im416measles2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_im416measles2"
+                            android:text="@string/im416measles2" />
+
+                        <TextView
+                            android:id="@+id/q_im416measles2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_im416measles2"
+                            android:layout_alignBottom="@id/qtxt_im416measles2"
+                            android:text="@string/Q_im416measles2" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im416measles2dd" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im416measles2dd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im416measles2dd"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im416measles2mm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im416measles2mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im416measles2mm"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/im416measles2yy" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/im416measles2yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:hint="@string/im416measles2yy"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2018"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--EndButton LinearLayout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/red_overlay"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@color/green_overlay"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <!--EndButton LinearLayout-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

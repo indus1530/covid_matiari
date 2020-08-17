@@ -249,7 +249,7 @@
                         android:layout_margin="2dp"
                         android:background="@color/white_overlay"
                         android:onClick="@{callback::openSpecificActivity}"
-                        android:text="CHC"
+                        android:text="IM1"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="30sp" />
@@ -264,7 +264,7 @@
                         android:layout_margin="2dp"
                         android:background="@color/white_overlay"
                         android:onClick="@{callback::openSpecificActivity}"
-                        android:text="CHD"
+                        android:text="IM2"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="30sp" />
@@ -276,7 +276,7 @@
                         android:layout_margin="2dp"
                         android:background="@color/white_overlay"
                         android:onClick="@{callback::openSpecificActivity}"
-                        android:text="CHE"
+                        android:text="IM3"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="30sp" />

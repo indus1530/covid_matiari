@@ -40,11 +40,11 @@ import edu.aku.hassannaqvi.covid_matiari.ui.list_activity.FormsReportCluster;
 import edu.aku.hassannaqvi.covid_matiari.ui.list_activity.FormsReportDate;
 import edu.aku.hassannaqvi.covid_matiari.ui.list_activity.PendingFormsActivity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.InfoSectionActivity;
-import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHDActivity;
-import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionCHEActivity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH301Activity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH4Activity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionIM1Activity;
+import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionIM2Activity;
+import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionIM3Activity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIAActivity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPIB01Activity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionPICActivity;
@@ -333,10 +333,10 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
                 oF = new Intent(this, SectionIM1Activity.class);
                 break;
             case R.id.formCHD:
-                oF = new Intent(this, SectionCHDActivity.class);
+                oF = new Intent(this, SectionIM2Activity.class);
                 break;
             case R.id.formCHE:
-                oF = new Intent(this, SectionCHEActivity.class);
+                oF = new Intent(this, SectionIM3Activity.class);
                 break;
             case R.id.databaseBtn:
                 oF = new Intent(this, AndroidDatabaseManager.class);

@@ -27,40 +27,46 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".ui.sections.SectionIM1Activity"></activity>
+
         <activity
             android:name=".ui.sections.SectionPIB02Activity"
             android:label="@string/nh3heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.sections.InfoSectionActivity"
             android:label="@string/nh3heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.sections.SectionH302Activity"
             android:label="@string/nh3heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.list_activity.FormsReportCluster"
             android:label="Forms Report"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
+
         <activity
             android:name=".ui.list_activity.FormsReportDate"
             android:label="Forms Report"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
+
         <activity
             android:name=".ui.list_activity.PendingFormsActivity"
             android:label="Unfinished Forms"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
+
         <activity
             android:name=".ui.other.SplashscreenActivity"
             android:screenOrientation="portrait"
@@ -113,24 +119,49 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.sections.SectionCHCActivity"
             android:label="@string/IMheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.sections.SectionCHDActivity"
             android:label="@string/IMheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.sections.SectionCHEActivity"
             android:label="@string/IMheading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionIM1Activity"
+            android:label="@string/IMheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionIM2Activity"
+            android:label="@string/IMheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".ui.sections.SectionIM3Activity"
+            android:label="@string/IMheading"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeUrdu"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
         <activity
             android:name=".ui.sections.SectionPIAActivity"
             android:label="@string/section1_mainheading"
