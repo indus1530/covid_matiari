@@ -74,15 +74,6 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
 
         JSONObject json = new JSONObject();
 
-        json.put("im05", bi.im051.isChecked() ? "1"
-                : bi.im052.isChecked() ? "2"
-                : bi.im053.isChecked() ? "98"
-                : "-1");
-
-        json.put("im06", bi.im061.isChecked() ? "1"
-                : bi.im062.isChecked() ? "2"
-                : "-1");
-
         json.put("im08", bi.im081.isChecked() ? "1"
                 : bi.im082.isChecked() ? "2"
                 : bi.im083.isChecked() ? "98"
