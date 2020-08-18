@@ -203,9 +203,6 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
         json.put("im04dd1", bi.im04dd1.isChecked() ? "98" : "-1");
 
         personal.setsI(String.valueOf(json));
-
-        if (dtInstant != null)
-            form.setCalculatedDOB(LocalDateTime.ofInstant(dtInstant, ZoneId.systemDefault()).toLocalDate());
     }
 
     private boolean formValidation() {
@@ -223,13 +220,17 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
     public void BtnContinue() {
 
         if (formValidation()) {
+
+            if (dtInstant != null)
+                personal.setCalculatedDOB(LocalDateTime.ofInstant(dtInstant, ZoneId.systemDefault()).toLocalDate());
+
             //Calculate months
             boolean monthFlag = true;
-            if (form.getCalculatedDOB() != null || dtInstant != null) {
+            if (personal.getCalculatedDOB() != null) {
                 Pair<String, String> month_year;
                 if (bi.im021.isChecked() && dtInstant != null)
                     month_year = getMonthAndYearFromDate(LocalDateTime.ofInstant(dtInstant, ZoneId.systemDefault()).toLocalDate().toString());
-                else month_year = getMonthAndYearFromDate(form.getCalculatedDOB().toString());
+                else month_year = getMonthAndYearFromDate(personal.getCalculatedDOB().toString());
                 int totalMonths = Integer.parseInt(month_year.getFirst()) + Integer.parseInt(month_year.getSecond()) * 12;
                 monthFlag = totalMonths < 60;
             }
@@ -280,51 +281,6 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
     public void onBackPressed() {
         contextBackActivity(this);
     }
-
-/*    public void takePhoto(int id) {
-        Intent intent = new Intent(this, TakePhoto.class);
-        intent.putExtra("picID", personal.getHh12() + "_" + personal.getHh13() + "_" + personal.getMemberSerial() + "_");
-        intent.putExtra("childName", personal.getMemberName());
-        if (id == 1) {
-            intent.putExtra("picView", "front".toUpperCase());
-            startActivityForResult(intent, 1); // Activity is started with requestCode 1 = Front
-        } else {
-            intent.putExtra("picView", "back".toUpperCase());
-            startActivityForResult(intent, 2); // Activity is started with requestCode 2 = Back
-        }
-    }
-
-    // Call Back method  to get the Message form other Activity
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != RESULT_CANCELED) {
-            Toast.makeText(this, requestCode + "_" + resultCode, Toast.LENGTH_SHORT).show();
-
-            String fileName = data.getStringExtra("FileName");
-
-            // Check if the requestCode 1 = Front : 2 = Back -- resultCode 1 = Success : 2 = Failure
-            // Results received with requestCode 1 = Front
-            if (requestCode == 1 && resultCode == 1) {
-                Toast.makeText(this, "Photo Taken", Toast.LENGTH_SHORT).show();
-                bi.frontFileName.setText(fileName);
-                bi.frontPhoto.setEnabled(false);
-            } else if (requestCode == 1) {
-                Toast.makeText(this, "Photo Cancelled", Toast.LENGTH_SHORT).show();
-                bi.frontFileName.setText("Photo not taken.");
-            }
-
-            // Results received with requestCode 2 = Back
-            if (requestCode == 2 && resultCode == 1) {
-                Toast.makeText(this, "Photo Taken", Toast.LENGTH_SHORT).show();
-                bi.backFileName.setText(fileName);
-                bi.backPhoto.setEnabled(false);
-            } else if (requestCode == 2) {
-                Toast.makeText(this, "Photo Cancelled", Toast.LENGTH_SHORT).show();
-                bi.backFileName.setText("Photo not taken.");
-            }
-        }
-    }*/
 
     @Override
     public void endSecActivity(boolean flag) {
