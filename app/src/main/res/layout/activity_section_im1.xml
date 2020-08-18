@@ -379,10 +379,8 @@
                             android:gravity="center"
                             android:hint="@string/im04yy"
                             android:inputType="number"
-                            android:maxLength="4"
-                            app:mask="20##"
-                            app:maxValue="2020"
-                            app:minValue="2018"
+                            app:maxValue="0"
+                            app:minValue="0"
                             app:type="range" />
 
                     </LinearLayout>
