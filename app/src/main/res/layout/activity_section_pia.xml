@@ -52,15 +52,19 @@
                             android:layout_alignTop="@id/qtxt_pa01"
                             android:layout_alignBottom="@id/qtxt_pa01"
                             android:text="@string/Q_pa01" />
+
                     </RelativeLayout>
 
                     <EditText
                         android:id="@+id/pa01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                        android:inputType="text"
                         android:hint="@string/pa01" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- pa02  Radio   -->
