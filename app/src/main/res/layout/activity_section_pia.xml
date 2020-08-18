@@ -59,8 +59,8 @@
                         android:id="@+id/pa01"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:inputType="text"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
                         android:hint="@string/pa01" />
 
                 </LinearLayout>
