@@ -139,6 +139,7 @@
                             android:layout_height="56dp"
                             android:hint="@string/h502a"
                             android:inputType="number"
+                            android:maxLength="3"
                             app:maxValue="999"
                             app:minValue="1"
                             app:type="range" />
@@ -202,8 +203,9 @@
                                 android:tag="h50301"
                                 android:text='@{h50301.checked ? h50301x.getText().toString() : ""}'
                                 android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -215,7 +217,8 @@
                                 android:tag="h50301"
                                 android:text='@{h50301.checked ? h50301xx.getText().toString() : ""}'
                                 android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -234,8 +237,9 @@
                                 android:tag="h50302"
                                 android:text='@{h50302.checked ? h50302x.getText().toString() : ""}'
                                 android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -247,7 +251,8 @@
                                 android:tag="h50302"
                                 android:text='@{h50302.checked ? h50302xx.getText().toString() : ""}'
                                 android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -266,8 +271,9 @@
                                 android:tag="h50303"
                                 android:text='@{h50303.checked ? h50303x.getText().toString() : ""}'
                                 android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -279,7 +285,8 @@
                                 android:tag="h50303"
                                 android:text='@{h50303.checked ? h50303xx.getText().toString() : ""}'
                                 android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -298,8 +305,9 @@
                                 android:tag="h50304"
                                 android:text='@{h50304.checked ? h50304x.getText().toString() : ""}'
                                 android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -311,7 +319,8 @@
                                 android:tag="h50304"
                                 android:text='@{h50304.checked ? h50304xx.getText().toString() : ""}'
                                 android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -330,8 +339,9 @@
                                 android:tag="h50305"
                                 android:text='@{h50305.checked ? h50305x.getText().toString() : ""}'
                                 android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -343,7 +353,8 @@
                                 android:tag="h50305"
                                 android:text='@{h50305.checked ? h50305xx.getText().toString() : ""}'
                                 android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -362,8 +373,9 @@
                                 android:tag="h50306"
                                 android:text='@{h50306.checked ? h50306x.getText().toString() : ""}'
                                 android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -375,7 +387,8 @@
                                 android:tag="h50306"
                                 android:text='@{h50306.checked ? h50306xx.getText().toString() : ""}'
                                 android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -394,8 +407,9 @@
                                 android:tag="h50307"
                                 android:text='@{h50307.checked ? h50307x.getText().toString() : ""}'
                                 android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -407,7 +421,8 @@
                                 android:tag="h50307"
                                 android:text='@{h50307.checked ? h50307xx.getText().toString() : ""}'
                                 android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -426,8 +441,9 @@
                                 android:tag="h50308"
                                 android:text='@{h50308.checked ? h50308x.getText().toString() : ""}'
                                 android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -439,7 +455,8 @@
                                 android:tag="h50308"
                                 android:text='@{h50308.checked ? h50308xx.getText().toString() : ""}'
                                 android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -458,8 +475,9 @@
                                 android:tag="h50309"
                                 android:text='@{h50309.checked ? h50309x.getText().toString() : ""}'
                                 android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -471,7 +489,8 @@
                                 android:tag="h50309"
                                 android:text='@{h50309.checked ? h50309xx.getText().toString() : ""}'
                                 android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -490,8 +509,9 @@
                                 android:tag="h503010"
                                 android:text='@{h503010.checked ? h503010x.getText().toString() : ""}'
                                 android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -503,7 +523,8 @@
                                 android:tag="h503010"
                                 android:text='@{h503010.checked ? h503010xx.getText().toString() : ""}'
                                 android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -522,8 +543,9 @@
                                 android:tag="h503011"
                                 android:text='@{h503011.checked ? h503011x.getText().toString() : ""}'
                                 android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -535,7 +557,8 @@
                                 android:tag="h503011"
                                 android:text='@{h503011.checked ? h503011xx.getText().toString() : ""}'
                                 android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
@@ -554,8 +577,9 @@
                                 android:tag="h503096"
                                 android:text='@{h503096.checked ? h503096x.getText().toString() : ""}'
                                 android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
+                                android:maxLength="5"
                                 app:maxValue="99999"
-                                app:minValue="0"
+                                app:minValue="1"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -567,7 +591,8 @@
                                 android:tag="h503096"
                                 android:text='@{h503096.checked ? h503096xx.getText().toString() : ""}'
                                 android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
-                                app:maxValue="99999"
+                                android:maxLength="5"
+                                app:maxValue="0"
                                 app:minValue="0"
                                 app:type="range" />
 
