@@ -495,7 +495,8 @@
                 <!-- im15  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvim15"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility='@{im141.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -535,6 +536,7 @@
                             app:defaultValue="98"
                             app:maxValue="3"
                             app:minValue="1"
+                            android:text='@{im141.checked ? im15.getText().toString() : "" }'
                             app:type="range" />
 
                     </LinearLayout>
@@ -612,7 +614,8 @@
                 <!-- im17  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvim17"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility='@{im161.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -652,6 +655,7 @@
                             app:defaultValue="98"
                             app:maxValue="3"
                             app:minValue="1"
+                            android:text='@{im161.checked ? im17.getText().toString() : "" }'
                             app:type="range" />
 
                     </LinearLayout>
@@ -726,10 +730,11 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <!-- im19  Radio   -->
+                <!-- im19  Input-Numeric -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvim19"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility='@{im181.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -769,6 +774,7 @@
                             app:defaultValue="98"
                             app:maxValue="2"
                             app:minValue="1"
+                            android:text='@{im181.checked ? im19.getText().toString() : "" }'
                             app:type="range" />
 
                     </LinearLayout>
@@ -913,7 +919,8 @@
                 <!-- im22  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvim22"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility='@{im211.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -953,6 +960,7 @@
                             app:defaultValue="98"
                             app:maxValue="2"
                             app:minValue="1"
+                            android:text='@{im211.checked ? im22.getText().toString() : "" }'
                             app:type="range" />
 
                     </LinearLayout>
@@ -1042,7 +1050,8 @@
                 <!-- im23a  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cvim23a"
-                    style="@style/cardView">
+                    style="@style/cardView"
+                    android:visibility='@{im236.checked ? View.VISIBLE : View.GONE}'>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1123,7 +1132,8 @@
             <!-- im24  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvim24"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{im231.checked || im232.checked || im233.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1346,7 +1356,8 @@
             <!-- im26  CheckBox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvim26"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{im2501.checked ? View.VISIBLE : View.GONE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"

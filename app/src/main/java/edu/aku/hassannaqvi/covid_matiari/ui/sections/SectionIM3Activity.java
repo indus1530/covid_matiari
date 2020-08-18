@@ -57,6 +57,14 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
 
     private void setupSkips() {
         bi.im08.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llim0923a));
+        bi.im10.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llim1113));
+
+        bi.im23.setOnCheckedChangeListener((radioGroup, i) -> {
+            Clear.clearAllFields(bi.cvim23a);
+            Clear.clearAllFields(bi.cvim24);
+        });
+
+        bi.im25.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvim26));
     }
 
 
