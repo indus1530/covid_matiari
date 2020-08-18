@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -43,6 +44,7 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_im3);
         bi.setCallback(this);
+        setupSkips();
 
         if (form.getLocalDate() != null) {
             int maxYears = form.getLocalDate().getYear();
@@ -51,6 +53,12 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
         }
 
     }
+
+
+    private void setupSkips() {
+        bi.im08.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llim0923a));
+    }
+
 
     private void setYearOfBirth(int minYears, int maxYears) {
         /*bi.im04yy.setMinvalue(minYears);
