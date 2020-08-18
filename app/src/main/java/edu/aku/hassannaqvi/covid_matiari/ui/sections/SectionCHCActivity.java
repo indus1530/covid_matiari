@@ -25,9 +25,9 @@ public class SectionCHCActivity extends AppCompatActivity {
 
         //setupListeners();
 
-        /*if (formgetCalculatedDOB() != null) {
-            int maxYears = formgetCalculatedDOB().getYear();
-            int minYears = formgetCalculatedDOB().minusYears(2).getYear();
+        /*if (form.getCalculatedDOB() != null) {
+            int maxYears = form.getCalculatedDOB().getYear();
+            int minYears = form.getCalculatedDOB().minusYears(2).getYear();
             setYearOfBirth(minYears, maxYears);
         } else
         if (form.getLocalDate() != null) {
@@ -38,12 +38,12 @@ public class SectionCHCActivity extends AppCompatActivity {
 
     }
 
-   /* private void setYearOfBirth(int minYears, int maxYears) {
+  /* private void setYearOfBirth(int minYears, int maxYears) {
         bi.im04yy.setMinvalue(minYears);
         bi.im04yy.setMaxvalue(maxYears);
-    }
+    }*/
 
-    private void setupListeners() {
+   /* private void setupListeners() {
         bi.im02.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.im021.getId()) {
                 //    Clear.clearAllFields(bi.fldGrpCVim02, false);
@@ -154,7 +154,7 @@ public class SectionCHCActivity extends AppCompatActivity {
 
         bi.im0497.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
-                Clear.clearAllFields(bi.fldGrpim04DT, false);
+                Clear .clearAllFields(bi.fldGrpim04DT, false);
                 imFlag = true;
             } else
                 Clear.clearAllFields(bi.fldGrpim04DT, true);

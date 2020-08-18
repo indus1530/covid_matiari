@@ -1,7 +1,11 @@
 package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
 import android.content.Intent;
+import android.net.ParseException;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
@@ -17,6 +21,7 @@ import org.threeten.bp.Instant;
 import org.threeten.bp.LocalDateTime;
 import org.threeten.bp.ZoneId;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import edu.aku.hassannaqvi.covid_matiari.R;
@@ -27,7 +32,9 @@ import edu.aku.hassannaqvi.covid_matiari.databinding.ActivitySectionIm1Binding;
 import edu.aku.hassannaqvi.covid_matiari.ui.other.PIEndingActivity;
 import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt;
 import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.EndSectionActivity;
+import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.DateRepository;
 import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.DateUtils;
+import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.model.AgeModel;
 import kotlin.Pair;
 
 import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM01CARDSEEN;
@@ -90,6 +97,65 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
                 bi.cvim04.setVisibility(View.VISIBLE);
             } else if (i == bi.im022.getId()) {
                 bi.cvim02a.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        bi.im04yy.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                dtInstant = null;
+                imFlag = true;
+                if (!bi.im011.isChecked() || bi.im04dd1.isChecked()) return;
+                String txt01, txt02, txt03;
+                bi.im04dd.setEnabled(true);
+                bi.im04mm.setEnabled(true);
+                if (!TextUtils.isEmpty(bi.im04dd.getText()) && !TextUtils.isEmpty(bi.im04mm.getText()) && !TextUtils.isEmpty(bi.im04yy.getText())) {
+                    txt01 = bi.im04dd.getText().toString();
+                    txt02 = bi.im04mm.getText().toString();
+                    txt03 = bi.im04yy.getText().toString();
+                } else return;
+                if ((!bi.im04dd.isRangeTextValidate()) ||
+                        (!bi.im04mm.isRangeTextValidate()) ||
+                        (!bi.im04yy.isRangeTextValidate()))
+                    return;
+                int day = bi.im04dd.getText().toString().equals("98") ? 15 : Integer.parseInt(txt01);
+                int month = Integer.parseInt(txt02);
+                int year = Integer.parseInt(txt03);
+
+                AgeModel age;
+                if (form.getLocalDate() != null)
+                    age = DateRepository.Companion.getCalculatedAge(form.getLocalDate(), year, month, day);
+                else
+                    age = DateRepository.Companion.getCalculatedAge(year, month, day);
+                if (age == null) {
+                    bi.im04yy.setError("Invalid date!!");
+                    imFlag = false;
+                } else {
+                    imFlag = true;
+                    bi.im04dd.setEnabled(false);
+                    bi.im04mm.setEnabled(false);
+                    //Setting Date
+                    try {
+                        dtInstant = Instant.parse(new SimpleDateFormat("yyyy-MM-dd").format(new SimpleDateFormat("dd-MM-yyyy").parse(
+                                bi.im04dd.getText().toString() + "-" + bi.im04mm.getText().toString() + "-" + bi.im04yy.getText().toString()
+                        )) + "T06:24:01Z");
+
+                    } catch (ParseException | java.text.ParseException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
             }
         });
 
