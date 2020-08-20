@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
         if (todaysForms.size() > 0) {
             String iStatus;
             rSumText.append("---------------------------------------------------------\r\n")
-                    .append("[Cluster][Household][Form Status][Sync Status]\r\n")
+                    .append("[Cluster][Household][Members][Form Status][Sync Status]\r\n")
                     .append("---------------------------------------------------------\r\n");
 
             for (Form form : todaysForms) {
@@ -155,11 +155,9 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
                     default:
                         iStatus = " N/A        " + form.getIstatus();
                 }
+                int personalCount = appInfo.getDbHelper().getPersonalByUUID(form.get_UID());
 
-                rSumText
-                        .append("  " + form.getHh12() + "    ")
-                        .append("  " + form.getHh13() + "      ")
-
+                rSumText.append("  ").append(form.getHh12()).append("    ").append("  ").append(form.getHh13()).append("      ").append("    ").append(personalCount).append("    ")
                         .append(iStatus)
                         .append(form.getSynced() == null ? " Not Synced " : " Synced     ")
                         .append("\r\n")
@@ -182,12 +180,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
                 .append("\t========================================================\r\n");
         bi.recordSummary.setText(rSumText);
 
-        Log.d(TAG, "onCreate: " + rSumText);
-        if (MainApp.admin) {
-            bi.databaseBtn.setVisibility(View.VISIBLE);
-        } else {
-            bi.databaseBtn.setVisibility(View.GONE);
-        }
+        bi.adminSections.setVisibility(MainApp.admin ? View.VISIBLE : View.GONE);
 
         // Auto download app
         sharedPrefDownload = getSharedPreferences("appDownload", MODE_PRIVATE);
@@ -205,18 +198,18 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
                 file = new File(Environment.getExternalStorageDirectory() + File.separator + fileName, versionApp.getPathname());
 
                 if (file.exists()) {
-                    bi.lblAppVersion.setText(new StringBuilder(R.string.app_name + " New Version ").append(newVer).append("  Downloaded"));
+                    bi.lblAppVersion.setText(new StringBuilder(getString(R.string.app_name) + " New Version ").append(newVer).append("  Downloaded"));
                     showDialog(newVer, preVer);
                 } else {
                     NetworkInfo networkInfo = ((ConnectivityManager) Objects.requireNonNull(getSystemService(Context.CONNECTIVITY_SERVICE))).getActiveNetworkInfo();
                     if (networkInfo != null && networkInfo.isConnected()) {
-                        bi.lblAppVersion.setText(new StringBuilder(R.string.app_name + " App New Version ").append(newVer).append("  Downloading.."));
+                        bi.lblAppVersion.setText(new StringBuilder(getString(R.string.app_name) + " App New Version ").append(newVer).append("  Downloading.."));
                         downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
                         Uri uri = Uri.parse(MainApp._UPDATE_URL + versionApp.getPathname());
                         DownloadManager.Request request = new DownloadManager.Request(uri);
                         request.setDestinationInExternalPublicDir(fileName, versionApp.getPathname())
                                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                                .setTitle("Downloading " + R.string.app_name + " App new App ver." + newVer);
+                                .setTitle("Downloading " + getString(R.string.app_name) + " App new App ver." + newVer);
                         refID = downloadManager.enqueue(request);
 
                         editorDownload.putLong("refID", refID);
@@ -224,7 +217,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
                         editorDownload.apply();
 
                     } else {
-                        bi.lblAppVersion.setText(new StringBuilder(R.string.app_name + " App New Version ").append(newVer).append("  Available..\n(Can't download.. Internet connectivity issue!!)"));
+                        bi.lblAppVersion.setText(new StringBuilder(getString(R.string.app_name) + " App New Version ").append(newVer).append("  Available..\n(Can't download.. Internet connectivity issue!!)"));
                     }
                 }
 

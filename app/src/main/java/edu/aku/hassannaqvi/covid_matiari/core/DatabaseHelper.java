@@ -1283,4 +1283,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 where,
                 whereArgs);
     }
+
+    public int getPersonalByUUID(String UUID) {
+        String countQuery = "SELECT  * FROM " + PersonalTable.TABLE_NAME + " WHERE " + PersonalTable.COLUMN_UUID + " = '" + UUID + "' AND " + PersonalTable.COLUMN_CSTATUS + " = '1'";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int count = cursor.getCount();
+        cursor.close();
+        return count;
+    }
 }
