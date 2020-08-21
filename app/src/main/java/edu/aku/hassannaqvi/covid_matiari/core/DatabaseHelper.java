@@ -194,10 +194,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(PersonalTable.COLUMN_SB, personal.getsB());
         values.put(PersonalTable.COLUMN_SC, personal.getsC());
         values.put(PersonalTable.COLUMN_SI, personal.getsI());
-        values.put(PersonalTable.COLUMN_GPSLAT, personal.getGpsLat());
-        values.put(PersonalTable.COLUMN_GPSLNG, personal.getGpsLng());
-        values.put(PersonalTable.COLUMN_GPSDATE, personal.getGpsDT());
-        values.put(PersonalTable.COLUMN_GPSACC, personal.getGpsAcc());
         values.put(PersonalTable.COLUMN_DEVICETAGID, personal.getDevicetagID());
         values.put(PersonalTable.COLUMN_DEVICEID, personal.getDeviceID());
         values.put(PersonalTable.COLUMN_APPVERSION, personal.getAppversion());
@@ -393,10 +389,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 PersonalTable.COLUMN_SB,
                 PersonalTable.COLUMN_SC,
                 PersonalTable.COLUMN_SI,
-                PersonalTable.COLUMN_GPSLAT,
-                PersonalTable.COLUMN_GPSLNG,
-                PersonalTable.COLUMN_GPSDATE,
-                PersonalTable.COLUMN_GPSACC,
                 PersonalTable.COLUMN_DEVICETAGID,
                 PersonalTable.COLUMN_DEVICEID,
                 PersonalTable.COLUMN_APPVERSION,
@@ -514,10 +506,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 PersonalTable.COLUMN_SB,
                 PersonalTable.COLUMN_SC,
                 PersonalTable.COLUMN_SI,
-                PersonalTable.COLUMN_GPSLAT,
-                PersonalTable.COLUMN_GPSLNG,
-                PersonalTable.COLUMN_GPSDATE,
-                PersonalTable.COLUMN_GPSACC,
                 PersonalTable.COLUMN_DEVICETAGID,
                 PersonalTable.COLUMN_DEVICEID,
                 PersonalTable.COLUMN_APPVERSION,
@@ -575,10 +563,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 PersonalTable.COLUMN_SB,
                 PersonalTable.COLUMN_SC,
                 PersonalTable.COLUMN_SI,
-                PersonalTable.COLUMN_GPSLAT,
-                PersonalTable.COLUMN_GPSLNG,
-                PersonalTable.COLUMN_GPSDATE,
-                PersonalTable.COLUMN_GPSACC,
                 PersonalTable.COLUMN_DEVICETAGID,
                 PersonalTable.COLUMN_DEVICEID,
                 PersonalTable.COLUMN_APPVERSION,
@@ -705,10 +689,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 PersonalTable.COLUMN_SB,
                 PersonalTable.COLUMN_SC,
                 PersonalTable.COLUMN_SI,
-                PersonalTable.COLUMN_GPSLAT,
-                PersonalTable.COLUMN_GPSLNG,
-                PersonalTable.COLUMN_GPSDATE,
-                PersonalTable.COLUMN_GPSACC,
                 PersonalTable.COLUMN_DEVICETAGID,
                 PersonalTable.COLUMN_DEVICEID,
                 PersonalTable.COLUMN_APPVERSION,
@@ -1125,10 +1105,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 PersonalTable.COLUMN_SB,
                 PersonalTable.COLUMN_SC,
                 PersonalTable.COLUMN_SI,
-                PersonalTable.COLUMN_GPSLAT,
-                PersonalTable.COLUMN_GPSLNG,
-                PersonalTable.COLUMN_GPSDATE,
-                PersonalTable.COLUMN_GPSACC,
                 PersonalTable.COLUMN_DEVICETAGID,
                 PersonalTable.COLUMN_DEVICEID,
                 PersonalTable.COLUMN_APPVERSION
@@ -1282,5 +1258,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values,
                 where,
                 whereArgs);
+    }
+
+    public int getPersonalByUUID(String UUID) {
+        String countQuery = "SELECT  * FROM " + PersonalTable.TABLE_NAME + " WHERE " + PersonalTable.COLUMN_UUID + " = '" + UUID + "' AND " + PersonalTable.COLUMN_CSTATUS + " = '1'";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int count = cursor.getCount();
+        cursor.close();
+        return count;
     }
 }

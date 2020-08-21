@@ -179,7 +179,6 @@ public class SectionH5Activity extends AppCompatActivity {
 
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionH5);
-
     }
 
 

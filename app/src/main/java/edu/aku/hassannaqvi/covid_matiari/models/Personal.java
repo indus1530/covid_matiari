@@ -31,10 +31,6 @@ public class Personal extends LiveData<Personal> {
     private String cstatus = ""; // Interview Status
     private String cstatus96x = ""; // Interview Status
     private String endingdatetime = "";
-    private String gpsLat = "";
-    private String gpsLng = "";
-    private String gpsDT = "";
-    private String gpsAcc = "";
     private String deviceID = "";
     private String devicetagID = "";
     private String synced = "";
@@ -290,42 +286,6 @@ public class Personal extends LiveData<Personal> {
     }
 
 
-    public String getGpsLat() {
-        return gpsLat;
-    }
-
-    public void setGpsLat(String gpsLat) {
-        this.gpsLat = gpsLat;
-    }
-
-
-    public String getGpsLng() {
-        return gpsLng;
-    }
-
-    public void setGpsLng(String gpsLng) {
-        this.gpsLng = gpsLng;
-    }
-
-
-    public String getGpsDT() {
-        return gpsDT;
-    }
-
-    public void setGpsDT(String gpsDT) {
-        this.gpsDT = gpsDT;
-    }
-
-
-    public String getGpsAcc() {
-        return gpsAcc;
-    }
-
-    public void setGpsAcc(String gpsAcc) {
-        this.gpsAcc = gpsAcc;
-    }
-
-
     public String getDeviceID() {
         return deviceID;
     }
@@ -384,10 +344,6 @@ public class Personal extends LiveData<Personal> {
         this.cstatus = jsonObject.getString(PersonalTable.COLUMN_CSTATUS);
         this.cstatus96x = jsonObject.getString(PersonalTable.COLUMN_CSTATUS96x);
         this.endingdatetime = jsonObject.getString(PersonalTable.COLUMN_ENDINGDATETIME);
-        this.gpsLat = jsonObject.getString(PersonalTable.COLUMN_GPSLAT);
-        this.gpsLng = jsonObject.getString(PersonalTable.COLUMN_GPSLNG);
-        this.gpsDT = jsonObject.getString(PersonalTable.COLUMN_GPSDATE);
-        this.gpsAcc = jsonObject.getString(PersonalTable.COLUMN_GPSACC);
         this.deviceID = jsonObject.getString(PersonalTable.COLUMN_DEVICEID);
         this.devicetagID = jsonObject.getString(PersonalTable.COLUMN_DEVICETAGID);
         this.synced = jsonObject.getString(PersonalTable.COLUMN_SYNCED);
@@ -414,10 +370,6 @@ public class Personal extends LiveData<Personal> {
         this.cstatus = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_CSTATUS));
         this.cstatus96x = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_CSTATUS96x));
         this.endingdatetime = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_ENDINGDATETIME));
-        this.gpsLat = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_GPSLAT));
-        this.gpsLng = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_GPSLNG));
-        this.gpsDT = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_GPSDATE));
-        this.gpsAcc = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_GPSACC));
         this.deviceID = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_DEVICEID));
         this.devicetagID = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_DEVICETAGID));
         this.appversion = cursor.getString(cursor.getColumnIndex(PersonalTable.COLUMN_APPVERSION));
@@ -468,10 +420,7 @@ public class Personal extends LiveData<Personal> {
                 json.put(PersonalTable.COLUMN_SI, new JSONObject(this.sI));
             }
 
-            json.put(PersonalTable.COLUMN_GPSLAT, this.gpsLat == null ? JSONObject.NULL : this.gpsLat);
-            json.put(PersonalTable.COLUMN_GPSLNG, this.gpsLng == null ? JSONObject.NULL : this.gpsLng);
-            json.put(PersonalTable.COLUMN_GPSDATE, this.gpsDT == null ? JSONObject.NULL : this.gpsDT);
-            json.put(PersonalTable.COLUMN_GPSACC, this.gpsAcc == null ? JSONObject.NULL : this.gpsAcc);
+
             json.put(PersonalTable.COLUMN_DEVICEID, this.deviceID == null ? JSONObject.NULL : this.deviceID);
             json.put(PersonalTable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
             json.put(PersonalTable.COLUMN_APPVERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
