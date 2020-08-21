@@ -130,61 +130,13 @@ public class LoginActivity extends Activity {
                 .singleShot(42)
                 .build();
 
-//        bi.password = findViewById(R.id.password);
-/*
-        bi.password.setOnEditorActionListener((textView, id, keyEvent) -> {
-            if (id == R.id.login || id == EditorInfo.IME_NULL) {
-                attemptLogin();
-                return true;
-            }
-            return false;
-        });
-*/
-
         bi.btnSignin.setOnClickListener(view -> attemptLogin());
-
-        //setListeners();
 
         db = new DatabaseHelper(this);
 //        DB backup
         dbBackup();
     }
 
-    /*private void setListeners() {
-        provinceAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, SplashscreenActivity.provinces);
-        spinnerProvince.setAdapter(provinceAdapter);
-        spinnerProvince.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) return;
-                List<String> districts = new ArrayList<>(Collections.singletonList("...."));
-                for (Map.Entry<String, Pair<String, EnumBlockContract>> entry : SplashscreenActivity.districtsMap.entrySet()) {
-                    if (entry.getValue().getFirst().equals(spinnerProvince.getSelectedItem().toString()))
-                        districts.add(entry.getKey());
-                }
-                spinnerDistrict.setAdapter(new ArrayAdapter<>(LoginActivity.this, android.R.layout.simple_list_item_1
-                        , districts));
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        spinnerDistrict.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) return;
-                MainApp.DIST_ID = Objects.requireNonNull(SplashscreenActivity.districtsMap.get(spinnerDistrict.getSelectedItem().toString())).getSecond().getDist_code();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-    }
-*/
     private void gettingDeviceIMEI() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             return;
@@ -274,10 +226,6 @@ public class LoginActivity extends Activity {
             Toast.makeText(this, "No network connection available.", Toast.LENGTH_SHORT).show();
         }
     }
-
-/*    private void populateAutoComplete() {
-        getLoaderManager().initLoader(0, null, this);
-    }*/
 
     private void attemptLogin() {
         if (mAuthTask != null) {

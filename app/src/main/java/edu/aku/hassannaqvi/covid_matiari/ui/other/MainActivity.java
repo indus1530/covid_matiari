@@ -302,6 +302,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
     }
 
     public void openSpecificActivity(View v) {
+        if (!AndroidUtilityKt.isNetworkConnected(this)) return;
         Intent oF = null;
         switch (v.getId()) {
             case R.id.formA:

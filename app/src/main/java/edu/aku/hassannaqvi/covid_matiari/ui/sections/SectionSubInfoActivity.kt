@@ -155,7 +155,7 @@ class SectionSubInfoActivity : AppCompatActivity(), EndSectionActivity {
 
     private fun setupRecyclerView(membersLst: MutableList<Personal>) {
         adapter = MemberListAdapter(this, membersLst)
-        bi.formScroll.recyclerViewChildren.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        bi.formScroll.recyclerViewChildren.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         bi.formScroll.recyclerViewChildren.adapter = adapter
     }
 
