@@ -178,8 +178,8 @@
                                 android:layout_height="wrap_content"
                                 android:hint="@string/pa03_dd"
                                 android:inputType="number"
+                                android:maxLength="2"
                                 app:defaultValue="98"
-                                app:mask="##"
                                 app:maxValue="31"
                                 app:minValue="1"
                                 app:type="range" />
@@ -206,8 +206,8 @@
                                 android:layout_height="wrap_content"
                                 android:hint="@string/pa03_mm"
                                 android:inputType="number"
+                                android:maxLength="2"
                                 app:defaultValue="98"
-                                app:mask="##"
                                 app:maxValue="12"
                                 app:minValue="1"
                                 app:type="range" />
@@ -234,9 +234,9 @@
                                 android:layout_height="wrap_content"
                                 android:hint="@string/pa03_yy"
                                 android:inputType="number"
+                                android:maxLength="4"
                                 android:onTextChanged="@{callback::pa03yyOnTextChanged}"
                                 app:defaultValue="9998"
-                                app:mask="####"
                                 app:maxValue="2020"
                                 app:minValue="1930"
                                 app:type="range" />
@@ -298,8 +298,8 @@
                             android:layout_weight="1"
                             android:hint="@string/pa04y"
                             android:inputType="number"
+                            android:maxLength="2"
                             android:onTextChanged="@{callback::pa04yOnTextChanged}"
-                            app:mask="##"
                             app:maxValue="99"
                             app:minValue="0"
                             app:type="range" />
@@ -325,12 +325,15 @@
                             android:layout_weight="1"
                             android:hint="@string/pa04m"
                             android:inputType="number"
-                            app:mask="##"
+                            android:maxLength="2"
                             app:maxValue="11"
                             app:minValue="0"
                             app:type="range" />
+
                     </LinearLayout>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
 
@@ -419,14 +422,15 @@
                             android:id="@+id/pa06"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-
                             android:hint="@string/pa06"
                             android:inputType="number"
-                            app:mask="##"
+                            android:maxLength="2"
                             app:maxValue="99"
                             app:minValue="15"
                             app:type="range" />
+
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
 
                 <!-- pa07  Radio   -->
