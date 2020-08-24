@@ -84,6 +84,7 @@
                                 android:layout_alignTop="@id/qtxt_nh301"
                                 android:layout_alignBottom="@id/qtxt_nh301"
                                 android:text="@string/Q_nh301" />
+
                         </RelativeLayout>
 
                         <RadioGroup
@@ -241,7 +242,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                            android:hint="@string/other"
+                            android:hint="@string/specify"
                             android:tag="nh30296"
                             android:text='@{nh30296.checked ? nh30296x.getText().toString() : ""}'
                             android:visibility="@{nh30296.checked ? View.VISIBLE : View.GONE}" />
@@ -1203,13 +1204,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31101"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31101" />
 
                                 <RadioButton
                                     android:id="@+id/nh31101a"
@@ -1235,13 +1234,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31102"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31102" />
 
                                 <RadioButton
                                     android:id="@+id/nh31102a"
@@ -1267,13 +1264,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31103"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31103" />
 
                                 <RadioButton
                                     android:id="@+id/nh31103a"
@@ -1299,13 +1294,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31104"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31104" />
 
                                 <RadioButton
                                     android:id="@+id/nh31104a"
@@ -1331,13 +1324,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31105"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31105" />
 
                                 <RadioButton
                                     android:id="@+id/nh31105a"
@@ -1363,13 +1354,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31106"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31106" />
 
                                 <RadioButton
                                     android:id="@+id/nh31106a"
@@ -1395,13 +1384,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31107"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31107" />
 
                                 <RadioButton
                                     android:id="@+id/nh31107a"
@@ -1427,13 +1414,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31108"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31108" />
 
                                 <RadioButton
                                     android:id="@+id/nh31108a"
@@ -1459,13 +1444,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31109"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31109" />
 
                                 <RadioButton
                                     android:id="@+id/nh31109a"
@@ -1491,13 +1474,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31110"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31110" />
 
                                 <RadioButton
                                     android:id="@+id/nh31110a"
@@ -1523,13 +1504,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31111"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31111" />
 
                                 <RadioButton
                                     android:id="@+id/nh31111a"
@@ -1555,13 +1534,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31112"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31112" />
 
                                 <RadioButton
                                     android:id="@+id/nh31112a"
@@ -1587,13 +1564,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31113"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31113" />
 
                                 <RadioButton
                                     android:id="@+id/nh31113a"
@@ -1619,13 +1594,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31114"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31114" />
 
                                 <RadioButton
                                     android:id="@+id/nh31114a"
@@ -1651,13 +1624,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31115"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31115" />
 
                                 <RadioButton
                                     android:id="@+id/nh31115a"
@@ -1683,13 +1654,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31116"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31116" />
 
                                 <RadioButton
                                     android:id="@+id/nh31116a"
@@ -1715,13 +1684,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31117"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31117" />
 
                                 <RadioButton
                                     android:id="@+id/nh31117a"
@@ -1747,13 +1714,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31118"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31118" />
 
                                 <RadioButton
                                     android:id="@+id/nh31118a"
@@ -1779,13 +1744,11 @@
                                 android:orientation="horizontal">
 
                                 <TextView
+                                    style="@style/sub"
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
-                                    android:gravity="center"
-                                    android:text="@string/nh31119"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    android:text="@string/nh31119" />
 
                                 <RadioButton
                                     android:id="@+id/nh31119a"
