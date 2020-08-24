@@ -1485,19 +1485,15 @@
 
                                 <RadioButton
                                     android:id="@+id/nh323a"
-                                    style="@style/radiobutton"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
                                     android:text="@string/yes" />
 
                                 <RadioButton
                                     android:id="@+id/nh323b"
-                                    style="@style/radiobutton"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
                                     android:layout_weight="1"
                                     android:text="@string/no" />
 
@@ -1545,174 +1541,233 @@
                                         android:layout_alignTop="@id/qtxt_nh324"
                                         android:layout_alignBottom="@id/qtxt_nh324"
                                         android:text="@string/Q_nh324" />
+
                                 </RelativeLayout>
 
-                                <TextView
 
+                                <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
                                     android:text="@string/nh324info" />
-                                <!--a-->
-                                <TextView
+
+
+                                <!--nh324a-->
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
 
-                                    android:background="@color/colorPrimaryLight_overlay"
-                                    android:text="@string/nh324a"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    <TextView
+                                        style="@style/sub"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/nh324a" />
 
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/nh324a"
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/nh324a"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text='@{nh323a.checked ? nh324a.getText().toString() : ""}'
+                                        app:maxValue="20"
+                                        app:minValue="0"
+                                        app:type="range" />
+
+                                </LinearLayout>
+
+
+                                <!--nh324b-->
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:hint="@string/nh324a"
-                                    android:inputType="number"
-                                    android:text='@{nh323a.checked ? nh324a.getText().toString() : ""}'
-                                    app:mask="##"
-                                    app:maxValue="20"
-                                    app:minValue="0"
-                                    app:type="range" />
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
 
-                                <!--b-->
-                                <TextView
+                                    <TextView
+                                        style="@style/sub"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/nh324b" />
+
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/nh324b"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text='@{nh323a.checked ? nh324b.getText().toString() : ""}'
+                                        app:maxValue="20"
+                                        app:minValue="0"
+                                        app:type="range" />
+
+                                </LinearLayout>
+
+
+                                <!--nh324c-->
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
 
-                                    android:background="@color/colorPrimaryLight_overlay"
-                                    android:text="@string/nh324b"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    <TextView
+                                        style="@style/sub"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/nh324c" />
 
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/nh324b"
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/nh324c"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text='@{nh323a.checked ? nh324c.getText().toString() : ""}'
+                                        app:maxValue="20"
+                                        app:minValue="0"
+                                        app:type="range" />
+
+                                </LinearLayout>
+
+
+                                <!--nh324d-->
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:hint="@string/nh324b"
-                                    android:inputType="number"
-                                    android:text='@{nh323a.checked ? nh324b.getText().toString() : ""}'
-                                    app:mask="##"
-                                    app:maxValue="20"
-                                    app:minValue="0"
-                                    app:type="range" />
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
 
-                                <!-- c -->
-                                <TextView
+                                    <TextView
+                                        style="@style/sub"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/nh324d" />
+
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/nh324d"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text='@{nh323a.checked ? nh324d.getText().toString() : ""}'
+                                        app:maxValue="20"
+                                        app:minValue="0"
+                                        app:type="range" />
+
+                                </LinearLayout>
+
+
+                                <!--nh324e-->
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
 
-                                    android:background="@color/colorPrimaryLight_overlay"
-                                    android:text="@string/nh324c"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    <TextView
+                                        style="@style/sub"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/nh324e" />
 
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/nh324c"
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/nh324e"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text='@{nh323a.checked ? nh324e.getText().toString() : ""}'
+                                        app:maxValue="20"
+                                        app:minValue="0"
+                                        app:type="range" />
+
+                                </LinearLayout>
+
+
+                                <!--nh324f-->
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:hint="@string/nh324c"
-                                    android:inputType="number"
-                                    android:text='@{nh323a.checked ? nh324c.getText().toString() : ""}'
-                                    app:mask="##"
-                                    app:maxValue="20"
-                                    app:minValue="0"
-                                    app:type="range" />
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
 
-                                <!-- d -->
-                                <TextView
+                                    <TextView
+                                        style="@style/sub"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/nh324f" />
+
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/nh324f"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text='@{nh323a.checked ? nh324f.getText().toString() : ""}'
+                                        app:maxValue="20"
+                                        app:minValue="0"
+                                        app:type="range" />
+
+                                </LinearLayout>
+
+
+                                <!--nh324g-->
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:orientation="horizontal">
 
-                                    android:background="@color/colorPrimaryLight_overlay"
-                                    android:text="@string/nh324d"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
+                                    <TextView
+                                        style="@style/sub"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/nh324g" />
 
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/nh324d"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:hint="@string/nh324d"
-                                    android:inputType="number"
-                                    android:text='@{nh323a.checked ? nh324d.getText().toString() : ""}'
-                                    app:mask="##"
-                                    app:maxValue="20"
-                                    app:minValue="0"
-                                    app:type="range" />
+                                    <com.edittextpicker.aliazaz.EditTextPicker
+                                        android:id="@+id/nh324g"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:hint="##"
+                                        android:inputType="number"
+                                        android:maxLength="2"
+                                        android:text='@{nh323a.checked ? nh324g.getText().toString() : ""}'
+                                        app:maxValue="20"
+                                        app:minValue="0"
+                                        app:type="range" />
 
-                                <!-- e -->
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                </LinearLayout>
 
-                                    android:background="@color/colorPrimaryLight_overlay"
-                                    android:text="@string/nh324e"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
-
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/nh324e"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:hint="@string/nh324e"
-                                    android:inputType="number"
-                                    android:text='@{nh323a.checked ? nh324e.getText().toString() : ""}'
-                                    app:mask="##"
-                                    app:maxValue="20"
-                                    app:minValue="0"
-                                    app:type="range" />
-
-                                <!-- f -->
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-
-                                    android:background="@color/colorPrimaryLight_overlay"
-                                    android:text="@string/nh324f"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
-
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/nh324f"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:hint="@string/nh324f"
-                                    android:inputType="number"
-                                    android:text='@{nh323a.checked ? nh324f.getText().toString() : ""}'
-                                    app:mask="##"
-                                    app:maxValue="20"
-                                    app:minValue="0"
-                                    app:type="range" />
-
-                                <!--g-->
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-
-                                    android:background="@color/colorPrimaryLight_overlay"
-                                    android:text="@string/nh324g"
-                                    android:textAppearance="?android:attr/textAppearanceLarge"
-                                    android:textColor="@color/colorPrimaryDark" />
-
-                                <com.edittextpicker.aliazaz.EditTextPicker
-                                    android:id="@+id/nh324g"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="1dp"
-                                    android:hint="@string/nh324g"
-                                    android:inputType="number"
-                                    android:text='@{nh323a.checked ? nh324g.getText().toString() : ""}'
-                                    app:mask="##"
-                                    app:maxValue="20"
-                                    app:minValue="0"
-                                    app:type="range" />
 
                             </LinearLayout>
 
