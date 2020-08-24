@@ -1,26 +1,27 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
+    <data>
         <import type="android.view.View" />
-        <!--<variable
-            name="form"
-            type="edu.aku.hassannaqvi.serocovidsurvey2019matiari.models.Form" />-->
+
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH5Activity" />
     </data>
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:id="@+id/fldGrpSectionH5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <!-- h501_title  Title   -->
             <androidx.cardview.widget.CardView
@@ -37,8 +38,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/h501_title" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- h501  Radio   -->
             <androidx.cardview.widget.CardView
@@ -70,26 +74,33 @@
                             android:layout_alignTop="@id/qtxt_h501"
                             android:layout_alignBottom="@id/qtxt_h501"
                             android:text="@string/Q_h501" />
+
                     </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/h501"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/h501a"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/h501a" />
 
                         <RadioButton
                             android:id="@+id/h501b"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/h501b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
 
@@ -99,6 +110,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility='@{h501b.checked? View.GONE : View.VISIBLE}'>
+
 
                 <!-- h502  Input-Numeric   -->
                 <androidx.cardview.widget.CardView
@@ -147,6 +159,7 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- h503  CheckBox   -->
                 <androidx.cardview.widget.CardView
@@ -602,6 +615,7 @@
 
                 </androidx.cardview.widget.CardView>
 
+
             </LinearLayout>
 
 
@@ -633,7 +647,11 @@
                     android:text="Save"
                     android:textColor="@color/white" />
             </LinearLayout>
+            <!--EndButton LinearLayout-->
+
 
         </LinearLayout>
+
     </ScrollView>
+
 </layout>
