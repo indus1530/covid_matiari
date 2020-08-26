@@ -301,21 +301,27 @@
                     <RadioGroup
                         android:id="@+id/pc03a"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/pc03a1"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/pc03a1" />
 
                         <RadioButton
                             android:id="@+id/pc03a2"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="@string/pc03a2" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- pc03b  Input-Numeric   -->
@@ -495,6 +501,7 @@
                         android:id="@+id/pc05"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:hint="##.###"
                         android:inputType="number"
                         app:mask="###.##"
@@ -502,7 +509,9 @@
                         app:minValue="40.00"
                         app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- pc06  Input-Numeric   -->
@@ -541,6 +550,7 @@
                         android:id="@+id/pc06"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:hint="##.###"
                         android:inputType="number"
                         app:mask="###.##"
@@ -548,7 +558,9 @@
                         app:minValue="1.00"
                         app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!--EndButton LinearLayout-->
