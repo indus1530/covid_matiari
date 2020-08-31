@@ -36,6 +36,7 @@ public class SectionPICActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_pic);
         bi.setCallback(this);
         setupSkips();
+        bi.pc04.setText(MainApp.user.getUserName());
     }
 
     private void setupSkips() {

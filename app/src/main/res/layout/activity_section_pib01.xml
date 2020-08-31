@@ -1221,7 +1221,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility='@{pb043.checked ? View.GONE : View.VISIBLE}'>
+                android:visibility='@{pb0301.checked || pb0303.checked ? View.VISIBLE : View.GONE}'>
 
 
                 <!-- pb05a  Radio   -->

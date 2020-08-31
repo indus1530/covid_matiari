@@ -56,32 +56,24 @@ public class SectionPIAActivity extends AppCompatActivity implements EndSectionA
     }
 
     private void setupSkips() {
-
-        /*bi.h04.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.h0402.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVh05);
-            }
-        }));*/
-
-        /*bi.h06.setOnCheckedChangeListener(((radioGroup, i) -> {
-            if (i == bi.h0602.getId()) {
-                Clear.clearAllFields(bi.fldGrpSecH01);
-            }
-        }));*/
-
         bi.pa08.setOnCheckedChangeListener((radioGroup, i) -> {
             if (bi.pa081.isChecked()) {
+
+                bi.fldGrpCVpa09.setVisibility(View.VISIBLE);
+
                 if (TextUtils.isEmpty(bi.pa04y.getText()))
                     bi.fldGrpSectionA02.setVisibility(View.VISIBLE);
                 else {
-                    if (Integer.parseInt(bi.pa04y.getText().toString()) < 5)
-                        bi.fldGrpSectionA02.setVisibility(View.GONE);
-                    else
+                    if (Integer.parseInt(bi.pa04y.getText().toString()) < 19)
                         bi.fldGrpSectionA02.setVisibility(View.VISIBLE);
+                    else
+                        bi.fldGrpSectionA02.setVisibility(View.GONE);
                 }
             } else {
                 bi.fldGrpSectionA02.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpSectionA02);
+                bi.fldGrpCVpa09.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVpa09);
             }
         });
 
@@ -325,18 +317,20 @@ public class SectionPIAActivity extends AppCompatActivity implements EndSectionA
 
     public void pa04yOnTextChanged(CharSequence s, int start, int before, int count) {
         if (TextUtils.isEmpty(bi.pa04y.getText())) return;
-        if (Integer.parseInt(bi.pa04y.getText().toString()) < 5) {
-            bi.fldGrpSectionA02.setVisibility(View.GONE);
-            bi.fldGrpSectionA01.setVisibility(View.VISIBLE);
-            Clear.clearAllFields(bi.fldGrpSectionA02);
-            bi.fldGrpCVpa09.setVisibility(View.GONE);
-            Clear.clearAllFields(bi.fldGrpCVpa09);
-        } else {
+        int pa04Value = Integer.parseInt(bi.pa04y.getText().toString());
+        if (pa04Value < 19) {
             bi.fldGrpSectionA02.setVisibility(View.VISIBLE);
+            bi.fldGrpSectionA01.setVisibility(View.VISIBLE);
+        } else {
+            bi.fldGrpSectionA02.setVisibility(View.GONE);
             bi.fldGrpSectionA01.setVisibility(View.GONE);
             Clear.clearAllFields(bi.fldGrpSectionA01);
-            bi.fldGrpCVpa09.setVisibility(View.VISIBLE);
+            Clear.clearAllFields(bi.fldGrpSectionA02);
         }
+    }
+
+    public void pa03ddmmOnTextChanged(CharSequence s, int start, int before, int count) {
+        bi.pa03yy.setText(null);
     }
 
     public void pa03yyOnTextChanged(CharSequence s, int start, int before, int count) {

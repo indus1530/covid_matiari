@@ -28,6 +28,7 @@ import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.conte
 public class SectionPIB01Activity extends AppCompatActivity {
 
     ActivitySectionPib01Binding bi;
+    boolean ancQues = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class SectionPIB01Activity extends AppCompatActivity {
 
         //Skip for married
         int age = personal.getHhModel().getMemAge();
+        ancQues = personal.getHhModel().getGenderFemale() && age < 49;
         if (age < 15) {
             bi.cvpb03.setVisibility(View.GONE);
             bi.cvpb04.setVisibility(View.GONE);
@@ -49,7 +51,7 @@ public class SectionPIB01Activity extends AppCompatActivity {
             bi.llpb05a.setVisibility(View.GONE);
         } else {
             bi.cvpb03.setVisibility(View.VISIBLE);
-            if (personal.getHhModel().getGenderFemale()) {
+            if (ancQues) {
                 bi.cvpb04.setVisibility(View.VISIBLE);
                 bi.cvpb05.setVisibility(View.VISIBLE);
                 bi.llpb05a.setVisibility(View.VISIBLE);
@@ -61,18 +63,21 @@ public class SectionPIB01Activity extends AppCompatActivity {
         bi.pb03.setOnCheckedChangeListener(((radioGroup, i) -> {
             if (i == bi.pb0302.getId() || i == bi.pb0304.getId()) {
                 bi.cvpb04.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.cvpb04);
                 bi.cvpb05.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.cvpb05);
                 bi.llpb05a.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.llpb05a);
             } else {
-                if (personal.getHhModel().getGenderFemale()) {
+                if (ancQues) {
                     bi.cvpb04.setVisibility(View.VISIBLE);
                     bi.cvpb05.setVisibility(View.VISIBLE);
                     bi.llpb05a.setVisibility(View.VISIBLE);
-                } else
+                } else {
                     bi.cvpb04.setVisibility(View.GONE);
-                bi.cvpb05.setVisibility(View.GONE);
-                bi.llpb05a.setVisibility(View.GONE);
+                    bi.cvpb05.setVisibility(View.GONE);
+                    bi.llpb05a.setVisibility(View.GONE);
+                }
             }
         }));
 
@@ -95,11 +100,23 @@ public class SectionPIB01Activity extends AppCompatActivity {
         bi.pb05e.setOnCheckedChangeListener((radioGroup, i) -> {
             Clear.clearAllFields(bi.cvpb05g);
             Clear.clearAllFields(bi.cvpb05h);
+            if (bi.pb05e02.isChecked() || bi.pb05f02.isChecked()) {
+                bi.fldGrpCVpb05i.setVisibility(View.VISIBLE);
+            } else {
+                bi.fldGrpCVpb05i.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVpb05i);
+            }
         });
 
         bi.pb05f.setOnCheckedChangeListener((radioGroup, i) -> {
             Clear.clearAllFields(bi.cvpb05g);
             Clear.clearAllFields(bi.cvpb05h);
+            if (bi.pb05e02.isChecked() || bi.pb05f02.isChecked()) {
+                bi.fldGrpCVpb05i.setVisibility(View.VISIBLE);
+            } else {
+                bi.fldGrpCVpb05i.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVpb05i);
+            }
         });
 
     }

@@ -174,6 +174,7 @@
                             <com.edittextpicker.aliazaz.EditTextPicker
                                 android:id="@+id/pa03dd"
                                 style="@style/textInput"
+                                android:onTextChanged="@{callback::pa03ddmmOnTextChanged}"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="@string/pa03_dd"
@@ -206,6 +207,7 @@
                                 android:layout_height="wrap_content"
                                 android:hint="@string/pa03_mm"
                                 android:inputType="number"
+                                android:onTextChanged="@{callback::pa03ddmmOnTextChanged}"
                                 android:maxLength="2"
                                 app:defaultValue="98"
                                 app:maxValue="12"

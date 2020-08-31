@@ -54,7 +54,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
     String DirectoryName;
     DatabaseHelper db;
     SyncListAdapter syncListAdapter;
-    //UploadListAdapter uploadListAdapter;
     ActivitySyncBinding bi;
     SyncModel model;
     SyncModel uploadmodel;
@@ -104,20 +103,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             Toast.makeText(this, "No network connection available.", Toast.LENGTH_SHORT).show();
         }
     }
-
-/*    void setAdapter() {
-        syncListAdapter = new SyncListAdapter(list);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        bi.rvSyncList.setLayoutManager(mLayoutManager);
-        bi.rvSyncList.setItemAnimator(new DefaultItemAnimator());
-        bi.rvSyncList.setAdapter(syncListAdapter);
-        syncListAdapter.notifyDataSetChanged();
-        if (syncListAdapter.getItemCount() > 0) {
-            bi.noItem.setVisibility(View.GONE);
-        } else {
-            bi.noItem.setVisibility(View.VISIBLE);
-        }
-    }*/
 
     void setUploadAdapter() {
         syncListAdapter = new SyncListAdapter(uploadlist);
@@ -194,7 +179,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
         }
 
     }
-
 
     public void dbBackup() {
 
@@ -327,6 +311,8 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
         @Override
         protected String doInBackground(Boolean... booleans) {
             runOnUiThread(() -> {
+
+                new SyncDevice(mContext, false).execute();
 
                 if (booleans[0]) {
 //                  getting Users!!
