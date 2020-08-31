@@ -55,6 +55,10 @@ public class SectionPIB01Activity extends AppCompatActivity {
                 bi.cvpb04.setVisibility(View.VISIBLE);
                 bi.cvpb05.setVisibility(View.VISIBLE);
                 bi.llpb05a.setVisibility(View.VISIBLE);
+            } else {
+                bi.cvpb04.setVisibility(View.GONE);
+                bi.cvpb05.setVisibility(View.GONE);
+                bi.llpb05a.setVisibility(View.GONE);
             }
         }
 

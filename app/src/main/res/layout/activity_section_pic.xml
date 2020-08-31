@@ -380,7 +380,8 @@
             <!-- pc04  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVpc04"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -411,10 +412,10 @@
 
                     <EditText
                         android:id="@+id/pc04"
-                        android:enabled="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                        android:enabled="false"
                         android:inputType="text"
                         android:maxLength="20" />
 

@@ -1220,8 +1220,7 @@
                 android:id="@+id/llpb05a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility='@{pb0301.checked || pb0303.checked ? View.VISIBLE : View.GONE}'>
+                android:orientation="vertical">
 
 
                 <!-- pb05a  Radio   -->
