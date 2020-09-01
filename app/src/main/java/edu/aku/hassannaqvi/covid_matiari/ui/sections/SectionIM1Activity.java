@@ -38,7 +38,6 @@ import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.model.AgeModel;
 import kotlin.Pair;
 
 import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM01CARDSEEN;
-import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM03FLAG;
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.form;
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.personal;
 import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.contextBackActivity;
@@ -210,10 +209,6 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
             Toast.makeText(this, "Invalid date!", Toast.LENGTH_SHORT).show();
             return false;
         }
-        /*if (bi.im011.isChecked() && (TextUtils.isEmpty(bi.frontFileName.getText()) || TextUtils.isEmpty(bi.backFileName.getText()))) {
-            Toast.makeText(this, "No Photos attached", Toast.LENGTH_SHORT).show();
-            return false;
-        }*/
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
@@ -243,7 +238,7 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
                 if (UpdateDB()) {
                     finish();
                     startActivity(new Intent(this, bi.im04yy.getText().toString().trim().isEmpty() ? SectionIM3Activity.class
-                            : SectionIM2Activity.class).putExtra(IM03FLAG, !im03Flag).putExtra(IM01CARDSEEN, bi.im021.isChecked() || bi.im022.isChecked()));
+                            : SectionIM2Activity.class).putExtra(IM01CARDSEEN, bi.im021.isChecked()));
                 } else {
                     Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
                 }

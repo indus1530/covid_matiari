@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,9 +13,6 @@ import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.threeten.bp.Instant;
-
-import java.util.Calendar;
 
 import edu.aku.hassannaqvi.covid_matiari.R;
 import edu.aku.hassannaqvi.covid_matiari.contracts.PersonalContract;
@@ -25,10 +23,8 @@ import edu.aku.hassannaqvi.covid_matiari.ui.other.PIEndingActivity;
 import edu.aku.hassannaqvi.covid_matiari.utils.JSONUtils;
 import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt;
 import edu.aku.hassannaqvi.covid_matiari.utils.app_utils.EndSectionActivity;
-import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.DateUtils;
-import kotlin.Pair;
 
-import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.form;
+import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM01CARDSEEN;
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.personal;
 import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.contextBackActivity;
 
@@ -36,8 +32,7 @@ import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.conte
 public class SectionIM3Activity extends AppCompatActivity implements EndSectionActivity {
 
     ActivitySectionIm3Binding bi;
-    boolean im03Flag = false, imFlag = true;
-    Instant dtInstant = null;
+    boolean im07;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,33 +41,31 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
         bi.setCallback(this);
         setupSkips();
 
-        if (form.getLocalDate() != null) {
-            int maxYears = form.getLocalDate().getYear();
-            int minYears = form.getLocalDate().minusYears(5).getYear();
-            setYearOfBirth(minYears, maxYears);
+        //imo7 Check
+        im07 = getIntent().getBooleanExtra(IM01CARDSEEN, false);
+        if (im07) {
+            bi.cvim08.setVisibility(View.GONE);
+            bi.llim0923a.setVisibility(View.GONE);
+            bi.llim23.setVisibility(View.GONE);
         }
-
     }
 
-
     private void setupSkips() {
-        bi.im08.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llim0923a));
+        bi.im08.setOnCheckedChangeListener((radioGroup, i) -> {
+            if (i == bi.im082.getId()) {
+                bi.llim0923a.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.llim0923a);
+                bi.llim23.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.llim23);
+            }
+        });
         bi.im10.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llim1113));
-
         bi.im23.setOnCheckedChangeListener((radioGroup, i) -> {
             Clear.clearAllFields(bi.cvim23a);
             Clear.clearAllFields(bi.cvim24);
         });
-
         bi.im25.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.cvim26));
     }
-
-
-    private void setYearOfBirth(int minYears, int maxYears) {
-        /*bi.im04yy.setMinvalue(minYears);
-        bi.im04yy.setMaxvalue(maxYears);*/
-    }
-
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
@@ -84,7 +77,6 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
             return false;
         }
     }
-
 
     private void SaveDraft() throws JSONException {
 
@@ -224,17 +216,8 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
     }
 
     private boolean formValidation() {
-        if (!imFlag) {
-            Toast.makeText(this, "Invalid date!", Toast.LENGTH_SHORT).show();
-            return false;
-        }
-        /*if (bi.im011.isChecked() && (TextUtils.isEmpty(bi.frontFileName.getText()) || TextUtils.isEmpty(bi.backFileName.getText()))) {
-            Toast.makeText(this, "No Photos attached", Toast.LENGTH_SHORT).show();
-            return false;
-        }*/
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
-
 
     public void BtnContinue() {
         if (!formValidation()) return;
@@ -251,26 +234,6 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
         }
     }
 
-
-    private Pair<String, String> getMonthAndYearFromDate(String date) {
-        Calendar cal = DateUtils.getCalendarDate(date.replace("-", "/"));
-        int curdate = form.getLocalDate().getDayOfMonth();
-        int curmonth = form.getLocalDate().getMonthValue();
-        int curyear = form.getLocalDate().getYear();
-        int day = cal.get(Calendar.DAY_OF_MONTH);
-        int month = cal.get(Calendar.MONTH) + 1;
-        int year = cal.get(Calendar.YEAR);
-
-        if (day > curdate) {
-            curmonth -= 1;
-        }
-        if (month > curmonth) {
-            curyear -= 1;
-            curmonth += 12;
-        }
-        return new Pair<>(String.valueOf(curmonth - month), String.valueOf(curyear - year));
-    }
-
     public void BtnEnd() {
         AppUtilsKt.openEndActivity(this, PIEndingActivity.class);
     }
@@ -279,51 +242,6 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
     public void onBackPressed() {
         contextBackActivity(this);
     }
-
-/*    public void takePhoto(int id) {
-        Intent intent = new Intent(this, TakePhoto.class);
-        intent.putExtra("picID", personal.getHh12() + "_" + personal.getHh13() + "_" + personal.getMemberSerial() + "_");
-        intent.putExtra("childName", personal.getMemberName());
-        if (id == 1) {
-            intent.putExtra("picView", "front".toUpperCase());
-            startActivityForResult(intent, 1); // Activity is started with requestCode 1 = Front
-        } else {
-            intent.putExtra("picView", "back".toUpperCase());
-            startActivityForResult(intent, 2); // Activity is started with requestCode 2 = Back
-        }
-    }
-
-    // Call Back method  to get the Message form other Activity
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != RESULT_CANCELED) {
-            Toast.makeText(this, requestCode + "_" + resultCode, Toast.LENGTH_SHORT).show();
-
-            String fileName = data.getStringExtra("FileName");
-
-            // Check if the requestCode 1 = Front : 2 = Back -- resultCode 1 = Success : 2 = Failure
-            // Results received with requestCode 1 = Front
-            if (requestCode == 1 && resultCode == 1) {
-                Toast.makeText(this, "Photo Taken", Toast.LENGTH_SHORT).show();
-                bi.frontFileName.setText(fileName);
-                bi.frontPhoto.setEnabled(false);
-            } else if (requestCode == 1) {
-                Toast.makeText(this, "Photo Cancelled", Toast.LENGTH_SHORT).show();
-                bi.frontFileName.setText("Photo not taken.");
-            }
-
-            // Results received with requestCode 2 = Back
-            if (requestCode == 2 && resultCode == 1) {
-                Toast.makeText(this, "Photo Taken", Toast.LENGTH_SHORT).show();
-                bi.backFileName.setText(fileName);
-                bi.backPhoto.setEnabled(false);
-            } else if (requestCode == 2) {
-                Toast.makeText(this, "Photo Cancelled", Toast.LENGTH_SHORT).show();
-                bi.backFileName.setText("Photo not taken.");
-            }
-        }
-    }*/
 
     @Override
     public void endSecActivity(boolean flag) {

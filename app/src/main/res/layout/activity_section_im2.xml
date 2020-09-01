@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <data>
@@ -65,9 +66,9 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!-- im41bcg  -->
+            <!-- im41bcg  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim41bcg"
+                android:id="@+id/fldGrpCVim41bcg"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -109,42 +110,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im41bcgdd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im41bcgdd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im41bcgdd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im41bcgmm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im41bcgmm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im41bcgmm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im41bcgyy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im41bcgyy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im41bcgyy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -152,10 +166,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im42opv0 -->
+            <!-- im42opv0  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim42opv0"
+                android:id="@+id/fldGrpCVim42opv0"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -186,10 +199,10 @@
 
                     </RelativeLayout>
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -197,42 +210,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im42opv0dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im42opv0dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im42opv0dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im42opv0mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im42opv0mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im42opv0mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im42opv0yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im42opv0yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im42opv0yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -240,10 +266,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im43opv1 -->
+            <!-- im43opv1  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim43opv1"
+                android:id="@+id/fldGrpCVim43opv1"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -270,14 +295,15 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im43opv1"
                             android:layout_alignBottom="@id/qtxt_im43opv1"
+                            android:gravity="center"
                             android:text="@string/Q_im43opv1" />
 
                     </RelativeLayout>
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -285,42 +311,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im43opv1dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im43opv1dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im43opv1dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im43opv1mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im43opv1mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im43opv1mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im43opv1yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im43opv1yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im43opv1yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -328,10 +367,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im44penta1 -->
+            <!-- im44penta1  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim44penta1"
+                android:id="@+id/fldGrpCVim44penta1"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -358,14 +396,15 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im44penta1"
                             android:layout_alignBottom="@id/qtxt_im44penta1"
+                            android:gravity="center"
                             android:text="@string/Q_im44penta1" />
 
                     </RelativeLayout>
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -373,42 +412,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im44penta1dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im44penta1dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im44penta1dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im44penta1mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im44penta1mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im44penta1mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im44penta1yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im44penta1yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im44penta1yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -416,10 +468,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im45pcv1 -->
+            <!-- im45pcv1  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim45pcv1"
+                android:id="@+id/fldGrpCVim45pcv1"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -446,6 +497,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im45pcv1"
                             android:layout_alignBottom="@id/qtxt_im45pcv1"
+                            android:gravity="center"
                             android:text="@string/Q_im45pcv1" />
 
                     </RelativeLayout>
@@ -453,7 +505,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -461,42 +512,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im45pcv1dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im45pcv1dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im45pcv1dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im45pcv1mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im45pcv1mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im45pcv1mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im45pcv1yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im45pcv1yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im45pcv1yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -504,10 +568,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im46rv1 -->
+            <!-- im46rv1  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim46rv1"
+                android:id="@+id/fldGrpCVim46rv1"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -534,6 +597,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im46rv1"
                             android:layout_alignBottom="@id/qtxt_im46rv1"
+                            android:gravity="center"
                             android:text="@string/Q_im46rv1" />
 
                     </RelativeLayout>
@@ -541,7 +605,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -549,42 +612,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im46rv1dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im46rv1dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im46rv1dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im46rv1mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im46rv1mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im46rv1mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im46rv1yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im46rv1yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im46rv1yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -592,10 +668,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im47opv2 -->
+            <!-- im47opv2  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim47opv2"
+                android:id="@+id/fldGrpCVim47opv2"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -622,6 +697,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im47opv2"
                             android:layout_alignBottom="@id/qtxt_im47opv2"
+                            android:gravity="center"
                             android:text="@string/Q_im47opv2" />
 
                     </RelativeLayout>
@@ -629,7 +705,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -637,42 +712,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im47opv2dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im47opv2dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im47opv2dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im47opv2mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im47opv2mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im47opv2mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im47opv2yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im47opv2yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im47opv2yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -680,10 +768,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im48penta2 -->
+            <!-- im48penta2  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim48penta2"
+                android:id="@+id/fldGrpCVim48penta2"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -710,6 +797,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im48penta2"
                             android:layout_alignBottom="@id/qtxt_im48penta2"
+                            android:gravity="center"
                             android:text="@string/Q_im48penta2" />
 
                     </RelativeLayout>
@@ -717,7 +805,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -725,42 +812,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im48penta2dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im48penta2dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im48penta2dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im48penta2mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im48penta2mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im48penta2mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im48penta2yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im48penta2yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im48penta2yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -768,10 +868,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im49pcv2 -->
+            <!-- im49pcv2  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim49pcv2"
+                android:id="@+id/fldGrpCVim49pcv2"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -798,6 +897,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im49pcv2"
                             android:layout_alignBottom="@id/qtxt_im49pcv2"
+                            android:gravity="center"
                             android:text="@string/Q_im49pcv2" />
 
                     </RelativeLayout>
@@ -805,7 +905,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -813,42 +912,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im49pcv2dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im49pcv2dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im49pcv2dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im49pcv2mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im49pcv2mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im49pcv2mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im49pcv2yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im49pcv2yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im49pcv2yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -856,10 +968,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im410rv2 -->
+            <!-- im410rv2  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim410rv2"
+                android:id="@+id/fldGrpCVim410rv2"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -886,6 +997,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im410rv2"
                             android:layout_alignBottom="@id/qtxt_im410rv2"
+                            android:gravity="center"
                             android:text="@string/Q_im410rv2" />
 
                     </RelativeLayout>
@@ -893,7 +1005,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -901,42 +1012,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im410rv2dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im410rv2dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im410rv2dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im410rv2mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im410rv2mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im410rv2mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im410rv2yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im410rv2yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im410rv2yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -944,10 +1068,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im411opv3 -->
+            <!-- im411opv3  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim411opv3"
+                android:id="@+id/fldGrpCVim411opv3"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -974,6 +1097,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im411opv3"
                             android:layout_alignBottom="@id/qtxt_im411opv3"
+                            android:gravity="center"
                             android:text="@string/Q_im411opv3" />
 
                     </RelativeLayout>
@@ -981,7 +1105,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -989,42 +1112,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im411opv3dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im411opv3dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im411opv3dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im411opv3mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im411opv3mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im411opv3mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im411opv3yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im411opv3yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im411opv3yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -1032,10 +1168,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im412penta3 -->
+            <!-- im412penta3  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim412penta3"
+                android:id="@+id/fldGrpCVim412penta3"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -1062,6 +1197,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im412penta3"
                             android:layout_alignBottom="@id/qtxt_im412penta3"
+                            android:gravity="center"
                             android:text="@string/Q_im412penta3" />
 
                     </RelativeLayout>
@@ -1069,7 +1205,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1077,42 +1212,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im412penta3dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im412penta3dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im412penta3dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im412penta3mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im412penta3mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im412penta3mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im412penta3yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im412penta3yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im412penta3yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -1120,10 +1268,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im413pcv3 -->
+            <!-- im413pcv3  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim413pcv3"
+                android:id="@+id/fldGrpCVim413pcv3"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -1150,6 +1297,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im413pcv3"
                             android:layout_alignBottom="@id/qtxt_im413pcv3"
+                            android:gravity="center"
                             android:text="@string/Q_im413pcv3" />
 
                     </RelativeLayout>
@@ -1157,7 +1305,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1165,42 +1312,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im413pcv3dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im413pcv3dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im413pcv3dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im413pcv3mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im413pcv3mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im413pcv3mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im413pcv3yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im413pcv3yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im413pcv3yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -1208,10 +1368,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im414ipv -->
+            <!-- im414ipv  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim414ipv"
+                android:id="@+id/fldGrpCVim414ipv"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -1238,6 +1397,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im414ipv"
                             android:layout_alignBottom="@id/qtxt_im414ipv"
+                            android:gravity="center"
                             android:text="@string/Q_im414ipv" />
 
                     </RelativeLayout>
@@ -1245,7 +1405,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1253,42 +1412,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im414ipvdd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im414ipvdd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im414ipvdd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im414ipvmm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im414ipvmm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im414ipvmm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im414ipvyy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im414ipvyy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im414ipvyy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -1296,10 +1468,9 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im415measles1 -->
+            <!-- im415measles1  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim415measles1"
+                android:id="@+id/fldGrpCVim415measles1"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -1326,6 +1497,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im415measles1"
                             android:layout_alignBottom="@id/qtxt_im415measles1"
+                            android:gravity="center"
                             android:text="@string/Q_im415measles1" />
 
                     </RelativeLayout>
@@ -1333,7 +1505,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1341,42 +1512,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im415measles1dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im415measles1dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im415measles1dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im415measles1mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im415measles1mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im415measles1mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im415measles1yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im415measles1yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im415measles1yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
@@ -1384,15 +1568,15 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- im416measles2 -->
+            <!-- im416measles2  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/cvim416measles2"
+                android:id="@+id/fldGrpCVim416measles2"
                 style="@style/cardView">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layoutDirection="ltr"
                     android:orientation="vertical">
 
                     <RelativeLayout
@@ -1414,14 +1598,15 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_im416measles2"
                             android:layout_alignBottom="@id/qtxt_im416measles2"
+                            android:gravity="center"
                             android:text="@string/Q_im416measles2" />
 
                     </RelativeLayout>
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1429,42 +1614,55 @@
                             android:layout_height="wrap_content"
                             android:text="@string/im416measles2dd" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im416measles2dd"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im416measles2dd"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:defaultValue="97"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im416measles2mm" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im416measles2mm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:inputType="number"
                             android:layout_weight="2"
-                            android:gravity="center"
                             android:hint="@string/im416measles2mm"
-                            android:inputType="number" />
+                            android:maxLength="2"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/im416measles2yy" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/im416measles2yy"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:gravity="center"
+                            android:layout_weight="4"
+                            android:inputType="number"
                             android:hint="@string/im416measles2yy"
-                            android:inputType="number" />
+                            android:maxLength="4"
+                            app:mask="20##"
+                            app:maxValue="2020"
+                            app:minValue="2015"
+                            app:type="range" />
 
                     </LinearLayout>
 
