@@ -46,7 +46,7 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
         if (im07) {
             bi.cvim08.setVisibility(View.GONE);
             bi.llim0923a.setVisibility(View.GONE);
-            bi.llim23.setVisibility(View.GONE);
+            bi.llim23.setVisibility(View.VISIBLE);
         }
     }
 
@@ -57,6 +57,9 @@ public class SectionIM3Activity extends AppCompatActivity implements EndSectionA
                 Clear.clearAllFields(bi.llim0923a);
                 bi.llim23.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.llim23);
+            } else {
+                bi.llim0923a.setVisibility(View.VISIBLE);
+                bi.llim23.setVisibility(View.VISIBLE);
             }
         });
         bi.im10.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.llim1113));
