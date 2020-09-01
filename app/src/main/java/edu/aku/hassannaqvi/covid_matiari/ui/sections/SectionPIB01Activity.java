@@ -91,8 +91,12 @@ public class SectionPIB01Activity extends AppCompatActivity {
 
 
         bi.pb04.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.cvpb05);
-            Clear.clearAllFields(bi.llpb05a);
+            if (i != bi.pb0401.getId()) {
+                Clear.clearAllFields(bi.cvpb05);
+                bi.cvpb05.setVisibility(View.GONE);
+            } else {
+                bi.cvpb05.setVisibility(View.VISIBLE);
+            }
         });
 
         bi.pb05a.setOnCheckedChangeListener((radioGroup, i) -> {
