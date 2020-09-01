@@ -69,7 +69,7 @@ class SectionSubInfoActivity : AppCompatActivity(), EndSectionActivity {
     }
 
     fun onChildViewClick() {
-        if (!memFlag) return
+//        if (!memFlag) return
         startActivity(Intent(this, SectionPIAActivity::class.java).putExtra(CONSTANTS.MEMBER_SERIAL, serial))
     }
 

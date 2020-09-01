@@ -37,7 +37,6 @@ import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.DateUtils;
 import edu.aku.hassannaqvi.covid_matiari.utils.date_utils.model.AgeModel;
 import kotlin.Pair;
 
-import static edu.aku.hassannaqvi.covid_matiari.CONSTANTS.IM01CARDSEEN;
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.form;
 import static edu.aku.hassannaqvi.covid_matiari.core.MainApp.personal;
 import static edu.aku.hassannaqvi.covid_matiari.utils.app_utils.AppUtilsKt.contextBackActivity;
@@ -237,8 +236,7 @@ public class SectionIM1Activity extends AppCompatActivity implements EndSectionA
                 }
                 if (UpdateDB()) {
                     finish();
-                    startActivity(new Intent(this, bi.im04yy.getText().toString().trim().isEmpty() ? SectionIM3Activity.class
-                            : SectionIM2Activity.class).putExtra(IM01CARDSEEN, bi.im021.isChecked()));
+                    startActivity(new Intent(this, bi.im04yy.getText().toString().trim().isEmpty() ? SectionIM3Activity.class : SectionIM2Activity.class));
                 } else {
                     Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
                 }
