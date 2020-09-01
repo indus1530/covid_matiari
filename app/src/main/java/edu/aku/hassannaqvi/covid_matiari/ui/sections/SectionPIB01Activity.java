@@ -48,17 +48,17 @@ public class SectionPIB01Activity extends AppCompatActivity {
         if (age < 15) {
             bi.cvpb03.setVisibility(View.GONE);
             bi.cvpb04.setVisibility(View.GONE);
-            bi.cvpb05.setVisibility(View.GONE);
+            bi.llpb05.setVisibility(View.GONE);
             bi.llpb05a.setVisibility(View.GONE);
         } else {
             bi.cvpb03.setVisibility(View.VISIBLE);
             if (ancQues) {
                 bi.cvpb04.setVisibility(View.VISIBLE);
-                bi.cvpb05.setVisibility(View.VISIBLE);
+                bi.llpb05.setVisibility(View.VISIBLE);
                 bi.llpb05a.setVisibility(View.VISIBLE);
             } else {
                 bi.cvpb04.setVisibility(View.GONE);
-                bi.cvpb05.setVisibility(View.GONE);
+                bi.llpb05.setVisibility(View.GONE);
                 bi.llpb05a.setVisibility(View.GONE);
             }
         }
