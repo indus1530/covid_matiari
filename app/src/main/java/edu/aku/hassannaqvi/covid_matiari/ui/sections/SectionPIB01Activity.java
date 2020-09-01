@@ -3,6 +3,7 @@ package edu.aku.hassannaqvi.covid_matiari.ui.sections;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -68,18 +69,18 @@ public class SectionPIB01Activity extends AppCompatActivity {
             if (i == bi.pb0302.getId() || i == bi.pb0304.getId()) {
                 bi.cvpb04.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.cvpb04);
-                bi.cvpb05.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.cvpb05);
+                bi.llpb05.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.llpb05);
                 bi.llpb05a.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.llpb05a);
             } else {
                 if (ancQues) {
                     bi.cvpb04.setVisibility(View.VISIBLE);
-                    bi.cvpb05.setVisibility(View.VISIBLE);
+                    bi.llpb05.setVisibility(View.VISIBLE);
                     bi.llpb05a.setVisibility(View.VISIBLE);
                 } else {
                     bi.cvpb04.setVisibility(View.GONE);
-                    bi.cvpb05.setVisibility(View.GONE);
+                    bi.llpb05.setVisibility(View.GONE);
                     bi.llpb05a.setVisibility(View.GONE);
                 }
             }
@@ -91,11 +92,19 @@ public class SectionPIB01Activity extends AppCompatActivity {
 
 
         bi.pb04.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (i != bi.pb0401.getId()) {
-                Clear.clearAllFields(bi.cvpb05);
-                bi.cvpb05.setVisibility(View.GONE);
+            if (i == bi.pb0401.getId()) {
+                bi.llpb05.setVisibility(View.VISIBLE);
+                bi.llpb05a.setVisibility(View.VISIBLE);
+            } else if (i == bi.pb0402.getId()) {
+                Clear.clearAllFields(bi.llpb05);
+                bi.llpb05.setVisibility(View.GONE);
+                bi.llpb05a.setVisibility(View.VISIBLE);
+                Clear.clearAllFields(bi.llpb05a);
             } else {
-                bi.cvpb05.setVisibility(View.VISIBLE);
+                bi.llpb05.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.llpb05);
+                bi.llpb05a.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.llpb05a);
             }
         });
 
@@ -105,27 +114,19 @@ public class SectionPIB01Activity extends AppCompatActivity {
             Clear.clearAllFields(bi.cvpb05d);
         });
 
-        bi.pb05e.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.cvpb05g);
-            Clear.clearAllFields(bi.cvpb05h);
-            if (bi.pb05e02.isChecked() || bi.pb05f02.isChecked()) {
-                bi.fldGrpCVpb05i.setVisibility(View.VISIBLE);
-            } else {
-                bi.fldGrpCVpb05i.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpCVpb05i);
-            }
-        });
-
-        bi.pb05f.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.cvpb05g);
-            Clear.clearAllFields(bi.cvpb05h);
-            if (bi.pb05e02.isChecked() || bi.pb05f02.isChecked()) {
-                bi.fldGrpCVpb05i.setVisibility(View.VISIBLE);
-            } else {
-                bi.fldGrpCVpb05i.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpCVpb05i);
-            }
-        });
+        for (RadioGroup rdp : new RadioGroup[]{bi.pb05e, bi.pb05f}) {
+            rdp.setOnCheckedChangeListener((radioGroup, i) -> {
+                if (bi.pb05e01.isChecked() || bi.pb05f01.isChecked()) {
+                    bi.llpb05g.setVisibility(View.VISIBLE);
+                    bi.fldGrpCVpb05i.setVisibility(View.GONE);
+                    Clear.clearAllFields(bi.fldGrpCVpb05i);
+                } else {
+                    bi.llpb05g.setVisibility(View.GONE);
+                    Clear.clearAllFields(bi.llpb05g);
+                    bi.fldGrpCVpb05i.setVisibility(View.VISIBLE);
+                }
+            });
+        }
 
     }
 
