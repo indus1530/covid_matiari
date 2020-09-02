@@ -46,6 +46,7 @@ public class SectionPIAActivity extends AppCompatActivity implements EndSectionA
     ActivitySectionPiaBinding bi;
     boolean dtFlag = false, edGrade = true, edGrade02 = true, edGrade03 = true;
     LocalDate calculatedDOB;
+    int pa04Value = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +60,12 @@ public class SectionPIAActivity extends AppCompatActivity implements EndSectionA
         bi.pa08.setOnCheckedChangeListener((radioGroup, i) -> {
             if (bi.pa081.isChecked()) {
 
-                bi.fldGrpCVpa09.setVisibility(View.VISIBLE);
+                if (pa04Value > 5)
+                    bi.fldGrpCVpa09.setVisibility(View.VISIBLE);
+                else {
+                    bi.fldGrpCVpa09.setVisibility(View.GONE);
+                    Clear.clearAllFields(bi.fldGrpCVpa09);
+                }
 
                 if (TextUtils.isEmpty(bi.pa04y.getText()))
                     bi.fldGrpSectionA02.setVisibility(View.VISIBLE);
@@ -316,8 +322,9 @@ public class SectionPIAActivity extends AppCompatActivity implements EndSectionA
     }
 
     public void pa04yOnTextChanged(CharSequence s, int start, int before, int count) {
+        pa04Value = 0;
         if (TextUtils.isEmpty(bi.pa04y.getText())) return;
-        int pa04Value = Integer.parseInt(bi.pa04y.getText().toString());
+        pa04Value = Integer.parseInt(bi.pa04y.getText().toString());
         if (pa04Value < 19) {
             bi.fldGrpSectionA02.setVisibility(View.VISIBLE);
             bi.fldGrpSectionA01.setVisibility(View.VISIBLE);
@@ -326,6 +333,12 @@ public class SectionPIAActivity extends AppCompatActivity implements EndSectionA
             bi.fldGrpSectionA01.setVisibility(View.GONE);
             Clear.clearAllFields(bi.fldGrpSectionA01);
             Clear.clearAllFields(bi.fldGrpSectionA02);
+        }
+        if (pa04Value > 5)
+            bi.fldGrpCVpa09.setVisibility(View.VISIBLE);
+        else {
+            bi.fldGrpCVpa09.setVisibility(View.GONE);
+            Clear.clearAllFields(bi.fldGrpCVpa09);
         }
     }
 

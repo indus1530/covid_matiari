@@ -887,12 +887,12 @@
     <string name="pa09b">مذہبی تعلیم </string>
     <string name="pa09dk">معلوم نہیں</string>
     <string name="pa10_info"> (اگر غیر تعلیم تافتہ یا ان پڑھ تو 77 لکھیں اور مذہبی تعلیم کے لئے 88 لھکیں)</string>
-    <string name="pa10">بچے کی والدہ کی  زیادہ سے زیادہ مکمل کردہ تعلیم کتنی ہے؟</string>
+    <string name="pa10"> (منتخب فرد/ بچہ) کی والدہ کی مکمل کردہ زیادہ سے زیادہ تعلیم کتنی ہے؟ اگر غیر تعلیم تافتہ یا ان پڑھ ہیں تو 77 لکھیں</string>
     <string name="pa10a">گریڈ</string>
     <string name="pa10b">مذہبی تعلیم </string>
     <string name="pa10dk">معلوم نہیں</string>
     <string name="pa11_info"> (اگر غیر تعلیم تافتہ یا ان پڑھ تو 77 لکھیں اور مذہبی تعلیم کے لئے 88 لھکیں)</string>
-    <string name="pa11">بچہ/بچی (نام)کے والد کی مکمل کردہ زیادہ سے زیادہ تعلیم کتنی ہے؟ اگر غیر تعلیم تافتہ یا ان پڑھ ہیں تو 77 لکھیں۔ کسی بھی قسم کی مذہبی تعلیم کے لئے</string>
+    <string name="pa11"> (منتخب فرد/ بچہ) کے والد کی مکمل کردہ زیادہ سے زیادہ تعلیم کتنی ہے؟ اگر غیر تعلیم تافتہ یا ان پڑھ ہیں تو 77 لکھیں)</string>
     <string name="pa11a">گریڈ</string>
     <string name="pa11b">مذہبی تعلیم </string>
     <string name="pa11dk">معلوم نہیں</string>
@@ -1010,10 +1010,10 @@
     <string name="pb1104a">ہاں </string>
     <string name="pb1104b">نہیں</string>
     <string name="pb12">اگر ہاں تو دن میں کتنی مرتبہ(تعداد بتائیں)</string>
-    <string name="pb13">کیا بچے نے گزشتہ  2 ہفتوں میں سفر کیا ہے؟</string>
+    <string name="pb13">کیا (منتخب فرد/ بچہ) نے گزشتہ 2 ہفتوں میں سفر کیا ہے؟</string>
     <string name="pb131">ہاں</string>
     <string name="pb132">نہیں</string>
-    <string name="pb14">بچے نے کہاں سفر کیا ہے؟</string>
+    <string name="pb14"> (منتخب فرد/ بچہ) نے کہاں سفر کیا ہے؟</string>
     <string name="pb14dist">ضلع</string>
     <string name="pb14city">شہر/گاوں</string>
     <string name="pb14country">ملک</string>
@@ -1021,7 +1021,7 @@
     <string name="pb15a">ہاں</string>
     <string name="pb15b">نہیں</string>
     <string name="pb16">صحت کی سہولت کا نام</string>
-    <string name="pb17"> کیا اس (منتخب فرد/بچہ)کاگذشتہ 2 ہفتوںمیں کسی تصدیق شدہ کورونا وائرس کے مریض سے رابطہ ہواہے؟</string>
+    <string name="pb17"> کیا اس (منتخب فرد/بچہ) کا گذشتہ 2 ہفتوںمیں کسی تصدیق شدہ کورونا وائرس کے مریض سے رابطہ ہواہے؟</string>
     <string name="pb17a">ہاں</string>
     <string name="pb17b">نہیں</string>
     <string name="pb18">اگرہاں،توبراہ کرم تمام ممکنہ یا تصدیق شدہ کیسز میں سےمنفرد کیس شناخت کنندگان کی فہرست بنائیں</string>

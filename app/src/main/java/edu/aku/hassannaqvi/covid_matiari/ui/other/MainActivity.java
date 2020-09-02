@@ -41,7 +41,7 @@ import edu.aku.hassannaqvi.covid_matiari.ui.list_activity.FormsReportDate;
 import edu.aku.hassannaqvi.covid_matiari.ui.list_activity.PendingFormsActivity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.InfoSectionActivity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH301Activity;
-import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH4Activity;
+import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionH5Activity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionIM1Activity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionIM2Activity;
 import edu.aku.hassannaqvi.covid_matiari.ui.sections.SectionIM3Activity;
@@ -321,7 +321,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
                 oF = new Intent(this, SectionH301Activity.class);
                 break;
             case R.id.formH4:
-                oF = new Intent(this, SectionH4Activity.class);
+                oF = new Intent(this, SectionH5Activity.class);
                 break;
             case R.id.formCHC:
                 oF = new Intent(this, SectionIM1Activity.class);

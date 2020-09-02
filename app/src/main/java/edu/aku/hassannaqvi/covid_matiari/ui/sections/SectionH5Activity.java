@@ -71,13 +71,12 @@ public class SectionH5Activity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (TextUtils.isEmpty(edit01.getText())) return;
+                edit02.setMaxvalue(Integer.parseInt(edit01.getText().toString().trim()));
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
-                if (TextUtils.isEmpty(edit01.getText()))
-                    return;
-                edit02.setMaxvalue(Integer.parseInt(edit01.getText().toString().trim()));
             }
         });
 

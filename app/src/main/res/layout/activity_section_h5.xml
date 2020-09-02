@@ -3,6 +3,7 @@
 
 
     <data>
+
         <import type="android.view.View" />
 
         <variable
@@ -207,33 +208,40 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50301" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50301x"
+                            <LinearLayout
+                                android:id="@+id/h50301check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h1"
-                                android:inputType="number"
-                                android:tag="h50301"
-                                android:text='@{h50301.checked ? h50301x.getText().toString() : ""}'
-                                android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50301">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50301xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50301"
-                                android:text='@{h50301.checked ? h50301xx.getText().toString() : ""}'
-                                android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50301x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:text='@{h50301.checked ? h50301x.getText().toString() : ""}'
+                                    android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50301xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:text='@{h50301.checked ? h50301xx.getText().toString() : ""}'
+                                    android:visibility='@{h50301.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50302"
@@ -241,33 +249,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50302" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50302x"
+                            <LinearLayout
+                                android:id="@+id/h50302check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50302"
-                                android:text='@{h50302.checked ? h50302x.getText().toString() : ""}'
-                                android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50302">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50302xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50302"
-                                android:text='@{h50302.checked ? h50302xx.getText().toString() : ""}'
-                                android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50302x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50302"
+                                    android:text='@{h50302.checked ? h50302x.getText().toString() : ""}'
+                                    android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50302xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50302"
+                                    android:text='@{h50302.checked ? h50302xx.getText().toString() : ""}'
+                                    android:visibility='@{h50302.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50303"
@@ -275,33 +292,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50303" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50303x"
+                            <LinearLayout
+                                android:id="@+id/h50303check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50303"
-                                android:text='@{h50303.checked ? h50303x.getText().toString() : ""}'
-                                android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50303">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50303xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50303"
-                                android:text='@{h50303.checked ? h50303xx.getText().toString() : ""}'
-                                android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50303x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50303"
+                                    android:text='@{h50303.checked ? h50303x.getText().toString() : ""}'
+                                    android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50303xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50303"
+                                    android:text='@{h50303.checked ? h50303xx.getText().toString() : ""}'
+                                    android:visibility='@{h50303.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50304"
@@ -309,33 +335,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50304" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50304x"
+                            <LinearLayout
+                                android:id="@+id/h50304check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50304"
-                                android:text='@{h50304.checked ? h50304x.getText().toString() : ""}'
-                                android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50304">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50304xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50304"
-                                android:text='@{h50304.checked ? h50304xx.getText().toString() : ""}'
-                                android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50304x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50304"
+                                    android:text='@{h50304.checked ? h50304x.getText().toString() : ""}'
+                                    android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50304xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50304"
+                                    android:text='@{h50304.checked ? h50304xx.getText().toString() : ""}'
+                                    android:visibility='@{h50304.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50305"
@@ -343,33 +378,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50305" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50305x"
+                            <LinearLayout
+                                android:id="@+id/h50305check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50305"
-                                android:text='@{h50305.checked ? h50305x.getText().toString() : ""}'
-                                android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50305">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50305xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50305"
-                                android:text='@{h50305.checked ? h50305xx.getText().toString() : ""}'
-                                android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50305x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50305"
+                                    android:text='@{h50305.checked ? h50305x.getText().toString() : ""}'
+                                    android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50305xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50305"
+                                    android:text='@{h50305.checked ? h50305xx.getText().toString() : ""}'
+                                    android:visibility='@{h50305.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50306"
@@ -377,33 +421,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50306" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50306x"
+                            <LinearLayout
+                                android:id="@+id/h50306check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50306"
-                                android:text='@{h50306.checked ? h50306x.getText().toString() : ""}'
-                                android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50306">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50306xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50306"
-                                android:text='@{h50306.checked ? h50306xx.getText().toString() : ""}'
-                                android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50306x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50306"
+                                    android:text='@{h50306.checked ? h50306x.getText().toString() : ""}'
+                                    android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50306xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50306"
+                                    android:text='@{h50306.checked ? h50306xx.getText().toString() : ""}'
+                                    android:visibility='@{h50306.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50307"
@@ -411,33 +464,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50307" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50307x"
+                            <LinearLayout
+                                android:id="@+id/h50307check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50307"
-                                android:text='@{h50307.checked ? h50307x.getText().toString() : ""}'
-                                android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50307">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50307xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50307"
-                                android:text='@{h50307.checked ? h50307xx.getText().toString() : ""}'
-                                android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50307x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50307"
+                                    android:text='@{h50307.checked ? h50307x.getText().toString() : ""}'
+                                    android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50307xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50307"
+                                    android:text='@{h50307.checked ? h50307xx.getText().toString() : ""}'
+                                    android:visibility='@{h50307.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50308"
@@ -445,33 +507,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50308" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50308x"
+                            <LinearLayout
+                                android:id="@+id/h50308check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50308"
-                                android:text='@{h50308.checked ? h50308x.getText().toString() : ""}'
-                                android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50308">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50308xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50308"
-                                android:text='@{h50308.checked ? h50308xx.getText().toString() : ""}'
-                                android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50308x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50308"
+                                    android:text='@{h50308.checked ? h50308x.getText().toString() : ""}'
+                                    android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50308xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50308"
+                                    android:text='@{h50308.checked ? h50308xx.getText().toString() : ""}'
+                                    android:visibility='@{h50308.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h50309"
@@ -479,33 +550,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h50309" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50309x"
+                            <LinearLayout
+                                android:id="@+id/h50309check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h50309"
-                                android:text='@{h50309.checked ? h50309x.getText().toString() : ""}'
-                                android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50309">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h50309xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h50309"
-                                android:text='@{h50309.checked ? h50309xx.getText().toString() : ""}'
-                                android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50309x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50309"
+                                    android:text='@{h50309.checked ? h50309x.getText().toString() : ""}'
+                                    android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h50309xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h50309"
+                                    android:text='@{h50309.checked ? h50309xx.getText().toString() : ""}'
+                                    android:visibility='@{h50309.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h503010"
@@ -513,33 +593,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h503010" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h503010x"
+                            <LinearLayout
+                                android:id="@+id/h503010check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h503010"
-                                android:text='@{h503010.checked ? h503010x.getText().toString() : ""}'
-                                android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h503010">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h503010xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h503010"
-                                android:text='@{h503010.checked ? h503010xx.getText().toString() : ""}'
-                                android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h503010x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h503010"
+                                    android:text='@{h503010.checked ? h503010x.getText().toString() : ""}'
+                                    android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h503010xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h503010"
+                                    android:text='@{h503010.checked ? h503010xx.getText().toString() : ""}'
+                                    android:visibility='@{h503010.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h503011"
@@ -547,33 +636,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h503011" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h503011x"
+                            <LinearLayout
+                                android:id="@+id/h503011check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h503011"
-                                android:text='@{h503011.checked ? h503011x.getText().toString() : ""}'
-                                android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h50301">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h503011xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h503011"
-                                android:text='@{h503011.checked ? h503011xx.getText().toString() : ""}'
-                                android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h503011x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h503011"
+                                    android:text='@{h503011.checked ? h503011x.getText().toString() : ""}'
+                                    android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h503011xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h503011"
+                                    android:text='@{h503011.checked ? h503011xx.getText().toString() : ""}'
+                                    android:visibility='@{h503011.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                             <CheckBox
                                 android:id="@+id/h503096"
@@ -581,33 +679,42 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/h503096" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h503096x"
+                            <LinearLayout
+                                android:id="@+id/h503096check"
                                 android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:inputType="number"
-                                android:hint="@string/h503h1"
-                                android:tag="h503096"
-                                android:text='@{h503096.checked ? h503096x.getText().toString() : ""}'
-                                android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="99999"
-                                app:minValue="1"
-                                app:type="range" />
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="h503096">
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/h503096xx"
-                                android:layout_width="match_parent"
-                                android:layout_height="56dp"
-                                android:hint="@string/h503h2"
-                                android:inputType="number"
-                                android:tag="h503096"
-                                android:text='@{h503096.checked ? h503096xx.getText().toString() : ""}'
-                                android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
-                                android:maxLength="5"
-                                app:maxValue="0"
-                                app:minValue="0"
-                                app:type="range" />
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h503096x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h1"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h503096"
+                                    android:text='@{h503096.checked ? h503096x.getText().toString() : ""}'
+                                    android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="99999"
+                                    app:minValue="1"
+                                    app:type="range" />
+
+                                <com.edittextpicker.aliazaz.EditTextPicker
+                                    android:id="@+id/h503096xx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/h503h2"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:tag="h503096"
+                                    android:text='@{h503096.checked ? h503096xx.getText().toString() : ""}'
+                                    android:visibility='@{h503096.checked? View.VISIBLE : View.GONE}'
+                                    app:maxValue="0"
+                                    app:minValue="0"
+                                    app:type="range" />
+
+                            </LinearLayout>
 
                         </LinearLayout>
 

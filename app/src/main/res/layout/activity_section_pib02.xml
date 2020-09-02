@@ -34,6 +34,7 @@
                 <!-- pb06  Radio   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVpb06"
+                    android:visibility="gone"
                     style="@style/cardView">
 
                     <LinearLayout
