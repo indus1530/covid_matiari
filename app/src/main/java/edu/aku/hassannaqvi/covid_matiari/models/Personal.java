@@ -397,8 +397,8 @@ public class Personal extends LiveData<Personal> {
             json.put(PersonalTable.COLUMN_ID, this._ID == null ? JSONObject.NULL : this._ID);
             json.put(PersonalTable.COLUMN_SYSDATE, this.sysdate == null ? JSONObject.NULL : this.sysdate);
             json.put(PersonalTable.COLUMN_UID, this._UID == null ? JSONObject.NULL : this._UID);
-            json.put(PersonalTable.COLUMN_A01, this.a01 == null ? JSONObject.NULL : this.a01);
-            json.put(PersonalTable.COLUMN_A02, this.a02 == null ? JSONObject.NULL : this.a02);
+//            json.put(PersonalTable.COLUMN_A01, this.a01 == null ? JSONObject.NULL : this.a01);
+//            json.put(PersonalTable.COLUMN_A02, this.a02 == null ? JSONObject.NULL : this.a02);
             json.put(PersonalTable.COLUMN_A03, this.a03 == null ? JSONObject.NULL : this.a03);
             json.put(PersonalTable.COLUMN_HH12, this.hh12 == null ? JSONObject.NULL : this.hh12);
             json.put(PersonalTable.COLUMN_HH13, this.hh13 == null ? JSONObject.NULL : this.hh13);
