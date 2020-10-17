@@ -98,18 +98,17 @@ public class SectionH301Activity extends AppCompatActivity {
     }
 
     public void BtnContinue() {
-        if (formValidation()) {
-            try {
-                saveDraft();
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            if (updateDB()) {
-                finish();
-                startActivity(new Intent(this, SectionH302Activity.class));
-            } else {
-                Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
-            }
+        if (!formValidation()) return;
+        try {
+            saveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (updateDB()) {
+            finish();
+            startActivity(new Intent(this, SectionH302Activity.class));
+        } else {
+            Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }
     }
 
